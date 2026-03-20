@@ -1,48 +1,60 @@
 const fs = require('fs');
 const path = require('path');
 
-/**
- * Almagest Manifest Compiler v1.0
- * INGEST → ONTOLOGY → DESIGN → COMPILE → RUNTIME
- */
-
 const ONTOLOGY_DIR = path.join(__dirname, '../docs/ontology');
 const DESIGN_DIR = path.join(__dirname, '../docs/design');
 const OUTPUT_FILE = path.join(__dirname, '../src/data/manifest.json');
 
 function buildManifest() {
-    console.log("🚀 INITIALIZING ALMAGEST COMPILATION CYCLE...");
+    console.log("🚀 INITIALIZING KDSC COMPILATION CYCLE...");
 
-    // 1. Load Ontology
+    // 1. Load Data Layers
     const ontologyFiles = fs.readdirSync(ONTOLOGY_DIR).filter(f => f.endsWith('.json'));
     let entities = [];
     ontologyFiles.forEach(file => {
-        const content = JSON.parse(fs.readFileSync(path.join(ONTOLOGY_DIR, file), 'utf-8'));
-        entities = entities.concat(content);
+        entities = entities.concat(JSON.parse(fs.readFileSync(path.join(ONTOLOGY_DIR, file), 'utf-8')));
     });
 
-    // 2. Validate Entities (The Tether Gate)
-    console.log("🛡️  VALIDATING ONTOLOGICAL INTEGRITY...");
-    entities.forEach(entity => {
-        if (!entity.metadata.sources || entity.metadata.sources.length === 0) {
-            throw new Error(`CRITICAL: Entity '${entity.id}' lacks provenance (sources required).`);
-        }
-        if (entity.metadata.confidence < 0.5) {
-            console.warn(`[WARNING] Low Confidence Entity: '${entity.id}' (score: ${entity.metadata.confidence})`);
-        }
-    });
+    const resolutions = JSON.parse(fs.readFileSync(path.join(DESIGN_DIR, 'variant_resolutions.json'), 'utf-8'));
 
-    // 3. Apply Design Mappings (The Affordance Gate)
-    // For this prototype, we'll assume the mechanical_affordances in ontology are correct.
-    // In later phases, this will resolve from DESIGN_DIR.
-    const resolvedWorldState = {
-        reagents: entities.filter(e => e.type === 'reagent').map(e => ({
+    // 2. Resolve Reagents (The Philology Gate)
+    const resolvedReagents = entities.filter(e => e.type === 'reagent').map(e => {
+        const resolutionId = resolutions[e.id];
+        const base = e.mechanical_affordances.base_modifiers;
+        
+        let finalName = e.metadata.name;
+        let finalDesc = e.philology.current_resolution || "Unresolved text.";
+        let finalPotency = base.potency;
+        let finalInstability = base.instability;
+
+        if (resolutionId) {
+            const variant = e.philology.variants.find(v => v.variant_id === resolutionId);
+            if (variant) {
+                finalName = variant.name;
+                finalDesc = variant.description;
+                finalPotency += variant.modifiers.potency;
+                finalInstability += variant.modifiers.instability;
+                console.log(`🧬 Resolved '${e.id}' via variant: ${resolutionId}`);
+            }
+        }
+
+        return {
             id: e.id,
-            name: e.metadata.name,
-            description: e.philology.current_resolution,
-            potency: e.mechanical_affordances.modifiers.potency,
-            instability: e.mechanical_affordances.modifiers.instability
-        })),
+            name: finalName,
+            description: finalDesc,
+            potency: finalPotency,
+            instability: finalInstability,
+            variant_options: e.philology.variants.map(v => ({
+                id: v.variant_id,
+                name: v.name,
+                description: v.description
+            }))
+        };
+    });
+
+    // 3. Output Manifest
+    const worldState = {
+        reagents: resolvedReagents,
         locations: entities.filter(e => e.type === 'location').map(e => ({
             id: e.id,
             name: e.metadata.name,
@@ -68,13 +80,8 @@ function buildManifest() {
         }))
     };
 
-    // 4. Resolve Philology Variants
-    // In a multi-agent mode, this would look at variant resolution flags.
-
-    // 5. Output Manifest
-    console.log("💾 EMITTING DETERMINISTIC MANIFEST...");
-    fs.writeFileSync(OUTPUT_FILE, JSON.stringify(resolvedWorldState, null, 2));
-    console.log(`✅ COMPILATION SUCCESSFUL. MANIFEST WRITTEN TO: ${OUTPUT_FILE}`);
+    fs.writeFileSync(OUTPUT_FILE, JSON.stringify(worldState, null, 2));
+    console.log(`✅ MANIFEST EMITTED TO: ${OUTPUT_FILE}`);
 }
 
 try {

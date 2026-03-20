@@ -25,6 +25,7 @@ interface GameStore extends GameState {
   sellReagent: (id: string, quantity: number, price: number) => void;
   setStigma: (val: number) => void;
   completePhilology: (id: string, success: boolean) => void;
+  resolveVariant: (entityId: string, variantId: string) => void;
 }
 
 export const useGameStore = create<GameStore>((set, get) => ({
@@ -185,5 +186,15 @@ export const useGameStore = create<GameStore>((set, get) => ({
             log: [...state.log, `Reconstruction complete: ${id}. Knowledge increased.`]
         }));
     }
+  },
+  
+  resolveVariant: (entityId, variantId) => {
+    console.log(`RESOLVING ${entityId} TO ${variantId}`);
+    set(state => ({
+        stats: {
+            ...state.stats,
+            knowledge: state.stats.knowledge + 50
+        }
+    }));
   }
 }));

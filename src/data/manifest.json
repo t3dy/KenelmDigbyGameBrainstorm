@@ -2,17 +2,30 @@
   "reagents": [
     {
       "id": "vitriol",
-      "name": "Raw Vitriol",
-      "description": "A sharp, calcined salt of iron.",
-      "potency": 50,
-      "instability": 10
+      "name": "Calcined Vitriol (Oxford MS)",
+      "description": "A sharp, white salt, purified by the heat of the London sun.",
+      "potency": 40,
+      "instability": 5,
+      "variant_options": [
+        {
+          "id": "oxford_allan",
+          "name": "Calcined Vitriol (Oxford MS)",
+          "description": "A sharp, white salt, purified by the heat of the London sun."
+        },
+        {
+          "id": "paris_duclos",
+          "name": "Green Vitriol (Paris MS)",
+          "description": "A crude, emerald-green earth, favored by the skeptics of the Paris circle."
+        }
+      ]
     },
     {
       "id": "antimony",
       "name": "Antimony",
       "description": "The semi-metal for the Glass of Antimony.",
       "potency": 80,
-      "instability": 40
+      "instability": 40,
+      "variant_options": []
     }
   ],
   "locations": [

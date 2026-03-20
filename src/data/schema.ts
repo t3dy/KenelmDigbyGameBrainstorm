@@ -70,6 +70,7 @@ export interface GameState {
     spirit: number;
     philology: number;
     stigma: number; // Phase 7: Reputation management
+    reagents: Array<{ id: string; name: string; quantity: number; description: string; }>;
   };
   inventory: string[];
   characters: Character[];
