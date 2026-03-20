@@ -1,0 +1,50 @@
+[
+  {
+    "id": "venice",
+    "type": "location",
+    "metadata": {
+      "name": "The Serene Republic of Venice",
+      "sources": ["Stain in the Blood", "Chapter 4"],
+      "confidence": 1.0,
+      "links": ["pursuer", "banking"]
+    },
+    "mechanical_affordances": {
+      "type": "capital",
+      "coordinates": { "x": 10, "y": 15 },
+      "unlocked": true,
+      "description": "The capital of banking and naval surveillance. Heart of the Pursuer's network."
+    }
+  },
+  {
+    "id": "scanderoon",
+    "type": "location",
+    "metadata": {
+      "name": "Scanderoon (Alexandretta)",
+      "sources": ["Digby 1628", "Mediterranean Accounts"],
+      "confidence": 1.0,
+      "links": ["battle_of_scanderoon", "levant"]
+    },
+    "mechanical_affordances": {
+      "type": "battleground",
+      "coordinates": { "x": 88, "y": 42 },
+      "unlocked": true,
+      "description": "The site of the great duel with the Venetian Galleys. Entry point to the Levant."
+    }
+  },
+  {
+      "id": "milos",
+      "type": "location",
+      "metadata": {
+        "name": "Milos (Secret Grotto)",
+        "sources": ["Stain in the Blood", "Milos Archeology"],
+        "confidence": 0.9,
+        "links": ["vitriol_experiment"]
+      },
+      "mechanical_affordances": {
+        "type": "refuge",
+        "coordinates": { "x": 45, "y": 62 },
+        "unlocked": true,
+        "description": "A quiet obsidian island where Kenelm first performed the Vitriol experiment."
+      }
+  }
+]

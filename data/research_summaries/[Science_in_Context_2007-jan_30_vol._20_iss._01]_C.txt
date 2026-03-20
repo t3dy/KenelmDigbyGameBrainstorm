@@ -1,0 +1,98 @@
+Science in Context
+http://journals.cambridge.org/SIC
+Additional services for Science in Context:
+Email alerts: Click here
+Subscriptions: Click here
+Commercial reprints: Click here
+Terms of use : Click here
+Composite Substance, Common Notions, and Kenelm
+Digby's Theory of Animal Generation
+Andreas Blank
+Science in Context / Volume 20 / Issue 01 / March 2007, pp 1 - 20
+DOI: 10.1017/S0269889706001116, Published online: 30 January 2007
+Link to this article: http://journals.cambridge.org/abstract_S0269889706001116
+How to cite this article:
+Andreas Blank (2007). Composite Substance, Common Notions, and Kenelm Digby's Theory of
+Animal Generation. Science in Context, 20, pp 1-20 doi:10.1017/S0269889706001116
+Request Permissions : Click here
+Downloaded from http://journals.cambridge.org/SIC, IP address: 138.251.14.35 on 17 Mar 2015
+
+Science in Context 20(1), 1–20 (2007). Copyright C⃝ Cambridge University Press
+doi:10.1017/S0269889706001116 Printed in the United Kingdom
+Composite Substance, Common Notions, and Kenelm
+Digby’s Theory of Animal Generation
+Andreas Blank
+The Cohn Institute for the History and Philosophy of Science and Ideas, Tel Aviv University
+Argument
+This paper argues for two claims. (1) In his biological views, Kenelm Digby tries to reconcile
+aspects of an Aristotelian theory of composite substance with early modern corpuscularianism.
+(2) From a methodological point of view, he uses the Stoic-Epicurean epistemology of common
+notions in order to show the adequacy of his conciliatory approach. The ﬁrst claim is
+substantiated by an analysis of Digby’s views on the role of mixture and homogeneity in
+the process of animal generation. The second claim is substantiated by an analysis of Digby’s
+views on the role of the concept of quantity in the evaluation of scientiﬁc hypotheses. Both
+arguments make use of the context of Digby’s philosophy: the ﬁrst argument draws on his
+background in the work of early modern corpuscularian Aristotelians such as Daniel Sennert;
+the second argument draws on his background in the epistemology of Pierre Gassendi.
+1. Introduction
+While Kenelm Digby’s matter theory and his research in experimental alchemy are,
+thanks to the ground-breaking studies of Betty Jo Dobbs (1971; 1973; 1974), well
+known today, other aspects of his natural philosophy, in particular his views on the
+life sciences, have received little attention.
+1 Nevertheless, the generation of living
+beings, in particular the generation of animals, plays a signiﬁcant role in Digby’s Two
+Treatises, which were published in Paris in 1644 when Digby was newly appointed
+Lord Chancellor at the court-in-exile of Charles I. 2 At this time, Digby divided
+his considerable energies between preparing negotiations with Pope Innocent X
+concerning Catholic funds for the King’ party,
+3 meeting leading French philosophers
+such as Descartes and Gassendi in the Mersenne circle, 4 and exchanging news about
+1 T o the best of my knowledge, the projected fourth part of Dobbs’ “Studies,” about Digby’s biological work,
+has not appeared in print.
+2 In what follows, I refer to this work as “TT.” References are to page numbers. In all quotations, I have
+modernized the use of “u”, “v”, and “j”; apart from that, I have preserved Digby’s spelling. All italics and
+capitalization by seventeenth-century authors are in the original.
+3 On Digby’s missions to Rome, see Gabrieli 1954.
+4 For Digby’s contact with the Mersenne circle, see the index to Mersenne 1955–1977.
+2 Andreas Blank
+experimental alchemy.5 His theory of animal generation deserves attention (at least)
+for two interconnected reasons, both of which are related, in a direct or indirect way,
+to his political, philosophical, and alchemical associations.
+The ﬁrst reason is the role that his theory of animal generation plays within
+the framework of a conciliatory approach to natural philosophy. His contemporaries
+perceived his natural philosophy as an attempt to reconcile aspects of Aristotelian natural
+philosophy with aspects of modern corpuscularianism. For example, in a programmatic
+letter of 1669, the German philosopher Gottfried Wilhelm Leibniz mentions Digby,
+alongside such thinkers as Julius Caesar Scaliger and Daniel Sennert, as exemplifying
+a conciliatory approach to natural philosophy akin to his own.
+6 Digby himself is keen
+to create such an understanding of his philosophical project, when, in the Conclusion
+to the ﬁrst part of Two Treatises, he emphasizes that, for the most part, he has been
+following Aristotle in his account of the nature of body, but that at the same time what
+he has been saying does not differ from Democritus, Hippocrates, and Galen, from
+the natural philosophy of the “moderns,” nor from the tradition of corpuscularian
+Alchemy, in particular the anonymous thirteenth-century author of one of the main
+alchemical writings of the Middle Ages, the Summa perfectionis , known under the
+pseudonym “Geber” (see TT 343).
+Although there are recent studies on corpuscularian Aristotelianism in philosophers
+such as Scaliger, Sennert, and the early Leibniz (see L ¨uthy 2001; Michael 1997;
+Newman 2001b; Mercer 2001; Blank 2005, chap. 3), it seems fair to say that it is
+still not well understood how such a conciliatory approach to natural philosophy was
+supposed to work in other sixteenth- and seventeenth-century authors. Obviously, the
+project of bringing Aristotelian and corpuscularian intuitions together is threatened by
+inconsistency. For example, the following question arises: how is it possible to hold
+that the generation of composite bodies reduces to the combination of corpuscles that
+do not change their nature in the process of composition and at the same time hold
+the Aristotelian view that composite substances are true unities. Indeed, Digby does
+hold both that biological reproduction involves the composition of minimal particles
+and also that animals are true unities. Looking into Digby’s strategy of reconciling
+such claims may give some interesting clues as to how early modern corpuscularian
+Aristotelianism sought to achieve its conciliatory goal. Moreover, emphasizing the role
+that Digby’s metaphysics of composite substance plays in his theory of animal generation
+will make it clear why interpretations that place Digby’s view on the nature of bodies
+in a one-sided way into the tradition of corpuscularian alchemy (such as the classical
+study of Kurd Lasswitz and more recent work by William Newman) miss something
+important. In section 3, I explore Digby’s conciliatory strategy in the context of similar
+strategies developed by authors such as Scaliger and Sennert.
+5 On the exchange of alchemical ideas and substances during Digby’s Paris years, see Dobbs 1973, 150–151.
+6 See Leibniz’s letter to Thomasius, 20/ 30 April 1669; Leibniz 1927 – , II, 1, 14.

@@ -1,0 +1,131 @@
+JHA, xxxvii (2006)
+A LETTER FROM WILLIAM GASCOIGNE
+TO SIR KENELM DIGBY
+DAVID SELLERS, Leeds, U.K.
+The advent of a new transit of Venus season has brought once more into focus the
+remarkable yet brief lives of three young astronomers who blazed a trail for precision
+astronomy in England. The contribution of Jeremiah Horrocks (c. 1619-41) scarcely
+needs any introduction: he embraced Keplerian astronomy before most of his peers,
+produced an improved theory of the Moon's motion, and earned enduring fame for
+his prediction of the 1639 transit of Venus and his meticulous observation of it. His
+friend William Crabtree (1610-44), a draper of Broughton, near Manchester, alerted
+to the prospect of the event by Horrocks, also observed the transit and bore witness
+to the tiny size of the Venusian disc on the face of the Sun. Crabtree was an accom­
+plished observer and was skilful in the mathematical aspects of astronomy. Much of
+our knowledge of Horrocks and his work arises from the extensive correspondence
+that he and Crabtree maintained.
+Of the third young astronomer, William Gascoigne (c.1612-e.I644), far less is
+known. Crabtree had made Gascoigne's acquaintance around 1639-40 and in 1640
+visited his home at Middleton, near Leeds inYorkshire. Through this relationship, both
+Crabtree and Horrocks had become aware of the ingenious inventions of the Leeds
+astronomer in the field oftelescopic optics. Between the years 1640and 1642Crabtree
+and Gascoigne exchanged a substantial series of letters. Following the death of their
+authors, these letters came into the possession of Richard Towneley (1629-1707).
+In 1672 John Flamsteed, "by the singular favour of that ingenuous & right worthy
+Gentleman Richard Townly of Townly", I spent some time at Towneley Hall, near
+Burnley, transcribing the correspondence. Shortly afterwards, he drafted a brieftrea­
+tise discussing its astronomical and optical content. This survives in the Flamsteedl
+RGO papers.' Unfortunately, the treatise, which was never published, contains only
+selected excerpts from the correspondence, since, in Flamsteed's words, the whole
+was "too prolix to transcribe altogeather, & conteineing some things immateriall to our
+purpose".' In 1712 the Gascoigne-Crabtree correspondence passed into the hands of
+the Rev.William Derham (1657-1735) through the generosity of Richard Towneley' s
+son, Charles (1658-1712). In the same year, Derham published one of the letters (from
+Crabtree to Gascoigne) in the Philosophical transactions of the Royal Society" and,
+five years later,prompted by a French claim to have invented the telescope micrometer,
+he published further fragments.' The originals sadly seem to have disappeared. Until
+recently, it had been thought that the only letters from Gascoigne to have survived
+were the two that he wrote to the mathematician, William Oughtred (1573?-1660) in
+1640-41. These letters remained hidden in the private Macclesfield Collection until
+they were purchased by the University of Cambridge Library in 2000. 6 Transcriptions
+were made by Stephen Rigaud? in the early nineteenth century, but the originals were
+0021-8286/06/3704-040S/$S.OO © 2006 Science History Publications Ltd
+ at Monash University on June 3, 2015jha.sagepub.comDownloaded from 
+406 David Sellers
+generally denied to the gaze of scholars. Consequently, when Chetham's Library in
+Manchester approached several eminent historians of astronomy in 1965 to obtain a
+view as to whether a suspected Gascoigne manuscript" in their possession was indeed
+in Gascoigne's own hand, the responses were non-comrnital: seemingly, none of the
+historians had ever seen a sample of the astronomer's handwriting.
+It is perhaps partly due to the paucity of primary source material relating to
+William Gascoigne - including correspondence - that he is so neglected today.
+Neither in his home town, nor anywhere in the U.K., is there any public memorial
+to his accomplishments.
+Gascoigne invented the telescopic sight and the telescope micrometer. He made
+seminal observations of the Moon, to which Flamsteed dedicated the first few pages
+of his monumental Historiae coelestis Britannicae. His expertise in the analysis of
+optical systems was such that Flamsteed was prompted to declare that
+Amongst Mr. Gascoigne's letters I found some wherein he showed how the images
+of remote objects were formed in the distinct base of a convex object glass. From
+these I got my dioptrics in a few hours; having read Descartes' Dioptrics before,
+but learnt little by them because he discourses not of this subject."
+William Molyneux, in his Dioptrica nova, admits to being similarly indebted to
+Gascoigne's originality when he says in the Preface, or Admonition to the Reader,
+I can say that the Geometrical method of Calculating a Rays Progress, which
+in many particulars is so amply delivered hereafter, is wholly new, and never
+before publish'd. And for the first Intimation thereof, I must acknowledg my
+self obliged to my worthy Friend Mr. Flamsteed, Astron. Reg., who had it from
+some unpublished Papers of Mr. Gascoignes.'?
+The optical instruments that Gascoigne invented were seemingly lost without trace
+following his untimely death in the English Civil War. Their like was not seen again
+until the micrometer was re-invented, apparently independently, by Adrien Auzout
+and others in the I 660s. Perhaps Gascoigne's most effective legacy was his contribu­
+tion to the optical instruction of those who, a generation or so later, would dedicate
+their lives to the meticulous measurement of the heavens. It is a pleasant surprise to
+find that, lurking in the manuscript archives of the British Library, now searchable
+via the Internet, is a hitherto uncited letter of 30 November 16[40] from Gascoigne
+to Sir Kenelm Digby I I and a lengthier one from William Crabtree to Gascoigne."
+Thus the number of surviving letters in Gascoigne's own hand is increased by 50%
+and a little more light is shed on their author. The letter to Digby, which is slightly
+damaged and illegible in places, is transcribed in the Appendix to this paper.
+We already knew that Gascoigne had met Digby and had corresponded with him.
+As the following extract of his second letter to Oughtred makes clear, the young
+astronomer, previously pursuing his studies in a solitary fashion, had started to make the
+acquaintance of a number of persons who were showing a keen interest in his work.
+Talking of his micrometer and other discoveries, he tells Oughtred,
+ at Monash University on June 3, 2015jha.sagepub.comDownloaded from 
+A Letter From William Gascoigne 407
+I have shewed some part of these to two of my very late acquaintance, both
+industrious astronomers, who are not a little taken with them, and the more,
+because they believed they had tried all possible means, that glasses could afford
+for the measuring of diameters, yet never attained to any more than guessing,
+and indeed were so confident, as they would not believe until I let them see a
+glass to try the moon's diameter by, and how I proceeded in the other usual one.
+Indeed if one of my noble friends had not, before I intended it, bolted out so
+much as it could not longer lie hid, I had reserved it until I had got some rare
+glasses worthy of a prince's inspection, unto whose notice, at his majesty's being
+at York, he had, unknown to me, promoted this invention, who, as I conceive his
+words, will expect an ample relation. He also acquainted me with the famous
+Sir Kenelm Digby, unto whom I first shewed the contrivance of the scale, and
+its use in a glass, whose courtesy bound me to fulfil his request for some of the
+diagrams and observations, which I have lately sent him. 13
+These diagrams and observations in all probability accompanied Gascoigne's letter
+of 30 November 16[40], which is appended to the present paper. It seems likely that
+the "industrious astronomers", whose acquaintance Gascoigne had been pleased
+to make, would have been William Crabtree and a friend, who paid an unexpected
+visit to Middleton sometime between 7 August 1640 and 30 October 1640. It was an
+understatement to say that the visitors were "not a little taken" with what they saw.
+I
+Crabtree was unstinting in his admiration:
+I cannot conceal how much I am transported beyond myself with the Remem­
+brance (of that little I do remember) of those admirable Inventions which you
+shewed me when I was with you. I should not have believed the World could
+have afforded such exquisite Rarities, and I know not how to stint my longing
+Desires, without some further Taste of these selected Dainties. Happier had I
+been, had I never known there had been such Secrets, than to know no more,
+but only that there are such.'!
+The identity of Gascoigne's "noble friend", who prematurely divulged details of his
+invention, is not made clear and must remain a matter for speculation and hypothesis.
+The peer of the realm in question would surely have to have been enthused by the
+micrometer in just the same way as Crabtree in order to have "bolted out" the details.
+There cannot have been many such peers in an age when most preferred hunting and
+hounds as leisure pursuits, rather than science. Perhaps the anonymous individual
+was William Cavendish, Marquess, and ultimately Duke, of Newcastle (1592-1676).
+In several ways Newcastle would be the likeliest candidate. In May 1638 he had
+been appointed as governor of the eight-year-old Prince Charles. The prince's father,
+Charles I, left London for York on 20 August 1640 and on 24 September convened
+there a Great Council of Peers, which Newcastle probably attended." He and his
+younger brother, Sir Charles Cavendish, the mathematician, to whom he was very
+close, were noted scholars. Gascoigne was certainly known to the latter. Writing to
+John Pell- a fellow mathematician - in August 1644, Charles Cavendish said
+ at Monash University on June 3, 2015jha.sagepub.comDownloaded from 

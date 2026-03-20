@@ -1,0 +1,13 @@
+[
+  {
+    "id": "ms_alkahest",
+    "title": "On the True Nature of the Alkahest",
+    "author": "The Paris Alchemical Circle",
+    "variants": [
+      "Variant A (Hartmann): 'The solvent arises from the spirit of Vitriol, distilled seven times over the ashes of an Oak.'",
+      "Variant B (Duclos): 'Nay, the spirit must be drawn from the Hidden Food of the Air, using a magnet of refined Iron.'",
+      "Variant C (Loberie): 'Both are partial; the true fire is found in the union of Vitriol and the Hidden Food, at the hour of the Lunar Apex.'"
+    ],
+    "true_result": "alkahest"
+  }
+]

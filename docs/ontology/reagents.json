@@ -1,0 +1,55 @@
+[
+  {
+    "id": "vitriol",
+    "type": "reagent",
+    "metadata": {
+      "name": "Raw Vitriol",
+      "sources": ["Digby 1658", "Librarian Report 002"],
+      "confidence": 0.95,
+      "links": ["athanor", "weapon_salve"]
+    },
+    "philology": {
+      "variants": [
+        {
+          "source": "Oxford MS 12",
+          "content": "A sharp, calcined salt of iron.",
+          "mechanical_bonus": "potency +10"
+        },
+        {
+          "source": "Paris MS 4",
+          "content": "A green, vitriolic earth of copper.",
+          "mechanical_bonus": "instability +20"
+        }
+      ],
+      "current_resolution": "A sharp, calcined salt of iron."
+    },
+    "mechanical_affordances": {
+      "type": "reagent_modifier",
+      "modifiers": {
+        "potency": 50,
+        "instability": 10
+      }
+    }
+  },
+  {
+    "id": "antimony",
+    "type": "reagent",
+    "metadata": {
+      "name": "Antimony",
+      "sources": ["Digby 1658", "Research Doc 03"],
+      "confidence": 0.88,
+      "links": ["glass_of_antimony", "purging"]
+    },
+    "philology": {
+      "variants": [],
+      "current_resolution": "The semi-metal for the Glass of Antimony."
+    },
+    "mechanical_affordances": {
+      "type": "reagent_modifier",
+      "modifiers": {
+        "potency": 80,
+        "instability": 40
+      }
+    }
+  }
+]

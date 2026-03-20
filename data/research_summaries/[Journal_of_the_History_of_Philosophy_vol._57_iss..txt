@@ -1,0 +1,99 @@
+Between Atoms and Forms: Natural Philosophy and Metaphysics 
+in Kenelm Digby 
+Han Thomas Adriaenssen, Sander de Boer
+Journal of the History of Philosophy, Volume 57, Number 1, January 2019,
+pp. 57-80 (Article)
+Published by Johns Hopkins University Press
+DOI:
+For additional information about this article
+Access provided by Tulane University (15 Feb 2019 13:50 GMT) 
+https://doi.org/10.1353/hph.2019.0002
+https://muse.jhu.edu/article/715079
+
+* Han Thomas Adriaenssen is Assistant Professor of Philosophy at the University of Gronin-
+gen and Sander de Boer is a former Postdoctoral Researcher at the University of Groningen.
+Journal of the History of Philosophy, vol. 57, no. 1 (2019) 57–80
+[57]
+Between Atoms and Forms: 
+Natural Philosophy and 
+Metaphysics in Kenelm Digby
+HAN THOMAS ADRIAENSSEN AND SANDER DE BOER*
+abstract Kenelm Digby is now best remembered for his attempt at reconciling 
+Aristotelianism with the new philosophies of his time. In his Two Treatises of 1644, 
+Digby argued that, while the notion of form has no place in natural philosophy, it 
+remains indispensable in metaphysics. This division of labor has not received much 
+attention, but we argue that it played an important role in Digby’s thought. The no-
+tion of form is central to his account of bodily identity over time, but by removing 
+it from the domain of natural philosophy, he avoids some of the standard criticism 
+of forms in authors like Descartes. In the final part of this paper, we turn to Digby’s 
+friend and follower, John Sergeant. We argue that, in Sergeant, we get an answer 
+to the question of how the atomic parts out of which a body is built up relate to its 
+form, which had remained open in Digby.
+keywords Digby, Sergeant, substantial form, atomism, mechanism, metaphysics, 
+Aristotelianism, Descartes
+although mostly known to specialists nowadays, Kenelm Digby (1603–1665) 
+was a remarkable figure on the intellectual scene of the early seventeenth century. 
+He has been described as “one of the most influential natural philosophers” of 
+his time,
+1 and corresponded with many of the great scholars of his days, including 
+Descartes, and the French pioneer of atomism, Pierre Gassendi. In the later years 
+of his life, Digby, alongside men like Robert Boyle, became one of the founding 
+members of the Royal Society.
+2
+Digby authored one major work of philosophy: the Two Treatises of 1644. This 
+work consisted of a long First Treatise on bodies, and a shorter, Second Treatise on 
+the human soul. In the First Treatise, Digby argued that all bodies are built up out 
+of minute bits of matter he called ‘atoms’ and claimed that it is the composition of 
+their atomic parts that gives bodies their physical characteristics. With this claim, 
+1 Antonio Clericuzio, Elements, Principles and Corpuscles, 81.
+2 On Digby’s life and work, see Michael Foster, “Digby, Sir Kenelm.”
+58
+journal of the history of philosophy 57:1 january 2019
+it has been argued, Digby was the first to offer a full statement of an atomic system 
+in the English language.3
+But at the same time, Digby combined his atomism with a clear commitment 
+to the philosophy of Aristotle. 4 Indeed, the atoms out of which the material 
+world is composed, in his view, are but minute portions of the four Aristotelian 
+elements. And more significantly still, bodies for him were not just composites of 
+atoms, but also compounds of matter and form. Indeed, Digby balanced these 
+two views of what bodies are by employing what appears to be a division of labor 
+between natural philosophy and metaphysics. In natural philosophy, he claimed, 
+we should treat of bodies as mere atomic compounds, and the notion of form has 
+no place in this domain. In the domain of metaphysics, however, we cannot do 
+without it. There, form is indispensable as a way to deal with questions concerning 
+material substances that cannot be answered merely by appealing to their atomic 
+composition.
+This division of labor in Digby has been little studied, but in this paper, we 
+argue that it plays an important role in his philosophy. In particular, we show 
+that by retaining the notion of form in the domain of metaphysics, Digby thinks 
+he can account for bodily identity over time in general, and for the resurrection 
+of the human body in particular. But by removing it from the domain of natural 
+philosophy, he can offer intelligible accounts of natural processes such as 
+calcination, and of the physical characteristics of metals and other materials.
+Yet his treatment of form also raises questions. In particular, it raises the question 
+of how the form of a body relates to the atoms out of which the body is built up. In 
+other words, it raises the question of just how his two accounts of what bodies are, 
+one atomic and one formal, fit together. Unfortunately, this is a question that Digby 
+himself never addressed. We argue, however, that in one of his most important 
+followers, John Sergeant, we are given a suggestion as to how bodies can be, at the 
+same time, atomic composites as well as the bearers of forms.
+5 Today, Sergeant is 
+mostly known as a vehement critic of the Cartesian way of ideas.6 Nonetheless, he 
+recognized that Descartes and his followers raised legitimate challenges for the 
+scholastic concept of form. In his attempt to accommodate this criticism without 
+simply rejecting forms, he built on the natural philosophy of the First Treatise, 
+and in doing so suggested a way in which bodies can both be atomic composites, 
+and the bearers of forms that identify them.
+We proceed as follows. In section 1, we look at Digby’s account of the four 
+elements. This account draws on Aristotelian traditions in a number of ways, but 
+as section 2 will make clear, he parted ways with this tradition when he denied to 
+3 On Digby’s contribution to atomism in England, see Robert Kargon, Atomism in England, 66–67; 
+and Clericuzio, Elements, Principles and Corpuscles, 81–86.
+4 Christia Mercer describes Digby as a “reformed philosopher,” who aimed to reconcile Aristote-
+lianism with the new philosophies of the seventeenth century (Leibniz’s Metaphysics, 106–7).
+5 The most extensive study of the relationship between Digby and Sergeant remains Dorothea 
+Krook, John Sergeant. Both were members of the Blackloist faction of English Catholicism. On Black-
+loism, see John Henry, “Atomism and Eschatology.” See also Beverley Southgate, Covetous of Truth, 
+34–41; and Stefania Tutino, Thomas White and the Blackloists.
+6 See, e.g. Richard Glauser, “John Sergeant’s Argument against Descartes”; and, more recently, 
+Han Thomas Adriaenssen, Representation and Scepticism, ch. 6.

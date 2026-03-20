@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Outfit:wght@300;400;600&display=swap');
+
+@theme {
+  --color-parchment-light: #f4f1ea;
+  --color-parchment: #e8e4d9;
+  --color-parchment-dark: #dcd7c9;
+  
+  --color-ink-light: #3a3a3a;
+  --color-ink: #1a1a1a;
+  --color-ink-dark: #0a0a0a;
+  
+  --color-gold-light: #efbf04;
+  --color-gold: #d4af37;
+  --color-gold-dark: #9a7e1a;
+  
+  --color-azure-light: #3b82f6;
+  --color-azure: #1d4ed8;
+  --color-azure-dark: #1e3a8a;
+
+  --font-serif: "IM Fell English", serif;
+  --font-display: "Outfit", sans-serif;
+}
+
+:root {
+  --color-parchment: #f4f1ea;
+  --color-ink: #1a1a1a;
+  --color-gold: #d4af37;
+  --color-azure: #1e3a8a;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-parchment);
+    color: var(--color-ink);
+    font-family: var(--font-serif);
+    line-height: 1.625;
+    background-image: radial-gradient(circle at center, rgba(232, 228, 217, 0.4) 0%, rgba(220, 215, 201, 0.6) 100%);
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-serif);
+    font-style: italic;
+    color: var(--color-ink-dark);
+  }
+}
+
+@layer components {
+  .btn-gold {
+    @apply px-6 py-2 bg-gold text-white font-display uppercase tracking-widest rounded-sm hover:bg-gold-dark transition-all duration-300 shadow-md transform hover:-translate-y-0.5;
+  }
+
+  .interactive-engraving {
+    @apply border-2 border-ink-light p-4 bg-white/50 backdrop-blur-sm shadow-xl relative overflow-hidden;
+  }
+}

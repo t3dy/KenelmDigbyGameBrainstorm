@@ -1,0 +1,155 @@
+{
+  "reagents": [
+    {
+      "id": "vitriol",
+      "name": "Raw Vitriol",
+      "description": "A sharp, calcined salt of iron.",
+      "potency": 50,
+      "instability": 10
+    },
+    {
+      "id": "antimony",
+      "name": "Antimony",
+      "description": "The semi-metal for the Glass of Antimony.",
+      "potency": 80,
+      "instability": 40
+    }
+  ],
+  "locations": [
+    {
+      "id": "venice",
+      "name": "The Serene Republic of Venice",
+      "x": 10,
+      "y": 15,
+      "description": "The capital of banking and naval surveillance. Heart of the Pursuer's network.",
+      "type": "capital",
+      "unlocked": true
+    },
+    {
+      "id": "scanderoon",
+      "name": "Scanderoon (Alexandretta)",
+      "x": 88,
+      "y": 42,
+      "description": "The site of the great duel with the Venetian Galleys. Entry point to the Levant.",
+      "type": "battleground",
+      "unlocked": true
+    },
+    {
+      "id": "milos",
+      "name": "Milos (Secret Grotto)",
+      "x": 45,
+      "y": 62,
+      "description": "A quiet obsidian island where Kenelm first performed the Vitriol experiment.",
+      "type": "refuge",
+      "unlocked": true
+    }
+  ],
+  "characters": [
+    {
+      "id": "kenelm_digby",
+      "name": "Sir Kenelm Digby",
+      "role": "advisor",
+      "health": 100,
+      "reputation": 100,
+      "bio": "The protagonist. Alchemist, courtier, and adventurer."
+    },
+    {
+      "id": "venetia_stanley",
+      "name": "Venetia Stanley",
+      "role": "advisor",
+      "health": 100,
+      "reputation": 95,
+      "bio": "Digby's wife, whose honor he seeks to protect across the Mediterranean."
+    },
+    {
+      "id": "thomas_allen",
+      "name": "Thomas Allen",
+      "role": "advisor",
+      "health": 80,
+      "reputation": 90,
+      "bio": "Oxford mathematician and mentor. His secret library is the foundation of your knowledge."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "intro_sympathy_secret",
+      "background": "eagle_deck",
+      "actors": [
+        {
+          "id": "kenelm",
+          "startX": 5,
+          "startY": 7,
+          "spriteType": "digby"
+        },
+        {
+          "id": "venetia",
+          "startX": 15,
+          "startY": 7,
+          "spriteType": "venetia"
+        }
+      ],
+      "timeline": [
+        {
+          "type": "wait",
+          "duration": 1000
+        },
+        {
+          "type": "move",
+          "actorId": "kenelm",
+          "targetX": 9,
+          "targetY": 7,
+          "duration": 1000
+        },
+        {
+          "type": "say",
+          "actorId": "kenelm",
+          "text": "Stelliana... the Mediterranean night is as vast as my intentions."
+        },
+        {
+          "type": "move",
+          "actorId": "venetia",
+          "targetX": 11,
+          "targetY": 7,
+          "duration": 800
+        },
+        {
+          "type": "emote",
+          "actorId": "venetia",
+          "emotion": "heart",
+          "duration": 1200
+        },
+        {
+          "type": "say",
+          "actorId": "venetia",
+          "text": "Kenelm, they say you carry a powder that can heal a man just by breathing on his sword miles away."
+        },
+        {
+          "type": "emote",
+          "actorId": "kenelm",
+          "emotion": "surprise",
+          "duration": 500
+        },
+        {
+          "type": "say",
+          "actorId": "kenelm",
+          "text": "It is not magic, Venetia. It is the sympathetical logic of the Vitriol, found in the salt of our souls."
+        },
+        {
+          "type": "emote",
+          "actorId": "venetia",
+          "emotion": "idea",
+          "duration": 1000
+        },
+        {
+          "type": "say",
+          "venetia": "If the London gossips hear this, they will call it soul-stealing, not science."
+        },
+        {
+          "type": "say",
+          "actorId": "kenelm",
+          "text": "Then we shall give them a romance so great, they will forget to call it a crime."
+        }
+      ]
+    }
+  ]
+}

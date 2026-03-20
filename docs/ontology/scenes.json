@@ -1,0 +1,32 @@
+[
+  {
+    "id": "intro_sympathy_secret",
+    "type": "scene",
+    "metadata": {
+      "name": "Intro: The Silence of the Text",
+      "sources": ["Stain in the Blood", "Chapter 1"],
+      "confidence": 1.0,
+      "links": ["kenelm_digby", "venetia_stanley", "eagle_deck"]
+    },
+    "mechanical_affordances": {
+      "background": "eagle_deck",
+      "actors": [
+        { "id": "kenelm", "startX": 5, "startY": 7, "spriteType": "digby" },
+        { "id": "venetia", "startX": 15, "startY": 7, "spriteType": "venetia" }
+      ],
+      "timeline": [
+        { "type": "wait", "duration": 1000 },
+        { "type": "move", "actorId": "kenelm", "targetX": 9, "targetY": 7, "duration": 1000 },
+        { "type": "say", "actorId": "kenelm", "text": "Stelliana... the Mediterranean night is as vast as my intentions." },
+        { "type": "move", "actorId": "venetia", "targetX": 11, "targetY": 7, "duration": 800 },
+        { "type": "emote", "actorId": "venetia", "emotion": "heart", "duration": 1200 },
+        { "type": "say", "actorId": "venetia", "text": "Kenelm, they say you carry a powder that can heal a man just by breathing on his sword miles away." },
+        { "type": "emote", "actorId": "kenelm", "emotion": "surprise", "duration": 500 },
+        { "type": "say", "actorId": "kenelm", "text": "It is not magic, Venetia. It is the sympathetical logic of the Vitriol, found in the salt of our souls." },
+        { "type": "emote", "actorId": "venetia", "emotion": "idea", "duration": 1000 },
+        { "type": "say", "venetia": "If the London gossips hear this, they will call it soul-stealing, not science." },
+        { "type": "say", "actorId": "kenelm", "text": "Then we shall give them a romance so great, they will forget to call it a crime." }
+      ]
+    }
+  }
+]

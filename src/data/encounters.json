@@ -1,0 +1,48 @@
+[
+  {
+    "id": "scanderoon_battle",
+    "title": "The Battle of Scanderoon",
+    "location": "Alexandretta (Scanderoon)",
+    "date": "1628-06-16",
+    "description": "A naval engagement against Venetian and French ships in the Mediterranean.",
+    "type": "naval",
+    "stakes": {
+      "honor": 50,
+      "wealth": 80,
+      "knowledge": 10
+    },
+    "choices": [
+      {
+        "text": "Aggressive pursuit with the 'Eagle'",
+        "consequence": "Gain immense wealth but risk honor with the Crown."
+      },
+      {
+        "text": "Negotiated seizure",
+        "consequence": "A more surgical victory, gaining prestige among merchants."
+      }
+    ]
+  },
+  {
+    "id": "gresham_college_withdrawal",
+    "title": "The Mourning Hermit",
+    "location": "Gresham College, London",
+    "date": "1633-05-01",
+    "description": "After Venetia's death, you retreat to a laboratory to master the secrets of matter.",
+    "type": "alchemy",
+    "stakes": {
+      "honor": -10,
+      "wealth": -20,
+      "knowledge": 100
+    },
+    "choices": [
+      {
+        "text": "Master the 'Powder of Sympathy'",
+        "consequence": "Knowledge increases but your reputation for credulity grows."
+      },
+      {
+        "text": "Study the 'Nature of Bodies'",
+        "consequence": "Deep philosophical insight into atomic composites."
+      }
+    ]
+  }
+]

@@ -1,0 +1,110 @@
+Sir Kenelm Digby and the Power of Sympathy
+Author(s): Seth Lobis
+Source: Huntington Library Quarterly, Vol. 74, No. 2 (June 2011), pp. 243-260
+Published by: University of California Press
+Stable URL: http://www.jstor.org/stable/10.1525/hlq.2011.74.2.243 .
+Accessed: 30/05/2013 17:18
+Your use of the JSTOR archive indicates your acceptance of the Terms & Conditions of Use, available at .
+http://www.jstor.org/page/info/about/policies/terms.jsp
+ .
+JSTOR is a not-for-profit service that helps scholars, researchers, and students discover, use, and build upon a wide range of
+content in a trusted digital archive. We use information technology and tools to increase productivity and facilitate new forms
+of scholarship. For more information about JSTOR, please contact support@jstor.org.
+ .
+University of California Press is collaborating with JSTOR to digitize, preserve and extend access to
+Huntington Library Quarterly.
+http://www.jstor.org 
+This content downloaded from 140.254.87.103 on Thu, 30 May 2013 17:19:04 PM
+All use subject to JSTOR Terms and Conditions
+Pp. 243–260. ©2011 by Henry E. Huntington Library and Art Gallery. issn 0018-7895 | e-issn 1544-399x. All rights
+reserved. For permission to photocopy or reproduce article content, consult the University of California Press Rights
+and Permissions website, http://www.ucpressjournals.com/reprintInfo.asp. DOI: 10.1525/hlq.2011.74.2.243.
+huntington library quarterly |  vol.74, no. 2 243
+/ornament12“stout orsin ,”  as Samuel Butler punningly suggests in the first part of Hudi-
+bras (1st ed. 1663), is both a soldier and a “solderer”—that is, one who heals and closes,
+or “solders, ” wounds. The wonder is that he does so at a startling distance from the
+wounded: 
+Learned he was in Medc’nal Lore,
+For by his side a Pouch he wore
+Replete with strange Hermetick Powder,
+That wounds nine miles point-blank would solder.
+1
+Of Butler the anonymous annotator of the 1704 edition of Hudibraswrites, “He here  .  .  .
+Sarcastically derides those who were great Admirers of the Sympathetick Powder and
+Weapon Salve; which were in great Repute in those Days, and much promoted by the
+Great Sir Kenelm Digby, who wrote a Treatise ex professoon that Subject, and I believe
+thought what he wrote to be true; which since has been almost exploded out of the
+World.”
+2Courtier, privateer, virtuoso, Sir Kenelm Digby (1603–1665) claimed to have
+1. Samuel Butler, Hudibras, ed. John Wilders (Oxford, 1967), 35.
+2. Hudibras. The First Part. Written In the Time of the Late Wars. Corrected and Amended with
+Several Additions and Annotations(London, 1704), 197.
+Sir Kenelm Digby and the Power of Sympathy
+Seth Lobis
+abstract In A Late Discourse.  .  .  . Touching the Cure of Wounds by the Powder
+of Sympathy(1658), Sir Kenelm Digby uses mechanistic principles to account for
+the healing of wounds at a distance, the subject of an international controversy
+in the seventeenth century. Seth Lobis examines Digby’s natural philosophy in the
+light of his moral philosophy, showing that even as he defends the sympathetic
+ action of the cure, Digby discredits the sympathetic interaction of human beings.
+Lobis locates A Late Discourseand its stoic opposition to human sympathy in a
+transitional period, one in which sympathy was increasingly conceived in human
+terms. keywords: Abraham Tucker; John Locke; Thomas Browne; Earl of
+Shaftesbury; sympathy and imaginative contagion
+This content downloaded from 140.254.87.103 on Thu, 30 May 2013 17:19:04 PM
+All use subject to JSTOR Terms and Conditions
+introduced the “Sympathetick Powder” to the West in A Late Discourse made in a
+Solemne Assembly of Nobles and Learned Men at Montpellier in France.  .  .  . Touching the
+Cure of Wounds by the Powder of Sympathy (1658), which went through over forty
+editions in French, English, Latin, Dutch, and German. That the treatise continued to
+appear in print after the turn of the eighteenth century suggests that the annotator’s
+slight hedging—“almost exploded”—was justified.
+3
+A Late Discourse has received attention for the most part from historians of sci-
+ence and medicine, who have shed light on Digby’s early articulation of a mechanical
+philosophy as well as on the urgent international debate about the workings of sympa-
+thetic cures.
+4 The powder of sympathy and its “Cousin German, ” the weapon salve,
+were both alleged to heal wounds “sympathetically”—that is, without direct contact—
+and so appeared to violate the Aristotelian axiom “nihil agit in distans. ”
+5 If the cures
+were not natural, it could then be concluded, they were either diabolical or divine.6 In a
+vitriolic exchange with the parson William Foster in 1631, Robert Fludd defended the
+weapon salve as a “Donum Dei, ” a phrase that he attributed to Paracelsus, who was fre-
+quently credited with the discovery of the cure.
+7 For Fludd, the weapon salve owed its
+efficacy to the universal spirit, which guaranteed the relation between microcosm
+and macrocosm, so that the sympathy between weapon and wound pointed to the
+fundamental sympathy among all things. This “fact” of cosmic connectedness, as
+Ernst  Cassirer long ago referred to it, carried with it a vast complex of associations—
+Hippocratic, Empedoclean, Pythagorean, pseudo-Democritean, Aristotelian, Stoic,
+and Neoplatonic.
+8 Citing Pierre Gassendi and Galileo Galilei, Digby distanced himself
+/ornament12  244 seth lobis
+3. Sir Kenelm Digby’s Powder of Sympathy: An unfinished essay, by Sir William Osler, ed. K. Garth
+Hutson (Los Angeles, 1972), xiv.
+4. See, for example, Lynn Thorndike, A History of Magic and Experimental Science, 8 vols. (New
+Y ork, 1923–58), 7:498–512; Lester S. King, The Road to Medical Enlightenment, 1650–1695(London,
+1970), 140–45; and Betty Jo Dobbs, “Studies in the Natural Philosophy of Sir Kenelm Digby, ” Ambix18
+(1971): 1–25. A notable exception, concerned with the social and cultural circulation around the Earl of
+Arundel in the 1630s, is Ernest B. Gilman, “The Arts of Sympathy: Dr. Harvey, Sir Kenelm Digby, and
+the Arundel Circle, ” in Opening the Borders: Inclusivity in Early Modern Studies, ed. Peter C. Herman
+(Newark, Del., 1999), 265–97. On the religious significance of Digby’s natural philosophy, see John
+Henry, “ Atomism and Eschatology: Catholicism and Natural Philosophy in the Interregnum, ” British
+Journal for the History of Science15 (1982): 211–39, and “Sir Kenelm Digby, Recusant Philosopher, ” in
+Insiders and Outsiders in Seventeenth-Century Philosophy,ed. G. A. J. Rogers, Tom Sorell, and Jill Kraye
+(New Y ork, 2010), 43–75.
+5. Walter Charleton, Physiologia Epicuro-Gassendo-Charltoniana, or, A fabrick of science natural,
+upon the hypothesis of atoms(London, 1654), 380; Alexander Ross, The Philosophicall Touch-stone, or,
+Observations upon Sir Kenelm Digbie’s Discourses of the nature of bodies and of the reasonable soule
+(London, 1645), 30.
+6. See Stuart Clark, Thinking with Demons: The Idea of Witchcraft in Early Modern Europe(Oxford,
+1997), 271–75.
+7. Robert Fludd, Doctor Fludds Answer unto M. Foster: Or, The Squeesing of Parson Fosters sponge,
+ordained by him for the wiping away of the weapon-salve(London, 1631), 41. On the Fludd–Foster
+ debate, see Allen G. Debus, “Robert Fludd and the Use of Gilbert’s De Magnetein the Weapon-Salve
+Controversy, ” Journal of the History of Medicine19 (1964): 389–417.
+8. Ernst Cassirer, The Individual and the Cosmos in Renaissance Philosophy, trans. Mario Domandi
+(Philadelphia, 1972), 149–50. On sympatheiain ancient thought, see, for example, Eduard Stemplinger,
+This content downloaded from 140.254.87.103 on Thu, 30 May 2013 17:19:04 PM
+All use subject to JSTOR Terms and Conditions

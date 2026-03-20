@@ -1,0 +1,86 @@
+{
+  "ontology_version": "0.1.0",
+  "entities": {
+    "assets": [
+      {
+        "id": "the_eagle",
+        "name": "The Eagle",
+        "type": "ship",
+        "description": "Digby's flagship during the 1628 Mediterranean voyage.",
+        "stats": { "firepower": 80, "speed": 60, "prestige": 90 }
+      },
+      {
+        "id": "elisabeth_and_george",
+        "name": "The Elisabeth and George",
+        "type": "ship",
+        "description": "The secondary vessel in the Scanderoon fleet.",
+        "stats": { "firepower": 50, "speed": 75, "prestige": 40 }
+      },
+      {
+        "id": "allen_burning_glass",
+        "name": "Thomas Allen's Burning Glass",
+        "type": "instrument",
+        "description": "A lens used for solar calcination, bequeathed by his mentor.",
+        "mechanic": "Increases success rate of 'Athanor' operations by 20% in sunlight."
+      },
+      {
+        "id": "stellianas_tress",
+        "name": "Stelliana's Tress",
+        "type": "relic",
+        "description": "A bracelet of Venetia's hair. Radiates a subtle sympathetic resonance.",
+        "mechanic": "Required for higher-tier 'Weapon Salve' sympathetic healing."
+      }
+    ],
+    "locations": [
+      {
+        "id": "milos",
+        "name": "Milos",
+        "aura": "Romance / Refuge",
+        "description": "The island where Loose Fantasies was penned amidst privateering.",
+        "mechanic": "Safe harbor; increases 'Mastery' gain while writing Log."
+      },
+      {
+        "id": "scanderoon",
+        "name": "Scanderoon (Alexandretta)",
+        "aura": "Conflict / Wealth",
+        "description": "Site of the 1628 battle against Venetian and French forces.",
+        "mechanic": "High-risk encounter zone; prize money potential."
+      },
+      {
+        "id": "gresham_college",
+        "name": "Gresham College",
+        "aura": "Alchemy / Mourning",
+        "description": "Digby's residence during his 'Hermit' phase (1633+).",
+        "mechanic": "Unlocks 'Chymical Verse' and 'Philology' modes."
+      }
+    ],
+    "plot_arcs": [
+      {
+        "id": "venetias_honor",
+        "title": "The Honor of Stelliana",
+        "summary": "Protecting Venetia's reputation against the scandals of Morea (London).",
+        "milestones": ["Recover the Castrations", "Synthesize the Sympathetic Salve", "Address the Prince"]
+      },
+      {
+        "id": "the_pirates_defense",
+        "title": "The Privateer's Defense",
+        "summary": "Navigating the thin line between piracy and heroism to clear the Digby name.",
+        "milestones": ["The Scanderoon Victory", "Negotiation at Algiers", "Presentation of the Prize"]
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "vital_spirit_pulse",
+        "name": "Vital Spirit Pulse",
+        "logic": "Advisors (Allen, Venetia) generate Spirit. Stigma slows the pulse.",
+        "formula": "net_spirit = max(0, advisor_bonus - stigma_penalty)"
+      },
+      {
+        "id": "chymical_verse",
+        "name": "Chymical Verse",
+        "logic": "In Gresham, write poems to convert 'Grief' or 'Annoy' into 'Philosophical Proof'.",
+        "outcome": "Increases Knowledge and Influence at Court."
+      }
+    ]
+  }
+}

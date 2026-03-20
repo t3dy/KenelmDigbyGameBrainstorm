@@ -1,0 +1,133 @@
+Sir Kenelm Digby and His Alchemical
+Circle in 1650s Paris: Newly Discovered
+Manuscripts
+Lawrence M. Principe
+Johns Hopkins University, Baltimore, USA
+A significant cache of hitherto unidentified manuscripts of Sir Kenelm Digby
+(1603–1665) has been discovered in the Bibliothèque Nationale et Universi-
+taire de Strasbourg. These manuscripts comprise over 5000 pages of material.
+The documents relate almost entirely to metallic transmutation. About half of
+the material consists of alchemical treatises (most of them unpublished) by
+earlier authors — many relate to the transmuter Noël Picard, known as
+Dubois, executed in 1637 — and show Digby ’s careful comparison of variant
+readings in order to obtain the best text. The other half contains transcripts
+from the otherwise lost notebooks of Joseph Du Chesne, Samuel Cottereau
+Duclos (including several letters from Johann Rudolf Glauber), and others,
+as well as reports of experiments and processes carried out by a range of infor-
+mants and by Digby himself. Significantly, these manuscripts bear witness to
+an important alchemical circle — of which Digby was a part — active in Paris
+during the 1650s and 1660s. The members of this circle traded manuscripts
+and information, and collaborated on a variety of alchemical projects;
+several members were also involved in other, better-known, scientific group-
+ings of mid-century Paris.
+Introduction
+Sir Kenelm Digby (1603–1665) ranks as one of the most colourful and engaging char-
+acters of the seventeenth century. Widely travelled across Europe as a diplomat, courtier ,
+scholar , and exile (not to mention his voyage to Turkey as a privateer), Digby interacted
+with a broad array of important figures of his day . As an intellectual and author , his
+activity encompassed natural philosophy, medicine, theology, literature, poetry , and
+law. Given the diversity and intensity of his activities, it can be said that while Digby
+has been the subject of several excellent studies, a rigorous and integrated portrait of
+ambix, Vol. 60 No. 1, February 2013, 3 –24
+© Society for the History of Alchemy and Chemistry 2013 DOI 10.1179/0002698012Z.00000000019
+the man and his thought has yet to emerge. 1 The same may be said even in the more
+restricted sense of Digby ’s natural philosophy, which has sometimes been portrayed
+as rather “eccentric” owing to his advocacy of such things as the powder of sympathy
+— a medicinal substance that cured wounds by being applied to a sample of the patient’s
+blood, not to the wound itself— and his pursuit of alchemical secrets such as transmu-
+tation and palingenesis. This portrayal is due in part to the influence of earlier historio-
+graphies of the history of science that failed to take such subjects seriously, and more so
+from our previously limited understanding of alchemy as a key part of seventeenth-
+century experimental natural philosophy. Given the substantial progress made in the
+past thirty years in terms of our knowledge of alchemy, the time is ripe for a fuller ,
+more coherent, and better contextualised exposition of Digby ’s natural philosophy
+and its influence.
+2 So substantial a goal obviously cannot be the purpose of this paper .
+Instead, I here wish only to report a discovery that should help in achieving that
+greater goal, namely, the recovery of a significant collection of hitherto-unknown manu-
+scripts of Sir Kenelm Digby entirely relating to alchemy. These manuscripts not only
+reveal much more than has hitherto been known of Digby ’s interests and activities,
+but also document a circle of his collaborators active in Paris during the 1650s and
+1660s.
+The documents in question are preserved among the outstanding collection of
+manuscripts held by the Bibliothèque Nationale et Universitaire de Strasbourg.
+Their identification as Digby ’s was partly a matter of good fortune. In summer
+2010, I visited Strasbourg for the purpose of consulting two manuscripts— described
+as eighteenth-century in the early twentieth-century catalogue of the collection —
+that I hoped would shed new light on an elusive French chymist of the seventeenth
+century. When the documents were delivered, I was astonished to find one of them
+magnificently bound in fine leather , bearing a gilt fleur-de-lis on the cover and the
+interlaced letters KD repeated in gold on the spine, instantly recognisable as the
+monogram of Kenelm Digby which I had seen on another of his chymical manuscripts
+uncovered at the Royal Society of London some years ago.
+3 The other volume,
+although more modestly bound, presumably at a later date (justifying its assignment
+by the cataloguer to the eighteenth century), also turned out to be Digby’s as indicated
+1 For general biographical accounts see R. T . Petersson, Sir Kenelm Digby: The Ornament of England, 1603-1665
+(Cambridge, Mass.: Harvard University Press, 1956); Thomas Longueville, The Life of Sir Kenelm Digby
+(London: Longmans, 1896); E. W . Bligh, Sir Kenelm Digby and his Venetia (London: Low, Marston & Co., 1932).
+2 The longest study of Digby ’s alchemy is Betty Jo Dobbs, “Studies in the Natural Philosophy of Sir Kenelm Digby: Part
+1,” Ambix 18 (1971): 1–25; “Part II,” Ambix 20 (1973): 143–63; “Part III,” Ambix 21 (1974): 1–28, which contains
+much that is useful, but is hampered by the adoption of Jungian notions (e.g. “Part II,” 161–63) which led the author
+to see Digby ’s alchemy as “unusual” in that it involved laboratory operations with chemicals. John F . Fulton, “Sir
+Kenelm Digby, FRS (1603 –1665),” Notes and Records of the Royal Society of London 15 (1960): 199 –210 displays
+biases of the time that prevented Digby’s work from being taken seriously. More interesting, although not entirely con-
+vincing, is Bruce Janecek, “Catholic Natural Philosophy: Alchemy and the Revivification of Sir Kenelm Digby, ” in
+Rethinking the Scientific Revolution , ed. Margaret J. Osler (Cambridge: Cambridge University Press, 2000), 89 –
+118. For Digby, the Newcastle Circle in 1630s Paris, and notions of atomism, see Robert H. Kargon, Atomism in
+England from Hariot to Newton (Oxford: Clarendon Press, 1966), 63 –79.
+3 Lawrence M. Principe, "Newly-Discovered Boyle Documents in the Royal Society Archive: Alchemical Tracts and his
+Student Notebook." Notes and Records of the Royal Society 49, (1995): 57 –70.
+4 LAWRENCE M. PRINCIPE
+by his characteristic handwriting throughout. Upon calling up the rest of the chymical
+manuscripts in the library ’s collection, I found a total of eleven Digby manuscripts
+(unambiguously identifiable by his handwriting within), forming two mostly con-
+tinuous sequences in both the original and the current numbering of the manuscript
+collection.
+4 These manuscripts comprise over five thousand pages of material. An
+additional four manuscripts in the collection might very well have been owned by
+Digby, based on their date, subject matter , and purchase at the same auction as the
+Digby material, but they contain no direct evidence of his ownership.
+5
+Dating and provenance
+Since the primary language of the Strasbourg Digby manuscripts is French, and they
+mention frequent personal contact with a host of Parisian chymists, they must date
+from one or more of Digby ’s residences in the French capital. Digby ’s multiple
+extended residences in Paris are spread over many years, from 1635 until 1660.
+All of these manuscripts, however , almost certainly date from one or both of his
+last two residences there in the 1650s — from around the start of the decade
+through to the end of 1653, and from late 1655 until mid-1658.
+6 Two manuscripts
+provide clear dating. MS 370 contains transcripts of letters from Johann Rudolf
+Glauber datable to late 1651 and these letters are closely followed by the account
+4 Bibliothèque Nationale et Universitaire de Strasbourg (hereinafter , BNU Strasbourg) MSS 199, 358, 363, 364, 365,
+368, 369, 370, 429, 431, 432; previously MS latin 195 and MSS français 7, 9 –11, 14 –16, 59, and 61 –62. Ernest
+Wickersheimer ,Catalogue général des manuscrits des bibliothèques publiques: Strasbourg (Paris: Plon, 1924) erro-
+neously dates all these manuscripts, except MS 358, as eighteenth century. The non-chymical manuscripts filling
+the gaps in the numbering sequences were also checked, but none was part of the same acquisition as the Digby
+materials. Likewise, the library ’s other alchemical manuscripts, MSS 2034, 2153, 2563, and 5550, were not part
+of the same acquisition. Note that the library ’s electronic catalogue lists a dozen printed books as having been
+owned by Digby; however, inspection of these books showed this result to be false, an artifact of having
+cut-and-pasted the entries from other library catalogues without deleting the copy-specific information.
+5 BNU Strasbourg MSS 184, 367, 430, and 1831, previously MSS latin 181, français 13 and 60 and anglais 1. These
+four manuscripts do not contain Digby ’s autograph, and may possibly have been added to the Digby cache by an
+owner intermediate between Digby and the BNU Strasbourg. MS 1831 is one of only two English manuscripts in
+the Strasbourg collection and preserves its seventeenth-century leather binding with gilded arms on the front cover:
+a shield with three birds facing left.
+6 Digby’s first residence at Paris in the 1650s is bracketed by his return from embassies to Rome in February 1648 and
+his departure for England on 5 January 1654. The latter date comes from a letter to Balthasar de Monconys where
+Digby writes that “mes chevaux de post estant à la porte ” for the voyage to England; Journal des voyages de Monsieur
+de Monconys , 2 vols. (Lyons, 1665 –66), 2: 142. His second residence began with his return in late 1655 (having
+obtained a travel pass in September). Digby was still in Paris on 22 May 1658 when he wrote to Robert Boyle ( Cor-
+respondence of Robert Boyle , eds. Michael Hunter, Antonio Clericuzio, and Lawrence M. Principe, 6 vols. [London:
+Pickering and Chatto, 2001], 1:272 –74) and was back in Paris in early March 1660 when Henry Oldenburg met him
+there (Correspondence, 402–5), but he returned to England shortly thereafter following the Restoration. For much of
+the time between May 1658 and March 1660, Digby was in Germany and Scandinavia; his assistant George Hart-
+mann reports that Digby “lived a year and a half, in the year 1659 ” at Frankfurt and “went often to Ments
+[Mainz] to visit the Prince Elector ” (George Hartmann, A Choice Collection of Rare Chymical Secrets and Exper-
+iments in Philosophy [London, 1682], 51) and this is partly confirmed by Oldenburg ’s memorandum of 20 November
+1659 citing accounts of transmutation given by the Elector of Mainz to Digby ( Correspondence of Henry Oldenburg ,
+ed. A. Rupert Hall and Marie Boas Hall, 13 vols. [Madison, Wis.: University of Wisconsin Press, 1965], 1:327). For
+some of the period 1657–1658, Digby was travelling in the south of France, when he presented his Discours fait en une
+celebre assemblée (Paris, 1658) at Montpellier .
+SIR KENELM DIGBY AND ALCHEMICAL CIRCLES IN 1650s PARIS 5

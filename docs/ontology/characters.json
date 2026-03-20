@@ -1,0 +1,50 @@
+[
+  {
+    "id": "kenelm_digby",
+    "type": "character",
+    "metadata": {
+      "name": "Sir Kenelm Digby",
+      "sources": ["Stain in the Blood", "Letters from the Mediterranean"],
+      "confidence": 1.0,
+      "links": ["venetia_stanley", "thomas_allen"]
+    },
+    "mechanical_affordances": {
+      "role": "advisor",
+      "health": 100,
+      "reputation": 100,
+      "bio": "The protagonist. Alchemist, courtier, and adventurer."
+    }
+  },
+  {
+    "id": "venetia_stanley",
+    "type": "character",
+    "metadata": {
+      "name": "Venetia Stanley",
+      "sources": ["Digby Memoirs", "Van Dyck Portrait Records"],
+      "confidence": 1.0,
+      "links": ["kenelm_digby"]
+    },
+    "mechanical_affordances": {
+      "role": "advisor",
+      "health": 100,
+      "reputation": 95,
+      "bio": "Digby's wife, whose honor he seeks to protect across the Mediterranean."
+    }
+  },
+  {
+    "id": "thomas_allen",
+    "type": "character",
+    "metadata": {
+      "name": "Thomas Allen",
+      "sources": ["Oxford Archives", "Gresham College Lectures"],
+      "confidence": 0.95,
+      "links": ["kenelm_digby", "oxford_ms"]
+    },
+    "mechanical_affordances": {
+      "role": "advisor",
+      "health": 80,
+      "reputation": 90,
+      "bio": "Oxford mathematician and mentor. His secret library is the foundation of your knowledge."
+    }
+  }
+]

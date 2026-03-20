@@ -1,0 +1,42 @@
+[
+    {
+        "id": "intro_sympathy_secret",
+        "background": "eagle_deck",
+        "actors": [
+            { "id": "kenelm", "startX": 5, "startY": 7, "spriteType": "digby" },
+            { "id": "venetia", "startX": 15, "startY": 7, "spriteType": "venetia" }
+        ],
+        "timeline": [
+            { "type": "wait", "duration": 1000 },
+            { "type": "move", "actorId": "kenelm", "targetX": 9, "targetY": 7, "duration": 1000 },
+            { "type": "say", "actorId": "kenelm", "text": "Stelliana... the Mediterranean night is as vast as my intentions." },
+            { "type": "move", "actorId": "venetia", "targetX": 11, "targetY": 7, "duration": 800 },
+            { "type": "emote", "actorId": "venetia", "emotion": "heart", "duration": 1200 },
+            { "type": "say", "actorId": "venetia", "text": "Kenelm, they say you carry a powder that can heal a man just by breathing on his sword miles away." },
+            { "type": "emote", "actorId": "kenelm", "emotion": "surprise", "duration": 500 },
+            { "type": "say", "actorId": "kenelm", "text": "It is not magic, Venetia. It is the sympathetical logic of the Vitriol, found in the salt of our souls." },
+            { "type": "emote", "actorId": "venetia", "emotion": "idea", "duration": 1000 },
+            { "type": "say", "actorId": "venetia", "text": "If the London gossips hear this, they will call it soul-stealing, not science." },
+            { "type": "say", "actorId": "kenelm", "text": "Then we shall give them a romance so great, they will forget to call it a crime." }
+        ]
+    },
+    {
+        "id": "scanderoon_clash",
+        "background": "scanderoon_clash",
+        "actors": [
+            { "id": "kenelm", "startX": 3, "startY": 8, "spriteType": "digby" },
+            { "id": "commander", "startX": 16, "startY": 8, "spriteType": "scholar" }
+        ],
+        "timeline": [
+            { "type": "wait", "duration": 500 },
+            { "type": "say", "actorId": "commander", "text": "Sir Kenelm! Your presence in these waters is a violation of the Salt-Levy." },
+            { "type": "move", "actorId": "kenelm", "targetX": 8, "targetY": 8, "duration": 400 },
+            { "type": "emote", "actorId": "kenelm", "emotion": "idea", "duration": 1000 },
+            { "type": "say", "actorId": "kenelm", "text": "I carry the King of England's commission. The Mediterranean belongs to any who can defend their logic." },
+            { "type": "move", "actorId": "commander", "targetX": 11, "targetY": 8, "duration": 500 },
+            { "type": "emote", "actorId": "commander", "emotion": "surprise", "duration": 400 },
+            { "type": "say", "actorId": "commander", "text": "Then defend it quickly. My galleys are already turning their broadsides." },
+            { "type": "say", "actorId": "kenelm", "text": "Then we shall see if your wood can withstand the sympathetical heat of my resolve." }
+        ]
+    }
+]

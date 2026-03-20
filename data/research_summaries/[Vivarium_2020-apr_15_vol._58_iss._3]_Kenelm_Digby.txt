@@ -1,0 +1,126 @@
+© Koninklijke Brill NV, Leiden, 2020 | doi:10.1163/15685349-12341384
+Vivarium 58 (2020) 191-218
+brill.com/viv
+viva
+riu m
+Kenelm Digby on Quantity as Divisibility
+Martine Pécharman
+Centre de Recherches sur les Arts et le Langage (cral),  
+École des hautes études en sciences sociales (ehess) & Centre national  
+de la recherche scientifique (cnrs), Paris, France
+martine.pecharman@ehess.fr
+Abstract
+Kenelm Digby’s Two Treatises, of the Nature of Bodies and of the Nature of Mans Soule 
+(1644) defends quite an idiosyncratic approach to mind-body dualism. In his use of the 
+divisibility argument to prove that the human soul cannot be a material substance, 
+Digby takes an uncompromising stand for merely potential material parts. In his 
+Treatise of Bodies the present article focuses on the mode of construction of the defini-
+tion of quantity as divisibility and on its links to two distinct fundamental arguments 
+against the actual material parts doctrine. The first, positive, argument consists of a 
+semantic reason drawn from Digby’s general doctrine of meaning, whereas the second, 
+negative, argument, addresses the traditional question of the composition of the con-
+tinuum. The latter, the author contends, does not build on the medieval controversy 
+itself, but on Digby’s opposition to Galileo’s claim of indivisibilism in his Dialogues 
+Concerning Two Sciences (1638).
+Keywords 
+body – continuum – Digby – divisibility – part – quantity – whole
+1 Introduction: An Outsider Defense of Mind-Body Dualism
+In seventeenth-century projects in natural philosophy, both mechanism and 
+the struggle against strictly mechanistic principles can be found to be associ-
+ated with the metaphysical thesis that minds are different from bodies. For René 
+Descartes (1596-1650) pre-eminently, an uncompromising pro-mechanical hy-
+pothesis in the explanation of material substances and their properties was 
+Downloaded from Brill.com11/15/2020 05:49:56AM
+via University of Exeter
+
+192 Pécharman
+Vivarium 58 (2020) 191-218
+the correlate of the metaphysical principle of substance dualism as the only 
+permissible distinction between the material and the mental. Now, the way 
+Descartes drew this distinction was very special. The Sixth Meditation (1641) 
+deduced the real distinction of mind from body from my clear and distinct 
+conceiving of thinking as my essential property and of extension as the essen-
+tial property of body. In this approach, the cornerstone of mind-body dualism 
+did not consist in a thesis concerning the material substance’s composite na-
+ture.1 Later, in the Principia philosophiae (1644), when defining real distinction 
+as a distinction between substances, Descartes asserted that every part of a 
+corporeal substance is really distinct from its other parts.2 Yet the division of 
+any body (and the subdivision of any portion of that body) into substances 
+distinct from one another was not on the front line of the demonstration that 
+the mind is not something corporeal. The Principia did not place emphasis 
+on the ‘divisibility argument’. Instead, the criterion for demonstrating the im-
+materiality of the mind was our referring all mental properties to a principal 
+attribute, thought, which we clearly and distinctly conceive by distinguishing 
+it from the principal attribute, extension, to which we refer all corporeal prop-
+erties.3 Descartes’s preferred option was the ‘conceivability argument’. A ver-
+sion of the divisibilibity argument was present, though, in the Meditations. In 
+the Sixth Meditation, indeed, Descartes insisted on the contrast between my 
+understanding of a thinking thing as something not compound and that of an 
+extended thing as something divisible into parts. But his conclusion was that 
+this argument would be by itself sufficient to demonstrate the complete differ-
+ence of mind from body only if it were not already established from another 
+source.4 Divisibility could merely constitute in the Cartesian model a second-
+rank argument for asserting the real distinction of mind from body.
+1   Descartes, Meditationes de prima philosophia v (Oeuvres de Descartes, ed. C. Adam and P. 
+Tannery [= AT], revised edition, 11 vols., Paris, 1964-74, vol. vii, 78); The Philosophical Writings 
+of Descartes, trans. J. Cottingham, R. Stoothoff, and D. Murdoch (Cambridge, 1984-91), vol. 
+2, 54. For a reconstruction of Descartes’s ‘Real Distinction Argument’: Marleen Rozemond, 
+Descartes’s Dualism (Cambridge, MA, 1998), 1-37.
+2   See Descartes, Principia Philosophiae i, §60 (AT viiiA, 28); Philosophical Writings, vol. 1, 224. 
+As to the problematic status of Descartes’s declaration on parts of matter as separate sub -
+stances: D. Garber, Descartes’ Metaphysical Physics (Chicago, 1992), 175-176.
+3   See Descartes, Principia Philosophiae i, §53 (AT viiiA, 25); Philosophical Writings, vol. 1, 210 
+(cf. i, §8, 7; trans., 195).
+4   See Descartes, Meditationes de prima philosophia vi (AT vii, 85-86); Philosophical Writings, 
+vol. 2, 59 [translation by ‘even if’ for the beginning of the phrase ‘si nondum illud aliunde satis 
+scirem’ should be corrected]. The Synopsis of the Sixth Meditation presents the divisibility 
+argument as a ‘confirmation’ of the conceivability argument (13; trans. 9).
+Downloaded from Brill.com11/15/2020 05:49:56AM
+via University of Exeter
+
+193Kenelm Digby on Quantity as Divisibility
+Vivarium 58 (2020) 191-218
+The scenario for this distinction was quite different in the book The True 
+Intellectual System of the Universe (1678), published by the Cambridge Platonist 
+Ralph Cudworth (1617-1688) to defend corpuscular physics against all atheistic 
+implications of mechanism. Cudworth attempted to promote a version of nat-
+ural philosophy accounting for “mental causality” in the world.5 His engage -
+ment with Descartes’s anti-finalism consisted in the hypothesis of a spiritual 
+agency of nature operating on passive matter according to God’s design – he 
+called “Plastick Nature” this incorporeal “Subordinate Instrument” of the divine 
+ends.6 It was essential for Cudworth’s hypothesis to devise a new metaphysical 
+dualism in response to Descartes’s restriction of thought to conscious thought. 
+The basic ontological divide had to be between matter and an energy – life, or 
+cogitation in an enlarged non-Cartesian sense – either unconscious (the Plastic 
+Nature) or conscious (the mind).7 Unlike Descartes, moreover, Cudworth held 
+that the infinite divisibility of body was the most prominent argument for the 
+metaphysical scheme of substance dualism. Invoking the authority of Plotinus 
+in the Fourth Ennead, in the Seventh Tractate On the Immortality of the Soul, 
+Cudworth emphasized the contradiction between the extended substance, a 
+mere multiplicity of substances, and the monadic nature of the substance re -
+quired as the subject of perception.8 Plotinus, he stressed, advanced against 
+the materiality of the soul the argument that no perception could be unified 
+if its subject had the kind of unity of a body, namely, the unity only of a mul-
+tiplicity of parts taken together. What is many cannot bring about what is one. 
+Now, the unity of perception constitutes an uncontroversial datum of our con-
+sciousness. Therefore, the soul cannot be something extended. Cudworth ad-
+opted as the strongest argument for substance dualism the Neoplatonic version 
+of the divisibility argument, claiming that whereas a body is composed of many 
+substances (its spatially distinct parts), the soul needs to be a simple substance.9
+5   Ralph Cudworth, The True Intellectual System of the Universe iii, c. 37, ‘A Digression con-
+cerning the Plastick Life of Nature’ (London, 1678), 146-174 (§7, 154-155). See B. Lotti, Ralph 
+Cudworth e l’idea di natura plastica (Udine, 2004).
+6   Cudworth, The True Intellectual System of the Universe ii, c. 37, §5, 150.
+7   See Cudworth, The True Intellectual System of the Universe ii, c. 37, §16, 159.
+8   See Cudworth, The True Intellectual System of the Universe v, 824-826 (Cudworth quotes and 
+translates or summarizes Enneads iv , 7.[2] 6-7). Cf. ibidem, 830: “a Monade, or one Single 
+Substance, and not a Heap of Substances.” 
+9   For the history of this ‘simplicity argument’ (named by Kant in his exposition of the Second 
+Paralogism ‘the Achilles of all dialectical inferences in the pure doctrine of the soul’), see 
+B.L. Mijuskovic, The Achilles of Rationalist Arguments. The Simplicity, Unity, and Identity of  
+the Soul from the Cambridge Platonists to Kant: A Study in the History of an Argument (The 
+Hague, 1974); T.M. Lennon and R.J. Stainton, eds., The Achilles of Rationalist Psychology 
+(Dordrecht, 2008).
+Downloaded from Brill.com11/15/2020 05:49:56AM
+via University of Exeter
+

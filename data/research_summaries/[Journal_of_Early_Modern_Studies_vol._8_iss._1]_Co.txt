@@ -1,0 +1,117 @@
+JEMS 8 (2019), 1: 117–139
+Common Conceptions and 
+the Metaphysics of Material 
+Substance:Domingo de Soto,  
+Kenelm Digby and Johannes de Raey
+Han Thomas Adriaenssen
+University of Groningen
+h.t.adriaenssen@rug.nl
+Abstract: This paper explores how, according to three early modern philos -
+ophers, philosophical theory should relate to our pre-theoretical picture of 
+reality. Though coming from very different backgrounds, the Spanish scholas-
+tic, Domingo de Soto, and the English natural philosopher, Kenelm Digby, 
+agreed that an ability to accommodate our pre-theoretical picture of the world 
+and our ordinary way of speaking about reality is a virtue for a philosophi -
+cal theory. Yet at the same time, they disagreed on what kind of ontology of 
+the material world is implied by these. The Dutch Cartesian, Johannes de 
+Raey, took a very different approach, and argued that the picture of reality we 
+naturally develop from our early days onwards and the language associated 
+with it have their use in domains such as law and medical practice, but are a 
+poor guide to the ontology of the material world. Thus, if we are to arrive at 
+a proper understanding of the nature of matter, we need to move beyond the 
+picture of reality we naturally develop from our early days onwards in order to 
+come to see that the nature of matter consists in bare extension.
+Keywords: Domingo de Soto, Kenelm Digby, Johannes de Raey, common 
+notions, real accidents, prime matter
+How should philosophy relate to our pre-theoretical picture of reality? On 
+one view, philosophy takes its cues from this picture, and tries to spell out in 
+detail what it has to say about good and evil, knowledge, and the nature of 
+the ordinary objects we see around us. On a competing view, the very point 
+of philosophy is to move beyond our pre-theoretical picture of reality, and 
+to point out where it stands in need of correction. By looking at three case 
+studies, this paper will illustrate how both of these views can be found in early 
+
+ 
+118 Han Thomas Adriaenssen
+modern discussions of the ontology of material reality. These case studies will 
+not only deepen our knowledge of the role played by appeals to what was 
+often called our common or natural picture of reality, but will also remind us 
+of a philosophical problem that such appeals face.
+The first author we will look at is the Spanish Dominican, Domingo de 
+Soto.1 Though little known today, Soto was the author of an influential com-
+mentary on the Sentences as well as an important treatise on the Aristotelian 
+categories. One of the issues he addressed in these works was the ontological 
+status of the accidents of material substances. Are these accidents real beings 
+over and above the substances whose accidents they are, as realists claim? Or 
+do accidents somehow reduce to substances, as nominalists submit? As we will 
+see, Soto argued that at least some accidents are real and have a being of their 
+own over and above that of their bearers. This kind of realism was of course 
+not new with Soto. But what makes his defence of realism of interest for pres-
+ent purposes, is the way in which it appeals to what he called our common 
+way of conceiving of things. According to Soto indeed, our common way of 
+conceiving of reality suggests a realist view of at least some accidents. 
+The second author we will look at is the English courtier and philosopher, 
+Sir Kenelm Digby.2 An early member of the Royal Society, Digby has been 
+described as one of the most influential philosophers of his time3 and as the 
+first to offer a full statement of an atomist system of natural philosophy in the 
+English language.4 But even if he was in many ways at the forefront of the new 
+philosophy of the century, Digby at the same time remained firmly attached 
+to the legacy of Aristotle, which he believed could well go hand in hand with 
+the innovations that were taking place in the science and philosophy of his 
+time. 
+One point where Digby took himself to agree with Aristotle, was that the 
+bodies we see around us are best described as substances endowed with acci -
+dents of nine sorts. This view naturally led him to consider the ontological sta-
+tus of the accidental categories. As we will see, Digby was critical of category 
+realism here, and argued that it was in part the product of an artificial way of 
+describing material reality. The natural picture of reality common to all men, 
+1 On the career and work of Soto (1494–1560), see David Jiménez Castaño, “Domingo 
+de Soto. Una breve bibliografía para iniciarse en el estudio de su obra y de su pensamiento,” 
+Azafea. Revista de filosofia 18 (2016), pp. 113–128.
+2 On the life and work of Digby (1603–1655), see Vittorio Gabrieli, Sir Kenelm Digby. 
+Un inglese italianato nell’età della controriforma, Rome: Edizioni di Storia e Letteratura, 1957.
+3 Antonio Clericuzio, Elements, Principles and Corpuscles: A Study of Atomism and Chemistry 
+in the Seventeenth Century, Dordrecht: Kluwer, 2000, p. 81. 
+4 On Digby’s contribution to atomism in England see Robert Kargon, Atomism in England 
+from Harriot to Newton, Oxford: Oxford University Press, 1966, pp. 66–67.    
+                 Common Conceptions and the Metaphysics of Material Substance 119
+he believed, suggested an ontology in which accidents are not beings in their 
+own right over and above the substances whose accidents they are.  
+ The cases of Soto and Digby are telling in at least two ways. First, the 
+case of Soto reminds us that, for all the criticism they would later receive, 
+doctrines such as category realism were at least in part the result of an attempt 
+to spell out in detail the ontological commitments of what was seen to be a 
+natural and common way of conceiving of reality. Second, the cases of Soto 
+and Digby raise a philosophical question about the weight appeals to this way 
+of conceiving can carry. For the moment we find one author appealing to the 
+common way of conceiving of things to defend a form of category realism 
+and another to deny it, the notion of a natural or common way of conceiving 
+of the material world begins to look rather flexible indeed. In fact, it begins 
+to look doubtful whether there are any truly natural and common views of 
+the ontological status of accidents at all, over and above the views common 
+to those in the nominalist camp and those in the realist camp already. If the 
+answer to this question is no, the philosophical value of appeals to a common 
+or natural way of conceiving of the world seems to be limited at best.  
+This at any rate appears to have been the view of one of the most eminent 
+Dutch Cartesians of the seventeenth century, Johannes de Raey. 5 As we will 
+see, de Raey believed that the task of philosophy is not so much to build on, 
+as to replace our pre-theoretical picture of reality. Our pre-theoretical ideas 
+about the way the world is and the language in which it is typically couched, 
+de Raey maintained, are useful tools to navigate the demands of everyday life. 
+But they are a burden to progress in the theoretical disciplines of science and 
+philosophy. 
+1. Soto on Accident Realism and the Common Way of Conceiving of Material 
+Reality
+According to Soto, we describe the material world in terms of the Aris -
+totelian ten categories. Material reality is populated by substances endowed 
+with accidents falling under nine broad categories, that is. But what is the 
+5 On de Raey (1622–1702) in the context of Dutch Cartesianism, see Tad Schmaltz, Early 
+Modern Cartesianisms: Dutch and French Constructions, Oxford: Oxford University Press, 2017, 
+pp. 77–83. According to de Raey, to follow Descartes need not be to turn away from Aristotle. 
+As he argued in several of his works, the philosophy of Aristotle had been perverted by his 
+scholastic readers, and the difference between Aristotle and Descartes was often smaller than 
+that between Aristotle and the scholastics. See Christia Mercer, Leibniz’s Metaphysics: Its Origins 
+and Developments, Cambridge: Cambridge University Press, 2001, pp. 107–109 for discussion. 
+Digby and de Raey would likely have agreed on this point. Yet as we will see towards the end 
+of this paper, they at the same time disagreed on fundamental points of methodology as well 
+as doctrine.   

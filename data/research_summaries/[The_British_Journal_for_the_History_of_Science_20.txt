@@ -1,0 +1,117 @@
+The British Society for the History of Science
+ 
+Romancing the Salve: Sir Kenelm Digby and the Powder of Sympathy
+Author(s): Elizabeth Hedrick
+Source: The British Journal for the History of Science, Vol. 41, No. 2 (Jun., 2008), pp.
+161-185
+Published by: Cambridge University Press on behalf of The British Society for the
+History of Science
+Stable URL: http://www.jstor.org/stable/30165689
+Accessed: 15-07-2016 08:13 UTC
+ 
+Your use of the JSTOR archive indicates your acceptance of the Terms & Conditions of Use, available at
+http://about.jstor.org/terms
+ 
+JSTOR is a not-for-profit service that helps scholars, researchers, and students discover, use, and build upon a wide range of content in a trusted
+digital archive. We use information technology and tools to increase productivity and facilitate new forms of scholarship. For more information about
+JSTOR, please contact support@jstor.org.
+ 
+Cambridge University Press, The British Society for the History of Science are
+collaborating with JSTOR to digitize, preserve and extend access to The British Journal for the History
+of Science
+This content downloaded from 165.193.178.102 on Fri, 15 Jul 2016 08:13:23 UTC
+All use subject to http://about.jstor.org/terms
+ BJHS 41(2): 161-185, June 2008. © 2007 British Society for the History of Science
+ doi:10.1017/S0007087407000386 First published online 25 September 2007
+ Romancing the salve: Sir Kenelm Digby and 
+ the powder of sympathy 
+ ELIZABETH HEDRICK* 
+ Abstract. Sir Kenelm Digby's A Late Discourse ... Touching the Cure of Wounds by the
+ Powder of Sympathy (1658) is usually read in the context of seventeenth-century explana-
+ tions of the weapon-salve. The salve supposedly worked by being applied to the weapon that
+ made a wound rather than to the wound itself. But Digby's essay was as much an effort to
+ claim priority for a powdered version of the sympathetic cure as an explanation of how the
+ cure worked. A close examination of Digby's claims in the Late Discourse in the context of his
+ own earlier work and of works by his contemporaries shows his priority claim to have been
+ false. It was recognized as such by his most knowledgeable associates. The story of Digby's
+ fabrications offers a case study of the generic and rhetorical terms in which seventeenth-
+ century English thinkers made and challenged natural-philosophical claims. 
+ In recent decades scholarly studies of the weapon-salve have illustrated the relevance of
+ this early modern sympathetic cure to a number of larger subjects. The salve was sup-
+ posedly Paracelsian in origin and was to be applied to the weapon that made a wound
+ rather than to the wound itself. Walter Pagel and Alien Debus have detailed the extent
+ to which it remained an object of intense interest into the seventeenth century.' Pagel, 
+ Debus and others have also shown how this interest attests to the durability of the
+ Paracelsian legacy and how the salve itself served as the locus of heated debates about
+ the nature and theological legitimacy of actions at a distance in the early seventeenth
+ century.2 Focusing on Sir Kenelm Digby's contribution to the literature on the weapon-
+ salve, A Late Discourse ... Touching the Cure of Wounds by the Powder of Sympathy
+ ' 1 University Station B5000, University of Texas, Austin 78712, USA. Email: eahedrick@mail.utexas.edu.
+ I would like to thank the anonymous readers for their useful comments on an earlier version of this paper.
+ 1 Pagel discusses Van Helmont's interest in the weapon-salve in Joan Baptista Van Helmont, Cambridge,
+ 1982, 9-13. Debus has discussed the weapon-salve often in the context of his studies of early modern chem-
+ istry and the work of Robert Fludd. See especially Alien G. Debus, 'Robert Fludd and the use of Gilbert's De
+ Magnete in the weapon-salve controversy', Journal of the History of Medicine (1964), 19, 389-417; idem, The
+ Chemical Philosophy: Paracelsian Science and Medicine in the Sixteenth and Seventeenth Centuries, 2 vols.,
+ New York, 1977, i, 205-93; and idem, The English Paracelsians, New York, 1966, 121-3.
+ 2 As Debus and others have observed, the salve or powder did appear to work, no doubt because its use
+ involved keeping wounds clean and free of the kinds of medicines that would have conventionally been 
+ applied to them, and which could have caused infection rather than promoted healing. The apparent efficacy
+ of sympathetic cures demanded explanation. In recent years, two scholars have discussed Joan Baptista van
+ Helmont's theological disputes with the Jesuits in the 1620s and 1630s, which focused largely on his attempts
+ to justify the operation of the salve as non-magical. See C. Z. Caminietzki, 'Jesuits and alchemy in the early
+ seventeenth century: Father Johannes Roberti and the weapon-salve controversy', Ambix (2001), 48, 83-101; 
+ and M. A. Waddell, 'The perversion of nature: Johannes Baptista Van Helmont, the Society of Jesus, and the
+ magnetic cure of wounds', Canadian Journal of History (2003), 38, 180-97.
+This content downloaded from 165.193.178.102 on Fri, 15 Jul 2016 08:13:23 UTC
+All use subject to http://about.jstor.org/terms
+ 162 Elizabeth Hedrick 
+ (1658), Betty Jo Dobbs has noted that Digby's atomistic account of the cure's alleged
+ operation serves as a useful example of the way in which natural philosophers before
+ Newton were able to explain occult phenomena in more or less mechanistic terms.3
+ As Dobbs explains, Digby's account of the powder's operation asserted its efficacy but
+ 'successfully eliminated the astral and spiritual influences' usually invoked in other 
+ explanations of the sympathetic cure.4 
+ Students of the cure often note that the primary difference between Digby's 
+ powder and the weapon-salve is that the powder was a simple, dry compound - vitriol,
+ dissolved in water for use - while the weapon-salve began as and remained a wet
+ preparation consisting of various exotic ingredients such as bear grease, boar fat, blood,
+ wine, skull moss and mummy (also called 'usnea').5 Because the powder and the salve 
+ were used in a similar manner and posed similar explanatory challenges most scholars 
+ have regarded them as interchangeable from a historical point of view. The essay that
+ follows does not deny the utility of this view. However, it argues that scholarly 
+ conflation of the two cures has obscured the meaningful question of why, in the Late
+ Discourse, Digby expended so much effort to distinguish his 'powder' from the 'salve'
+ with which so many of his contemporaries were already familiar. A re-examination of
+ Digby's celebrated essay in fact shows that this work, reprinted forty times between
+ 1658 and the early eighteenth century, a text that continues to secure Digby's place in 
+ discussions of the weapon-salve,6 was as much an attempt to establish the 'powder'
+ itself as his intellectual property as it was an attempt to explain and legitimize the
+ principles governing sympathetic cures. An examination of Digby's claim to priority 
+ in the context of earlier writings both on the salve and on the powder, including 
+ Digby's own, shows his claim to have been false. Moreover, a number of Digby's 
+ contemporaries almost certainly knew that the stories he told to validate his ownership
+ of the powder were fabrications. If historians have recurrently accepted Digby's tale
+ without question - even some of the most authoritative of recent Digby scholars have 
+ 3 See B. J. Dobbs, 'Studies in the natural philosophy of Sir Kenelm Digby', Ambix (1971), 18, 1-25, 6. In its
+ sympathy for the perspective of seventeenth-century thinkers, the approach taken by Dobbs marks a notable
+ advance upon that of Digby's biographers, who are commonly eager to apologize for the fact that Digby
+ believed in sympathetic cures at all. See, for example, R. T. Petersson, Sir Kenelm Digby, The Ornament of
+ England 1603-1665, Cambridge, MA, 1956, 265-74; also R. D. Thomas, Digby: The Gunpowder Plotter's 
+ Legacy, London, 2001, 233-9. The more complete citation for Digby's discourse on the powder is A Late 
+ Discourse Made in a Solemne Assembly of Nobles and Learned Men at Montpellier in France ... Touching the 
+ Cure of Wounds by the Powder of Sympathy, London, 1658. I will refer to this work in the text as the Late
+ Discourse. 
+ 4 Dobbs, op. cit. (3), 13. 
+ 5 Recipes for the salve varied. A recipe in the possession of John Locke's father is characteristic, although it
+ excludes mummy; it does include skull moss as well as dried earthworms. See BM Add. MS 28273 f.141.
+ Digby's powder differs from the Countess of Kent's powder, Gascon's powder and similar aristocratic home
+ remedies in its simplicity (it only contained one ingredient) and in the fact that it worked at a distance. The
+ Countess of Kent's powder, for example, contained numerous rare or expensive ingredients, including pearls,
+ crabs' eyes, amber, bezar, saffron, ambergris and musk, and it was taken internally, in sack or hartshorn jelly.
+ See E. Grey, Countess of Kent, A Choice Manual of Rare and Select Secrets in Physick and Chyryrgery,
+ London, 1653, 175-6. 
+ 6 K. G. Huston, introduction to Sir William Osler, Sir Kenelm Digby's Powder of Sympathy: An 
+ Unfinished Essay by Sir William Osler, Los Angeles, 1972, p. xiv.
+This content downloaded from 165.193.178.102 on Fri, 15 Jul 2016 08:13:23 UTC
+All use subject to http://about.jstor.org/terms
