@@ -2,6 +2,9 @@
 
 **Almagest** is a research-backed tactical simulation of Sir Kenelm Digby’s 1628 privateering voyage. This project integrates 17th-century alchemical theory (The Powder of Sympathy) with a high-tension naval chase across the Mediterranean.
 
+### [🏛️ ACCESS THE ALMAGEST SHOWCASE PORTFOLIO](http://localhost:5173/)
+*(Requires local dev server running)*
+
 ---
 
 ## 🏗️ THE KDSC ARCHITECTURE
