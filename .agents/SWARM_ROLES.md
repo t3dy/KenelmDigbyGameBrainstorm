@@ -27,6 +27,12 @@
 *   **Output**: Built `manifest.json`.
 *   **Constraint**: Blocks the turn if provenance is missing or validation fails.
 
+## ⚖️ 6. TRADER (Merchant) - Phase 4+
+*   **Input**: Historical commodity price data.
+*   **Output**: Market affordances in `/docs/design/pricing.json`.
+*   **Action**: Defining Levantine trade loops and risk/reward multipliers.
+*   **Constraint**: Based on Port Ontology entries only.
+
 ---
 **Status**: ENFORCED
-**Goal**: Zero Ontological Drift.
+**Focus**: Structural Stability through Phase 4 expansion.

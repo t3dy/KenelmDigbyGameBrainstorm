@@ -70,5 +70,6 @@ Philology is a first-class citizen.
 
 ---
 
-**Status**: ACTIVE
-**Mode**: COMPILER MODE. Proceed to Migration Phase 1.
+**Status**: SEALED ARCHITECTURE. COMPILER-DRIVEN.
+**Mode**: EXPANSION MODE (Phase 4: Levantine Trade).
+**Strategic Reference**: [ROADMAP.md](file:///docs/architecture/ROADMAP.md)
