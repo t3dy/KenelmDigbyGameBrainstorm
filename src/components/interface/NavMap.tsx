@@ -1,15 +1,20 @@
 import React, { useState, useEffect } from 'react';
-import { Ship, Anchor, AlertCircle, Shield, Droplets, Zap, X } from 'lucide-react';
+import { Ship, Anchor, AlertCircle, Shield, Droplets, Zap, X, ArrowLeftRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useGameStore } from '../../state/gameStore';
 import { useEngineStore } from '../../state/engineStore';
 import { WeaponSalve } from '../laboratory/WeaponSalve';
 
 export const NavMap: React.FC = () => {
-    const { location: currentLoc, travelTo, stats, manifest, currentDay } = useGameStore();
-    const { ship, pursuer, tick, escalatePursuit } = useEngineStore();
+    const { 
+        location: currentLoc, travelTo, stats, manifest, currentDay, setView, setEncounter 
+    } = useGameStore();
+    const { ship, pursuer, tick, escalatePursuit, setShipCoords } = useEngineStore();
     const [hoveredLoc, setHoveredLoc] = useState<string | null>(null);
     const [isRepairOpen, setIsRepairOpen] = useState(false);
+
+    const hasMarket = !!(manifest as any).markets[currentLoc];
+    const locationName = manifest.locations.find(l => l.id === currentLoc)?.name || currentLoc;
 
     // Tactical Pursuit Loop
     useEffect(() => {
@@ -19,10 +24,24 @@ export const NavMap: React.FC = () => {
         return () => clearInterval(timer);
     }, [tick]);
 
-    // Synergy Loop: Sync Stigma to Pursuer Aggro
+    // Synergy Loop: Sync Stigma to Pursuer Aggro & Location to Pursuit Target
     useEffect(() => {
         escalatePursuit(stats.stigma, currentDay);
-    }, [stats.stigma, currentDay, escalatePursuit]);
+        
+        const locData = manifest.locations.find(l => l.id === currentLoc);
+        if (locData) {
+            setShipCoords(locData.x, locData.y);
+        }
+
+        // Collision Check: Pursuit Interception
+        const dx = ship.x - pursuer.x;
+        const dy = ship.y - pursuer.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+
+        if (dist < 2.5 && pursuer.active) {
+            setEncounter('pursuit_confrontation');
+        }
+    }, [stats.stigma, currentDay, currentLoc, manifest.locations, escalatePursuit, setShipCoords, ship.x, ship.y, pursuer.x, pursuer.y, pursuer.active, setEncounter]);
 
     return (
         <div className="flex-1 flex flex-col bg-zinc-50 relative overflow-hidden h-full">
@@ -93,20 +112,37 @@ export const NavMap: React.FC = () => {
 
             {/* Tactical Ship Status Footer */}
             <div className="h-56 bg-zinc-950 text-white p-10 flex gap-12 border-t-4 border-amber-500 shadow-[0_-20px_50px_rgba(0,0,0,0.5)] z-30">
-                <div className="w-72 border-r border-zinc-800 pr-12 flex flex-col justify-center">
-                   <h4 className="text-[10px] uppercase font-black tracking-[0.4em] text-zinc-500 mb-6 flex items-center gap-2">
-                       <Ship size={14} className="text-amber-500" /> Naval Integrity
-                   </h4>
-                   <div className="flex items-baseline gap-3 mb-3">
-                       <span className="text-5xl font-mono font-bold tracking-tighter text-white">{ship.hull}%</span>
-                       <span className="text-[10px] text-zinc-600 font-mono font-bold uppercase tracking-widest">Structure</span>
+                <div className="w-[450px] border-r border-zinc-800 pr-12 flex items-center gap-12">
+                   <div className="w-48">
+                        <h4 className="text-[10px] uppercase font-black tracking-[0.4em] text-zinc-500 mb-6 flex items-center gap-2">
+                            <Ship size={14} className="text-amber-500" /> Naval Integrity
+                        </h4>
+                        <div className="flex items-baseline gap-3 mb-3">
+                            <span className="text-5xl font-mono font-bold tracking-tighter text-white">{ship.hull}%</span>
+                            <span className="text-[10px] text-zinc-600 font-mono font-bold uppercase tracking-widest">Structure</span>
+                        </div>
+                        <div className="w-full h-2 bg-zinc-900 rounded-full overflow-hidden border border-zinc-800">
+                            <motion.div 
+                                initial={{ width: 0 }}
+                                animate={{ width: `${ship.hull}%` }}
+                                className="h-full bg-white shadow-[0_0_20px_rgba(255,255,255,0.4)]"
+                            />
+                        </div>
                    </div>
-                   <div className="w-full h-2 bg-zinc-900 rounded-full overflow-hidden border border-zinc-800">
-                       <motion.div 
-                         initial={{ width: 0 }}
-                         animate={{ width: `${ship.hull}%` }}
-                         className="h-full bg-white shadow-[0_0_20px_rgba(255,255,255,0.4)]"
-                       />
+
+                   {/* Port Interaction */}
+                   <div className="flex-1 border-l border-zinc-900 pl-12">
+                        <h4 className="text-[10px] uppercase font-black tracking-[0.4em] text-zinc-500 mb-6 flex items-center gap-2">
+                            <Anchor size={14} className="text-amber-500" /> Current Mooring
+                        </h4>
+                        <p className="text-xs font-bold uppercase tracking-widest text-zinc-100 italic mb-4">Port of {locationName.toUpperCase()}</p>
+                        <button 
+                            disabled={!hasMarket}
+                            onClick={() => setView('market')}
+                            className="w-full py-4 bg-amber-500 text-zinc-950 text-[10px] font-black uppercase tracking-[0.3em] hover:bg-amber-400 transition-all shadow-[0_10px_30px_rgba(245,158,11,0.2)] disabled:opacity-20 disabled:grayscale flex items-center justify-center gap-2"
+                        >
+                            <ArrowLeftRight size={14} /> Dock & Trade
+                        </button>
                    </div>
                 </div>
 

@@ -26,6 +26,8 @@ interface GameStore extends GameState {
   setStigma: (val: number) => void;
   completePhilology: (id: string, success: boolean) => void;
   resolveVariant: (entityId: string, variantId: string) => void;
+  startDirector: (playlist: string[]) => void;
+  nextDirectorialScene: () => void;
 }
 
 export const useGameStore = create<GameStore>((set, get) => ({
@@ -134,10 +136,59 @@ export const useGameStore = create<GameStore>((set, get) => ({
   },
 
   mixReagents: (id1, id2) => {
-    set(state => ({
-        stats: { ...state.stats, knowledge: state.stats.knowledge + 10 },
-        log: [...state.log, `Attempted alchemical synthesis between ${id1} and ${id2}.`]
-    }));
+    const manifest = get().manifest;
+    const recipes = (manifest as any).recipes || [];
+    
+    // Find matching recipe
+    const recipe = recipes.find((r: any) => 
+        (r.ingredients.includes(id1) && r.ingredients.includes(id2))
+    );
+
+    set(state => {
+        if (!recipe) {
+            return {
+                stats: { ...state.stats, knowledge: state.stats.knowledge + 2 },
+                log: [...state.log, `Synthesis between ${id1} and ${id2} yielded only charred remains.`]
+            };
+        }
+
+        const resultReagent = manifest.reagents.find(r => r.id === recipe.result_reagent_id);
+        const name = resultReagent?.name || recipe.name;
+        
+        const existing = state.stats.reagents.find(r => r.id === recipe.result_reagent_id);
+        const updatedReagents = existing
+            ? state.stats.reagents.map(r => r.id === recipe.result_reagent_id ? { ...r, quantity: r.quantity + 1 } : r)
+            : [...state.stats.reagents, { 
+                id: recipe.result_reagent_id, 
+                name, 
+                quantity: 1, 
+                description: recipe.description 
+              }];
+
+        return {
+            stats: { 
+                ...state.stats, 
+                knowledge: state.stats.knowledge + recipe.knowledge_gain,
+                stigma: state.stats.stigma + recipe.stigma_gain,
+                reagents: updatedReagents
+            },
+            log: [...state.log, `GREAT WORK: Successfully synthesized ${name}.`]
+        };
+    });
+  },
+
+  resolveVariant: (reagentId, variantId) => {
+    set(state => {
+        const reagent = state.manifest.reagents.find(r => r.id === reagentId);
+        const variant = reagent?.variant_options?.find((v: any) => v.id === variantId);
+        
+        if (!variant) return state;
+
+        return {
+            stats: { ...state.stats, philology: Math.min(100, state.stats.philology + 20) },
+            log: [...state.log, `Resolved manuscript conflict for ${reagentId}: Adopted the ${variant.name} procedure.`]
+        };
+    });
   },
 
   buyReagent: (id, name, quantity, price) => {
@@ -187,14 +238,35 @@ export const useGameStore = create<GameStore>((set, get) => ({
         }));
     }
   },
-  
-  resolveVariant: (entityId, variantId) => {
-    console.log(`RESOLVING ${entityId} TO ${variantId}`);
-    set(state => ({
-        stats: {
-            ...state.stats,
-            knowledge: state.stats.knowledge + 50
-        }
-    }));
+
+  startDirector: (playlist) => {
+    set({ directorMode: true, directorPlaylist: playlist });
+    const firstSceneId = playlist[0];
+    const firstScene = manifestData.scenes.find(s => s.id === firstSceneId);
+    if (firstScene) {
+      set({ currentScene: firstScene as SceneScript, currentView: 'staging' });
+    }
+  },
+
+  nextDirectorialScene: () => {
+    set(state => {
+      if (!state.directorMode || !state.directorPlaylist || state.directorPlaylist.length === 0) {
+        return { directorMode: false, currentView: 'gallery' };
+      }
+      
+      const remaining = state.directorPlaylist.slice(1);
+      if (remaining.length === 0) {
+        return { directorMode: false, currentView: 'gallery', directorPlaylist: [] };
+      }
+      
+      const nextId = remaining[0];
+      const nextScene = state.manifest.scenes.find(s => s.id === nextId);
+      
+      return {
+        directorPlaylist: remaining,
+        currentScene: (nextScene as SceneScript) || null,
+        currentView: nextScene ? 'staging' : 'gallery'
+      };
+    });
   }
 }));

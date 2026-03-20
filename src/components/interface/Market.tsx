@@ -1,161 +1,120 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { ShoppingBag, Coins, TrendingUp, Package, ArrowRight, ArrowLeft, Info, Plus, Minus } from 'lucide-react';
+import React from 'react';
 import { useGameStore } from '../../state/gameStore';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Coins, ShoppingBag, ArrowLeftRight, Package, Info } from 'lucide-react';
 
 export const Market: React.FC = () => {
-    const { stats, buyReagent, sellReagent, location: locId, manifest, setView, previousView } = useGameStore();
-    const [selectedReagent, setSelectedReagent] = useState<string | null>(null);
-    const [quantity, setQuantity] = useState(1);
+    const { 
+        location: locationId, stats, manifest, buyReagent, sellReagent, setView 
+    } = useGameStore();
 
-    const locationName = manifest.locations.find(l => l.id === locId)?.name || locId;
-
-    const marketReagents = [
-        { id: 'vitriol', name: 'Raw Vitriol', price: 20, description: 'Fundamental acidic salt for all transformations.' },
-        { id: 'nitre', name: 'Nitre', price: 15, description: 'Potent oxidizer for explosive reactions.' },
-        { id: 'antimony', name: 'Antimony', price: 150, description: 'Rare semi-metal. Essential for specific tinctures.' },
-        { id: 'mercury', name: 'Quicksilver', price: 80, description: 'Fluid metal. The philosopher\'s root.' }
-    ];
-
-    const currentItem = marketReagents.find(r => r.id === selectedReagent);
-    const inventoryItem = stats.reagents.find(r => r.id === selectedReagent);
-    const totalPrice = (currentItem?.price || 0) * quantity;
+    const marketData = (manifest.markets as any)[locationId] || [];
+    const locationName = manifest.locations.find(l => l.id === locationId)?.name || locationId;
 
     return (
-        <div className="flex-1 flex flex-col p-12 bg-[#fdfaf6] font-serif relative overflow-hidden h-full">
-            {/* Background Texture */}
-            <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/arabic-bazars.png')]" />
-
-            <header className="mb-12 border-b-4 border-zinc-950 pb-6 flex justify-between items-end relative z-10">
+        <div className="flex-1 bg-[#0c0c0e] flex flex-col p-8 overflow-hidden">
+            {/* Header */}
+            <header className="flex justify-between items-center mb-12 border-b border-zinc-800 pb-8">
                 <div className="flex items-center gap-6">
-                    <div className="p-4 bg-zinc-950 text-amber-500 rounded-sm shadow-2xl">
-                        <ShoppingBag size={32} />
+                    <div className="w-16 h-16 bg-amber-500 flex items-center justify-center rounded-sm shadow-[0_0_30px_rgba(245,158,11,0.2)]">
+                        <ShoppingBag size={32} className="text-zinc-950" />
                     </div>
                     <div>
-                        <h2 className="text-5xl italic tracking-tighter uppercase">Levantine Bazaar</h2>
-                        <p className="text-amber-700 font-display font-black text-[10px] tracking-[0.4em] uppercase">Trading at: {locationName}</p>
+                         <span className="text-[10px] uppercase font-black text-zinc-500 tracking-[0.4em] mb-1 block">Levantine Exchange</span>
+                         <h2 className="text-4xl font-black italic tracking-tighter text-zinc-100">{locationName.toUpperCase()}</h2>
                     </div>
                 </div>
-                
-                <button 
-                  onClick={() => setView(previousView)}
-                  className="px-6 py-3 border-2 border-zinc-950 hover:bg-zinc-950 hover:text-white transition-all font-black text-[10px] uppercase tracking-widest flex items-center gap-3 shadow-xl"
-                >
-                    <ArrowLeft size={14} /> Exit to NavMap
-                </button>
+
+                <div className="flex items-center gap-10 bg-zinc-900/50 p-6 border border-zinc-800 rounded-sm">
+                    <div className="text-right">
+                        <span className="block text-[8px] uppercase tracking-widest text-zinc-500">Current Wealth</span>
+                        <span className="text-3xl font-mono font-bold text-amber-500 flex items-center gap-2">
+                             <Coins size={20} /> {stats.wealth}
+                        </span>
+                    </div>
+                </div>
             </header>
 
-            <div className="grid grid-cols-12 gap-12 flex-1 min-h-0 relative z-10">
-                {/* Available Goods */}
-                <aside className="col-span-5 flex flex-col gap-6 overflow-y-auto pr-4 scrollbar-hide">
-                    <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-zinc-400 mb-2 flex items-center gap-2">
-                        <TrendingUp size={14} /> Current Market Availability
-                    </h4>
-                    {marketReagents.map(reagent => (
-                        <button
-                            key={reagent.id}
-                            onClick={() => { setSelectedReagent(reagent.id); setQuantity(1); }}
-                            className={`p-6 border-2 transition-all flex items-center justify-between group shadow-sm ${selectedReagent === reagent.id ? 'bg-zinc-950 border-zinc-950 text-white translate-x-3' : 'bg-white border-zinc-100 hover:border-zinc-950'}`}
-                        >
-                            <div className="flex items-center gap-6">
-                                <div className={`w-12 h-12 flex items-center justify-center border-2 ${selectedReagent === reagent.id ? 'border-amber-500/30' : 'border-zinc-100 group-hover:border-zinc-950'}`}>
-                                    <Package size={20} className={selectedReagent === reagent.id ? 'text-amber-500' : 'text-zinc-300'} />
-                                </div>
-                                <div className="text-left">
-                                    <p className="font-bold text-lg leading-tight uppercase tracking-tight">{reagent.name}</p>
-                                    <p className={`text-[9px] uppercase font-black tracking-widest ${selectedReagent === reagent.id ? 'text-amber-500' : 'text-zinc-400'}`}>Price: {reagent.price} Gold</p>
-                                </div>
-                            </div>
-                            <ArrowRight size={18} className={selectedReagent === reagent.id ? 'opacity-100' : 'opacity-0'} />
-                        </button>
-                    ))}
-                </aside>
+            <div className="flex-1 grid grid-cols-12 gap-12 overflow-hidden">
+                {/* Buy Section */}
+                <section className="col-span-12 lg:col-span-8 flex flex-col overflow-hidden">
+                    <div className="flex items-center gap-4 mb-6">
+                        <ArrowLeftRight className="text-amber-500" size={18} />
+                        <h3 className="text-sm font-black uppercase tracking-[0.4em] text-zinc-400">Merchant Stock</h3>
+                    </div>
 
-                {/* Transaction Panel */}
-                <main className="col-span-7 bg-white border-2 border-zinc-950 shadow-[20px_20px_0_rgba(0,0,0,0.05)] p-12 flex flex-col relative">
-                    <AnimatePresence mode="wait">
-                        {selectedReagent && currentItem ? (
-                            <motion.div
-                                key={selectedReagent}
-                                initial={{ opacity: 0, y: 10 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                exit={{ opacity: 0, y: -10 }}
-                                className="flex flex-col h-full"
+                    <div className="flex-1 overflow-y-auto pr-4 space-y-4">
+                        {marketData.length > 0 ? marketData.map((item: any) => (
+                            <motion.div 
+                                key={item.id}
+                                className="bg-zinc-900/30 border border-zinc-800 p-6 flex items-center justify-between hover:bg-zinc-900/60 transition-all border-l-4 border-l-transparent hover:border-l-amber-500"
                             >
-                                <div className="mb-10 flex justify-between items-start">
-                                    <div className="max-w-md">
-                                        <h3 className="text-4xl italic mb-4 uppercase tracking-tighter">{currentItem.name}</h3>
-                                        <p className="text-zinc-500 italic text-sm leading-relaxed pr-8">"{currentItem.description}"</p>
+                                <div className="flex gap-6 items-center">
+                                    <div className="w-12 h-12 bg-zinc-950 border border-zinc-800 flex items-center justify-center text-amber-500/50">
+                                        <Package size={24} />
                                     </div>
-                                    <div className="bg-zinc-50 p-6 border border-zinc-100 text-center">
-                                        <span className="text-[9px] font-black uppercase text-zinc-400 block mb-2 tracking-widest italic">Current Stock</span>
-                                        <span className="text-3xl font-bold font-mono text-zinc-950">{inventoryItem?.quantity || 0}</span>
+                                    <div>
+                                        <h4 className="text-lg font-bold text-zinc-100 leading-tight mb-1">{item.name}</h4>
+                                        <p className="text-[10px] text-zinc-500 italic max-w-sm leading-relaxed">{item.description}</p>
                                     </div>
                                 </div>
 
-                                <div className="mt-auto space-y-10">
-                                    {/* Wealth Counter */}
-                                    <div className="flex items-center gap-6 p-6 border-2 border-dashed border-zinc-200 bg-zinc-50/50">
-                                        <Coins className="text-amber-600" size={24} />
-                                        <div className="flex-1">
-                                            <span className="text-[9px] font-black uppercase text-zinc-400 tracking-widest block mb-1">Available Capital</span>
-                                            <span className="text-2xl font-bold font-mono">{stats.wealth} GOLD</span>
-                                        </div>
-                                        {totalPrice > 0 && (
-                                            <div className="text-right">
-                                                <span className="text-[9px] font-black uppercase text-red-400 tracking-widest block mb-1">Transaction Price</span>
-                                                <span className="text-2xl font-bold font-mono">-{totalPrice}</span>
-                                            </div>
-                                        )}
+                                <div className="flex items-center gap-8">
+                                    <div className="text-right">
+                                         <span className="block text-[8px] uppercase tracking-widest text-zinc-600 mb-1">Buy Price</span>
+                                         <span className="text-xl font-mono font-bold text-zinc-300">{item.buy_price} <span className="text-[10px] opacity-40">GP</span></span>
                                     </div>
-
-                                    <div className="flex items-center gap-8">
-                                        <div className="flex-1 flex items-center border-2 border-zinc-950 overflow-hidden">
-                                            <button 
-                                                onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                                                className="px-8 py-6 bg-zinc-50 hover:bg-zinc-100 transition-colors border-r-2 border-zinc-950"
-                                            >
-                                                <Minus size={20} />
-                                            </button>
-                                            <div className="flex-1 text-center text-4xl font-bold font-mono bg-white">
-                                                {quantity}
-                                            </div>
-                                            <button 
-                                                onClick={() => setQuantity(quantity + 1)}
-                                                className="px-8 py-6 bg-zinc-50 hover:bg-zinc-100 transition-colors border-l-2 border-zinc-950"
-                                            >
-                                                <Plus size={20} />
-                                            </button>
-                                        </div>
-                                        
-                                        <button 
-                                            disabled={totalPrice > stats.wealth}
-                                            onClick={() => buyReagent(currentItem.id, currentItem.name, quantity, totalPrice)}
-                                            className={`flex-[1.5] py-6 font-black text-xs uppercase tracking-[0.4em] transition-all shadow-2xl relative overflow-hidden group ${totalPrice > stats.wealth ? 'bg-zinc-100 text-zinc-300 cursor-not-allowed' : 'bg-amber-600 text-white hover:bg-amber-700'}`}
-                                        >
-                                            <div className="absolute inset-0 bg-white/10 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000" />
-                                            {totalPrice > stats.wealth ? 'Insufficient Funds' : 'Execute Exchange'}
-                                        </button>
-                                    </div>
-
-                                    <div className="flex justify-center gap-12 pt-6 opacity-30">
-                                        <div className="flex items-center gap-2 text-[10px] uppercase font-black tracking-widest">
-                                            <Info size={14} /> Trade Ethics: Levantine Balance
-                                        </div>
-                                        <div className="flex items-center gap-2 text-[10px] uppercase font-black tracking-widest">
-                                            <ArrowRight size={14} /> Handshake: Librarian Verified
-                                        </div>
-                                    </div>
+                                    <button 
+                                        onClick={() => buyReagent(item.id, item.name, 1, item.buy_price)}
+                                        disabled={stats.wealth < item.buy_price}
+                                        className="px-8 py-3 bg-zinc-100 text-zinc-950 text-[10px] font-black uppercase tracking-[0.2em] hover:bg-amber-500 transition-all disabled:opacity-20 disabled:grayscale"
+                                    >
+                                        Procure
+                                    </button>
                                 </div>
                             </motion.div>
-                        ) : (
-                            <div className="flex-1 flex flex-col items-center justify-center text-center opacity-30 italic">
-                                <ShoppingBag size={64} className="mb-6" />
-                                <p className="text-xl">Select a commodity from the market manifest<br />to initiate an exchange.</p>
+                        )) : (
+                            <div className="h-full flex flex-col items-center justify-center opacity-20 border-2 border-dashed border-zinc-800 p-12">
+                                <Info size={48} />
+                                <span className="mt-4 font-mono uppercase text-xs tracking-widest">No merchant presence in this port.</span>
                             </div>
                         )}
-                    </AnimatePresence>
-                </main>
+                    </div>
+                </section>
+
+                {/* Sell / Inventory Section */}
+                <aside className="col-span-12 lg:col-span-4 flex flex-col bg-zinc-950/50 border border-zinc-800 p-8 rounded-sm overflow-hidden">
+                    <div className="mb-8 p-4 bg-zinc-900 border border-zinc-800">
+                         <h3 className="text-[10px] font-black uppercase tracking-[0.4em] text-zinc-100 mb-2">Ship's Hold</h3>
+                         <div className="h-1 w-full bg-zinc-800">
+                             <div className="h-full bg-amber-500" style={{ width: '40%' }} />
+                         </div>
+                    </div>
+
+                    <div className="flex-1 overflow-y-auto space-y-3">
+                         {stats.reagents.map(r => (
+                            <div key={r.id} className="flex items-center justify-between p-4 bg-zinc-900/40 border border-zinc-900 hover:border-zinc-800 transition-colors group">
+                                <div>
+                                    <span className="text-xs font-black text-zinc-300 group-hover:text-amber-500 transition-colors uppercase tracking-tighter">{r.name}</span>
+                                    <span className="block text-[10px] font-mono text-zinc-600">Qty: {r.quantity}</span>
+                                </div>
+                                <button 
+                                    onClick={() => sellReagent(r.id, 1, 10)} // Placeholder sell logic
+                                    className="p-2 text-zinc-600 hover:text-white transition-colors"
+                                >
+                                    <ArrowLeftRight size={14} />
+                                </button>
+                            </div>
+                         ))}
+                    </div>
+
+                    <button 
+                         onClick={() => setView('nav')}
+                         className="mt-8 w-full py-4 border border-zinc-800 text-zinc-500 hover:text-zinc-100 hover:bg-zinc-900 transition-all text-[9px] uppercase font-black tracking-[0.5em]"
+                    >
+                         Depart Market
+                    </button>
+                </aside>
             </div>
         </div>
     );

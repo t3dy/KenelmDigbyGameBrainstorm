@@ -1,32 +1,189 @@
 [
   {
-    "id": "intro_sympathy_secret",
+    "id": "1603_everard_legacy",
     "type": "scene",
     "metadata": {
-      "name": "Intro: The Silence of the Text",
-      "sources": ["Stain in the Blood", "Chapter 1"],
+      "name": "The Shadow of Everard",
+      "sources": ["Stain in the Blood", "Tower of London records"],
       "confidence": 1.0,
-      "links": ["kenelm_digby", "venetia_stanley", "eagle_deck"]
+      "links": ["sir_everard_digby", "stigma"]
+    },
+    "mechanical_affordances": {
+      "background": "london_prison",
+      "actors": [{ "id": "kenelm_young", "startX": 5, "startY": 8, "spriteType": "scholar" }],
+      "timeline": [
+        { "type": "say", "actorId": "kenelm_young", "text": "They executed him for a dream of gunpowder. Now I must build a dream of salt." }
+      ]
+    }
+  },
+  {
+    "id": "1623_madrid_duel",
+    "type": "scene",
+    "metadata": {
+      "name": "The Madrid Duel",
+      "sources": ["Digby Memoirs", "Court of Spain Accounts"],
+      "confidence": 0.95,
+      "links": ["madrid", "honor"]
+    },
+    "mechanical_affordances": {
+      "background": "madrid_night",
+      "actors": [{ "id": "kenelm", "startX": 3, "startY": 8, "spriteType": "digby" }],
+      "timeline": [
+        { "type": "say", "actorId": "kenelm", "text": "Five men in the dark to protect the Prince? My blade is as certain as my logic." }
+      ]
+    }
+  },
+  {
+    "id": "1628_eagle_departure",
+    "type": "scene",
+    "metadata": {
+      "name": "The Eagle Departs",
+      "sources": ["Naval Logs 1628"],
+      "confidence": 1.0,
+      "links": ["the_eagle", "mediterranean"]
     },
     "mechanical_affordances": {
       "background": "eagle_deck",
-      "actors": [
-        { "id": "kenelm", "startX": 5, "startY": 7, "spriteType": "digby" },
-        { "id": "venetia", "startX": 15, "startY": 7, "spriteType": "venetia" }
-      ],
+      "actors": [{ "id": "kenelm", "startX": 8, "startY": 7, "spriteType": "digby" }],
       "timeline": [
-        { "type": "wait", "duration": 1000 },
-        { "type": "move", "actorId": "kenelm", "targetX": 9, "targetY": 7, "duration": 1000 },
-        { "type": "say", "actorId": "kenelm", "text": "Stelliana... the Mediterranean night is as vast as my intentions." },
-        { "type": "move", "actorId": "venetia", "targetX": 11, "targetY": 7, "duration": 800 },
-        { "type": "emote", "actorId": "venetia", "emotion": "heart", "duration": 1200 },
-        { "type": "say", "actorId": "venetia", "text": "Kenelm, they say you carry a powder that can heal a man just by breathing on his sword miles away." },
-        { "type": "emote", "actorId": "kenelm", "emotion": "surprise", "duration": 500 },
-        { "type": "say", "actorId": "kenelm", "text": "It is not magic, Venetia. It is the sympathetical logic of the Vitriol, found in the salt of our souls." },
-        { "type": "emote", "actorId": "venetia", "emotion": "idea", "duration": 1000 },
-        { "type": "say", "venetia": "If the London gossips hear this, they will call it soul-stealing, not science." },
-        { "type": "say", "actorId": "kenelm", "text": "Then we shall give them a romance so great, they will forget to call it a crime." }
+        { "type": "say", "actorId": "kenelm", "text": "The channel is a mere gate. The Mediterranean is the laboratory." }
       ]
     }
+  },
+  {
+    "id": "1628_milos_grotto",
+    "type": "scene",
+    "metadata": {
+      "name": "The Secret Grotto",
+      "sources": ["Digby Vitriol experiments", "Milos local history"],
+      "confidence": 0.9,
+      "links": ["milos", "vitriol_resolution"]
+    },
+    "mechanical_affordances": {
+      "background": "milos_refuge",
+      "actors": [{ "id": "kenelm", "startX": 5, "startY": 5, "spriteType": "digby" }],
+      "timeline": [
+        { "type": "say", "actorId": "kenelm", "text": "An obsidian island. Perfect for the calcination of the copper soul." }
+      ]
+    }
+  },
+  {
+    "id": "1628_scanderoon_clash",
+    "type": "scene",
+    "metadata": {
+      "name": "The Battle of Scanderoon",
+      "sources": ["Stain in the Blood", "Venetian State Archives"],
+      "confidence": 1.0,
+      "links": ["scanderoon", "naval_combat"]
+    },
+    "mechanical_affordances": {
+      "background": "scanderoon_clash",
+      "actors": [{ "id": "kenelm", "startX": 2, "startY": 8, "spriteType": "digby" }],
+      "timeline": [
+        { "type": "say", "actorId": "kenelm", "text": "They thought a mathematician couldn't command a broadside." }
+      ]
+    }
+  },
+  {
+    "id": "1618_florence_meeting",
+    "type": "scene",
+    "metadata": { "name": "Meeting the Medici", "sources": ["Memoirs"], "confidence": 0.8 },
+    "mechanical_affordances": { "background": "florence_court", "actors": [], "timeline": [] }
+  },
+  {
+    "id": "1620_venice_shores",
+    "type": "scene",
+    "metadata": { "name": "The Venetian Mask", "sources": ["Memoirs"], "confidence": 0.85 },
+    "mechanical_affordances": { "background": "venice_canal", "actors": [], "timeline": [] }
+  },
+  {
+    "id": "1621_secret_marriage",
+    "type": "scene",
+    "metadata": { "name": "Sacred Romance", "sources": ["Stain in the Blood"], "confidence": 0.95 },
+    "mechanical_affordances": { "background": "london_chapel", "actors": [], "timeline": [] }
+  },
+  {
+    "id": "1624_gresham_lecture",
+    "type": "scene",
+    "metadata": { "name": "Gresham Discourse", "sources": ["Royal Society"], "confidence": 0.9 },
+    "mechanical_affordances": { "background": "gresham_library", "actors": [], "timeline": [] }
+  },
+  {
+    "id": "1628_gibraltar_passage",
+    "type": "scene",
+    "metadata": { "name": "Straits of Fire", "sources": ["Naval Logs"], "confidence": 0.88 },
+    "mechanical_affordances": { "background": "gibraltar_sea", "actors": [], "timeline": [] }
+  },
+  {
+    "id": "1628_algiers_truce",
+    "type": "scene",
+    "metadata": { "name": "Algiers Parley", "sources": ["Stain in the Blood"], "confidence": 0.82 },
+    "mechanical_affordances": { "background": "algiers_port", "actors": [], "timeline": [] }
+  },
+  {
+    "id": "1628_zante_harvest",
+    "type": "scene",
+    "metadata": { "name": "Zante Currants", "sources": ["Trade records"], "confidence": 0.9 },
+    "mechanical_affordances": { "background": "zante_shore", "actors": [], "timeline": [] }
+  },
+  {
+    "id": "1628_delos_antiquities",
+    "type": "scene",
+    "metadata": { "name": "Digging at Delos", "sources": ["Digby Collection"], "confidence": 0.95 },
+    "mechanical_affordances": { "background": "delos_ruins", "actors": [], "timeline": [] }
+  },
+  {
+    "id": "1628_milos_famine",
+    "type": "scene",
+    "metadata": { "name": "Milos Despair", "sources": ["Milos local memory"], "confidence": 0.75 },
+    "mechanical_affordances": { "background": "milos_town", "actors": [], "timeline": [] }
+  },
+  {
+    "id": "1628_rhodes_fortress",
+    "type": "scene",
+    "metadata": { "name": "Rhodes Garrison", "sources": ["Travel logs"], "confidence": 0.8 },
+    "mechanical_affordances": { "background": "rhodes_walls", "actors": [], "timeline": [] }
+  },
+  {
+    "id": "1628_cyprus_ambush",
+    "type": "scene",
+    "metadata": { "name": "Cyprus Sails", "sources": ["Naval Logs"], "confidence": 0.85 },
+    "mechanical_affordances": { "background": "cyprus_bay", "actors": [], "timeline": [] }
+  },
+  {
+    "id": "1629_london_triumph",
+    "type": "scene",
+    "metadata": { "name": "The Hero's Return", "sources": ["Court journals"], "confidence": 1.0 },
+    "mechanical_affordances": { "background": "london_docks", "actors": [], "timeline": [] }
+  },
+  {
+    "id": "1630_alchemical_maturation",
+    "type": "scene",
+    "metadata": { "name": "The Great Work", "sources": ["Digby 1658"], "confidence": 0.9 },
+    "mechanical_affordances": { "background": "gresham_lab", "actors": [], "timeline": [] }
+  },
+  {
+    "id": "1632_venetia_death",
+    "type": "scene",
+    "metadata": { "name": "The White Rose Falls", "sources": ["Stain in the Blood"], "confidence": 1.0 },
+    "mechanical_affordances": { "background": "venetia_chamber", "actors": [], "timeline": [] }
+  },
+  {
+    "id": "1633_mourning_portrait",
+    "type": "scene",
+    "metadata": { "name": "Van Dyck's Shadow", "sources": ["Art history"], "confidence": 0.95 },
+    "mechanical_affordances": { "background": "london_studio", "actors": [], "timeline": [] }
+  },
+  {
+    "id": "1635_paris_conversion",
+    "type": "scene",
+    "metadata": { "name": "The Paris Turn", "sources": ["Memoirs"], "confidence": 0.85 },
+    "mechanical_affordances": { "background": "paris_street", "actors": [], "timeline": [] }
+  },
+  {
+    "id": "1665_final_rest",
+    "type": "scene",
+    "metadata": { "name": "Digby's Tomb", "sources": ["Biographical records"], "confidence": 1.0 },
+    "mechanical_affordances": { "background": "christ_church", "actors": [], "timeline": [] }
   }
 ]

@@ -39,10 +39,19 @@ Unlike standard RPGs, Almagest features a core **Philology System**:
 
 ---
 
+## 🏛️ THE ALMAGEST SHOWCASE PORTFOLIO
+The simulation includes a high-fidelity **Showcase Portfolio** accessible from the main intro. This production gallery features:
+*   **Theater Mode**: Automated cinematography for the 20 key scenes of Kenelm Digby’s life.
+*   **Structural Deep-Dives**: Detailed design cards for the Alchemical Forge, the Mediterranean Stage, and the Philological Codex.
+*   **Cinematic Presentation**: Glassmorphism and historical parallax effects designed for design audits and video reels.
+
+---
+
 ## 🛠️ GETTING STARTED (DEVELOPER)
 1.  **Install**: `npm install`
 2.  **Build Manifest**: `node scripts/compile_manifest.cjs`
 3.  **Run Simulation**: `npm run dev`
+4.  **View Showcase**: Select "Almagest Showcase Portfolio" from the landing page to enter the production reel.
 
 **License**: Private Research (Sir Kenelm Digby, 1628)
-**Status**: STRUCTURALLY SEALED. COMPILER-DRIVEN.
+**Status**: PHASE 7: STRUCTURALLY SEALED. COMPILER-DRIVEN.

@@ -52,9 +52,29 @@ function buildManifest() {
         };
     });
 
-    // 3. Output Manifest
+    const marketPricing = JSON.parse(fs.readFileSync(path.join(DESIGN_DIR, 'market_pricing.json'), 'utf-8'));
+    const commodities = entities.filter(e => e.type === 'commodity');
+
+    // 3. Build Markets (Design Layer Over Ontology)
+    const markets = {};
+    Object.keys(marketPricing).forEach(portId => {
+        markets[portId] = commodities.map(c => {
+            const pricing = marketPricing[portId][c.id] || { buy: 1.0, sell: 1.0 };
+            return {
+                id: c.id,
+                name: c.metadata.name,
+                buy_price: Math.round(c.base_price * pricing.buy),
+                sell_price: Math.round(c.base_price * pricing.sell),
+                description: c.description
+            };
+        });
+    });
+
+    // 4. Output Manifest
     const worldState = {
         reagents: resolvedReagents,
+        commodities: commodities,
+        markets: markets,
         locations: entities.filter(e => e.type === 'location').map(e => ({
             id: e.id,
             name: e.metadata.name,
@@ -77,7 +97,9 @@ function buildManifest() {
             background: e.mechanical_affordances.background,
             actors: e.mechanical_affordances.actors,
             timeline: e.mechanical_affordances.timeline
-        }))
+        })),
+        recipes: JSON.parse(fs.readFileSync(path.join(ONTOLOGY_DIR, 'recipes.json'), 'utf8')),
+        encounters: JSON.parse(fs.readFileSync(path.join(__dirname, '../src/data/encounters.json'), 'utf8'))
     };
 
     fs.writeFileSync(OUTPUT_FILE, JSON.stringify(worldState, null, 2));

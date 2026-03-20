@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useGameStore } from '../../state/gameStore';
-import { SceneScript, SpriteAction } from '../../data/schema';
+import type { SceneScript, SpriteAction } from '../../data/schema';
 import { User, MessageCircle, Info, Heart, Zap, Coffee } from 'lucide-react';
 
 const TILE_SIZE = 32;
@@ -81,8 +81,11 @@ export const SceneRunner: React.FC<{ script: SceneScript, onComplete: () => void
                 break;
             case 'say':
                 setCurrentDialogue({ actor: action.actorId || 'Mystery', text: action.text || '' });
-                // We Wait for user interaction or timer?
-                // For "Go go go" let's do a timer but allow click to skip
+                // Auto-advance after 4 seconds for "Director Mode"
+                setTimeout(() => {
+                   setCurrentDialogue(null);
+                   setTimelineIndex(prev => prev + 1);
+                }, 4000);
                 break;
             case 'wait':
                 setTimeout(() => setTimelineIndex(prev => prev + 1), action.duration || 1000);
@@ -101,17 +104,37 @@ export const SceneRunner: React.FC<{ script: SceneScript, onComplete: () => void
         }
     };
 
+    // Background Mapper
+    const backgrounds: Record<string, string> = {
+        scanderoon_clash: 'https://images.unsplash.com/photo-1599408162165-4011409d9494?q=80&w=2000', // Mockup proxy
+        milos_refuge: 'https://images.unsplash.com/photo-1502472545331-6419ca66a1a1?q=80&w=2000',
+        london_prison: 'https://images.unsplash.com/photo-1549413243-7f72f0db381e?q=80&w=2000',
+        madrid_night: 'https://images.unsplash.com/photo-1543783232-f79f0653f419?q=80&w=2000'
+    };
+
+    const currentBG = backgrounds[script.background] || 'https://www.transparenttextures.com/patterns/natural-paper.png';
+
+    const { directorMode, nextDirectorialScene } = useGameStore();
+
+    const handleContinue = () => {
+        if (directorMode) {
+            nextDirectorialScene();
+        } else {
+            onComplete();
+        }
+    };
+
     return (
         <div 
             className="flex-1 flex flex-col items-center justify-center bg-zinc-950 p-12 overflow-hidden relative"
             onClick={nextStep}
         >
             {/* Background Map / Stage */}
-            <div className={`relative border-4 border-zinc-800 shadow-2xl overflow-hidden bg-cover bg-center`}
+            <div className={`relative border-8 border-zinc-900 shadow-[0_0_100px_rgba(0,0,0,0.8)] overflow-hidden bg-cover bg-center transition-all duration-1000`}
                  style={{ 
-                    width: TILE_SIZE * 20, 
-                    height: TILE_SIZE * 15,
-                    backgroundImage: `url('/api/placeholder/640/480')`, // Will represent eagle_deck, etc.
+                    width: TILE_SIZE * 28, 
+                    height: TILE_SIZE * 18,
+                    backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('${currentBG}')`,
                     backgroundColor: '#1a1d23'
                  }}>
                 
@@ -172,7 +195,7 @@ export const SceneRunner: React.FC<{ script: SceneScript, onComplete: () => void
                          >
                             <h3 className="text-4xl italic font-serif opacity-70">The Scene Concludes.</h3>
                             <button 
-                                onClick={onComplete}
+                                onClick={handleContinue}
                                 className="px-12 py-3 bg-zinc-100 text-zinc-950 text-xs font-black uppercase tracking-[0.3em] hover:bg-zinc-300 transition-all"
                             >
                                 Continue Voyage

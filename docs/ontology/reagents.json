@@ -6,7 +6,7 @@
       "name": "Vitriol of Copper",
       "sources": ["Digby 1658", "Stain in the Blood"],
       "confidence": 1.0,
-      "links": ["thanor", "weapon_salve"]
+      "links": ["athanor", "weapon_salve"]
     },
     "philology": {
       "variants": [
@@ -50,5 +50,35 @@
         "instability": 40
       }
     }
+  },
+  {
+    "id": "glass_antimony",
+    "type": "reagent",
+    "metadata": {
+        "name": "Glass of Antimony",
+        "sources": ["Digby 1658"]
+    },
+    "philology": { "variants": [], "current_resolution": "A ruby-colored translucent salt." },
+    "mechanical_affordances": { "base_modifiers": { "potency": 120, "instability": 60 } }
+  },
+  {
+    "id": "spirit_vitriol",
+    "type": "reagent",
+    "metadata": {
+        "name": "Spirit of Vitriol",
+        "sources": ["Digby 1658"]
+    },
+    "philology": { "variants": [], "current_resolution": "A sharp, volatile acidic oil." },
+    "mechanical_affordances": { "base_modifiers": { "potency": 90, "instability": 15 } }
+  },
+  {
+    "id": "philosophers_lead",
+    "type": "reagent",
+    "metadata": {
+        "name": "Philosopher's Lead",
+        "sources": ["Digby 1658"]
+    },
+    "philology": { "variants": [], "current_resolution": "Lead that has received the influence of vitriolic spirit." },
+    "mechanical_affordances": { "base_modifiers": { "potency": 150, "instability": 80 } }
   }
 ]

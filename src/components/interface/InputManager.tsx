@@ -25,6 +25,7 @@ export const InputManager: React.FC = () => {
                 case 'p': setView('philology'); break;
                 case 'v': setView('log'); break;
                 case 'e': setView('editor'); break;
+                case 'g': setView('gallery'); break;
                 case 's': triggerScene('intro_sympathy_secret'); break;
                 case 'i': setView('intro'); break;
                 case 'escape': setView('nav'); break;

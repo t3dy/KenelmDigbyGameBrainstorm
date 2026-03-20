@@ -1,0 +1,29 @@
+[
+    {
+        "id": "glass_of_antimony",
+        "name": "Glass of Antimony",
+        "ingredients": ["antimony", "vitriol"],
+        "result_reagent_id": "glass_antimony",
+        "knowledge_gain": 50,
+        "stigma_gain": 15,
+        "description": "A translucent, ruby-colored glass formed by the intense calcination of Antimony with the aid of Vitriol. The foundation of the Digbyan medical corpus."
+    },
+    {
+        "id": "spirit_of_vitriol",
+        "name": "Spirit of Vitriol",
+        "ingredients": ["vitriol", "water_marine"],
+        "result_reagent_id": "spirit_vitriol",
+        "knowledge_gain": 30,
+        "stigma_gain": 5,
+        "description": "A sharp, acidic vapor distilled from calcined salts. Essential for the purification of lead."
+    },
+    {
+        "id": "philosophers_lead",
+        "name": "Philosopher's Lead",
+        "ingredients": ["lead_scanderoon", "spirit_vitriol"],
+        "result_reagent_id": "philosophers_lead",
+        "knowledge_gain": 100,
+        "stigma_gain": 25,
+        "description": "Lead purified by the spirit of vitriol, allegedly capable of receiving the lunar influence."
+    }
+]

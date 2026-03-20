@@ -1,42 +1,197 @@
 [
-    {
-        "id": "intro_sympathy_secret",
-        "background": "eagle_deck",
-        "actors": [
-            { "id": "kenelm", "startX": 5, "startY": 7, "spriteType": "digby" },
-            { "id": "venetia", "startX": 15, "startY": 7, "spriteType": "venetia" }
-        ],
-        "timeline": [
-            { "type": "wait", "duration": 1000 },
-            { "type": "move", "actorId": "kenelm", "targetX": 9, "targetY": 7, "duration": 1000 },
-            { "type": "say", "actorId": "kenelm", "text": "Stelliana... the Mediterranean night is as vast as my intentions." },
-            { "type": "move", "actorId": "venetia", "targetX": 11, "targetY": 7, "duration": 800 },
-            { "type": "emote", "actorId": "venetia", "emotion": "heart", "duration": 1200 },
-            { "type": "say", "actorId": "venetia", "text": "Kenelm, they say you carry a powder that can heal a man just by breathing on his sword miles away." },
-            { "type": "emote", "actorId": "kenelm", "emotion": "surprise", "duration": 500 },
-            { "type": "say", "actorId": "kenelm", "text": "It is not magic, Venetia. It is the sympathetical logic of the Vitriol, found in the salt of our souls." },
-            { "type": "emote", "actorId": "venetia", "emotion": "idea", "duration": 1000 },
-            { "type": "say", "actorId": "venetia", "text": "If the London gossips hear this, they will call it soul-stealing, not science." },
-            { "type": "say", "actorId": "kenelm", "text": "Then we shall give them a romance so great, they will forget to call it a crime." }
-        ]
-    },
-    {
-        "id": "scanderoon_clash",
-        "background": "scanderoon_clash",
-        "actors": [
-            { "id": "kenelm", "startX": 3, "startY": 8, "spriteType": "digby" },
-            { "id": "commander", "startX": 16, "startY": 8, "spriteType": "scholar" }
-        ],
-        "timeline": [
-            { "type": "wait", "duration": 500 },
-            { "type": "say", "actorId": "commander", "text": "Sir Kenelm! Your presence in these waters is a violation of the Salt-Levy." },
-            { "type": "move", "actorId": "kenelm", "targetX": 8, "targetY": 8, "duration": 400 },
-            { "type": "emote", "actorId": "kenelm", "emotion": "idea", "duration": 1000 },
-            { "type": "say", "actorId": "kenelm", "text": "I carry the King of England's commission. The Mediterranean belongs to any who can defend their logic." },
-            { "type": "move", "actorId": "commander", "targetX": 11, "targetY": 8, "duration": 500 },
-            { "type": "emote", "actorId": "commander", "emotion": "surprise", "duration": 400 },
-            { "type": "say", "actorId": "commander", "text": "Then defend it quickly. My galleys are already turning their broadsides." },
-            { "type": "say", "actorId": "kenelm", "text": "Then we shall see if your wood can withstand the sympathetical heat of my resolve." }
-        ]
-    }
+  {
+    "id": "childhood_buckingham",
+    "background": "buckingham_estate",
+    "actors": [{ "id": "kenelm_young", "startX": 2, "startY": 8, "spriteType": "child" }],
+    "timeline": [
+      { "type": "say", "actorId": "kenelm_young", "text": "They say my father died for a traitor's plot. But they hide his books... why?" }
+    ]
+  },
+  {
+    "id": "meeting_venetia",
+    "background": "garden_london",
+    "actors": [
+      { "id": "kenelm", "startX": 4, "startY": 7, "spriteType": "digby" },
+      { "id": "venetia", "startX": 14, "startY": 7, "spriteType": "venetia" }
+    ],
+    "timeline": [
+      { "type": "say", "actorId": "kenelm", "text": "Stelliana... our names are written in the same star." },
+      { "type": "say", "actorId": "venetia", "text": "Then the world will surely try to tear the paper." }
+    ]
+  },
+  {
+    "id": "paris_exile_1620",
+    "background": "paris_street",
+    "actors": [{ "id": "kenelm", "startX": 5, "startY": 8, "spriteType": "digby" }],
+    "timeline": [
+      { "type": "say", "actorId": "kenelm", "text": "In Paris, the air smells of old sulfur and new ideas. Here, I will learn to breathe." }
+    ]
+  },
+  {
+    "id": "madrid_duel",
+    "background": "madrid_plaza",
+    "actors": [
+      { "id": "kenelm", "startX": 3, "startY": 8, "spriteType": "digby" },
+      { "id": "challenger", "startX": 15, "startY": 8, "spriteType": "scholar" }
+    ],
+    "timeline": [
+      { "type": "say", "actorId": "challenger", "text": "An English privateer... or an English dog?" },
+      { "type": "emote", "actorId": "kenelm", "emotion": "surprise", "duration": 500 },
+      { "type": "say", "actorId": "kenelm", "text": "My steel will answer the question better than my voice." }
+    ]
+  },
+  {
+    "id": "oxford_allen",
+    "background": "oxford_library",
+    "actors": [
+      { "id": "kenelm", "startX": 5, "startY": 7, "spriteType": "digby" },
+      { "id": "allen", "startX": 13, "startY": 7, "spriteType": "scholar" }
+    ],
+    "timeline": [
+      { "type": "say", "actorId": "allen", "text": "Young Digby... the universe is a machine of hidden sympathies." },
+      { "type": "say", "actorId": "kenelm", "text": "Then I shall be the one who learns to turn the gears." }
+    ]
+  },
+  {
+    "id": "king_commission",
+    "background": "throne_room",
+    "actors": [
+      { "id": "king", "startX": 16, "startY": 5, "spriteType": "scholar" },
+      { "id": "kenelm", "startX": 4, "startY": 9, "spriteType": "digby" }
+    ],
+    "timeline": [
+      { "type": "say", "actorId": "king", "text": "Go to the Levant, Digby. Bring us glory, or at least bring us silver." },
+      { "type": "say", "actorId": "kenelm", "text": "I shall bring you both, and the secrets of the Levant's vitriol." }
+    ]
+  },
+  {
+    "id": "scanderoon_victory",
+    "background": "scanderoon_clash",
+    "actors": [{ "id": "kenelm", "startX": 10, "startY": 7, "spriteType": "digby" }],
+    "timeline": [
+      { "type": "say", "actorId": "kenelm", "text": "The Venetian galleys burn with a most alchemical light. Victory is ours." }
+    ]
+  },
+  {
+    "id": "siege_alexandretta",
+    "background": "naval_battle",
+    "actors": [{ "id": "kenelm", "startX": 5, "startY": 8, "spriteType": "digby" }],
+    "timeline": [
+      { "type": "say", "actorId": "kenelm", "text": "Scanderoon is taken. The merchants demand mercy, but the crown demands honor." }
+    ]
+  },
+  {
+    "id": "venetia_death",
+    "background": "bedchamber",
+    "actors": [
+      { "id": "kenelm", "startX": 8, "startY": 8, "spriteType": "digby" },
+      { "id": "venetia", "startX": 12, "startY": 8, "spriteType": "venetia" }
+    ],
+    "timeline": [
+       { "type": "emote", "actorId": "kenelm", "emotion": "heart", "duration": 2000 },
+       { "type": "say", "actorId": "kenelm", "text": "Stelliana... do not let the flame leave the wick yet." }
+    ]
+  },
+  {
+    "id": "hermit_gresham",
+    "background": "gresham_lab",
+    "actors": [{ "id": "kenelm", "startX": 5, "startY": 8, "spriteType": "digby" }],
+    "timeline": [
+      { "type": "say", "actorId": "kenelm", "text": "In this cell at Gresham, I am the lead, waiting for the spirit to transmute me." }
+    ]
+  },
+  {
+    "id": "powder_discovery",
+    "background": "gresham_lab",
+    "actors": [{ "id": "kenelm", "startX": 10, "startY": 7, "spriteType": "digby" }],
+    "timeline": [
+       { "type": "emote", "actorId": "kenelm", "emotion": "idea", "duration": 1000 },
+       { "type": "say", "actorId": "kenelm", "text": "The vitriol reacts! A wound on the ship healed by a pulse in the lab. Sympathy lives." }
+    ]
+  },
+  {
+    "id": "nature_of_bodies",
+    "background": "study",
+    "actors": [{ "id": "kenelm", "startX": 5, "startY": 8, "spriteType": "digby" }],
+    "timeline": [
+      { "type": "say", "actorId": "kenelm", "text": "I write these pages not for the scholars, but for the soul of man. Matter is but a shadow." }
+    ]
+  },
+  {
+    "id": "catholic_conversion",
+    "background": "chapel",
+    "actors": [{ "id": "kenelm", "startX": 10, "startY": 9, "spriteType": "digby" }],
+    "timeline": [
+      { "type": "say", "actorId": "kenelm", "text": "To serve the King is honor, but to serve the Truth is salvation. I return to the old faith." }
+    ]
+  },
+  {
+    "id": "civil_war_prison",
+    "background": "prison_cell",
+    "actors": [{ "id": "kenelm", "startX": 2, "startY": 8, "spriteType": "digby" }],
+    "timeline": [
+      { "type": "say", "actorId": "kenelm", "text": "The parliament men take my freedom, but they cannot take my thoughts. I shall write of the Soul." }
+    ]
+  },
+  {
+    "id": "paris_circle",
+    "background": "paris_salon",
+    "actors": [
+      { "id": "kenelm", "startX": 4, "startY": 8, "spriteType": "digby" },
+      { "id": "descartes", "startX": 14, "startY": 8, "spriteType": "scholar" }
+    ],
+    "timeline": [
+      { "type": "say", "actorId": "descartes", "text": "Sir Kenelm, your sympathies are poetic, but the world is geometry." },
+      { "type": "say", "actorId": "kenelm", "text": "Then geometry is but the skin of the poem, Monsieur." }
+    ]
+  },
+  {
+    "id": "queen_mother",
+    "background": "court_paris",
+    "actors": [
+        { "id": "queen", "startX": 15, "startY": 7, "spriteType": "venetia" },
+        { "id": "kenelm", "startX": 5, "startY": 7, "spriteType": "digby" }
+    ],
+    "timeline": [
+      { "type": "say", "actorId": "queen", "text": "Digby, you were always my most eccentric knight." },
+      { "type": "say", "actorId": "kenelm", "text": "I carry your exile like a cross of gold, Majesty." }
+    ]
+  },
+  {
+    "id": "restoration_return",
+    "background": "london_charles2",
+    "actors": [{ "id": "kenelm", "startX": 10, "startY": 8, "spriteType": "digby" }],
+    "timeline": [
+      { "type": "say", "actorId": "kenelm", "text": "London rises from the ash. The King returns, and the hermits emerge." }
+    ]
+  },
+  {
+    "id": "royal_society",
+    "background": "royal_society_hall",
+    "actors": [
+        { "id": "kenelm", "startX": 5, "startY": 8, "spriteType": "digby" },
+        { "id": "boyle", "startX": 14, "startY": 8, "spriteType": "scholar" }
+    ],
+    "timeline": [
+      { "type": "say", "actorId": "boyle", "text": "Let us weigh the air, Sir Kenelm." },
+      { "type": "say", "actorId": "kenelm", "text": "And the spirit that moves it, Mr. Boyle. Do not forget the spirit." }
+    ]
+  },
+  {
+    "id": "glass_of_antimony_final",
+    "background": "laboratory_final",
+    "actors": [{ "id": "kenelm", "startX": 9, "startY": 7, "spriteType": "digby" }],
+    "timeline": [
+       { "type": "emote", "actorId": "kenelm", "emotion": "idea", "duration": 2000 },
+       { "type": "say", "actorId": "kenelm", "text": "The glass is perfect as a ruby. My work is done. The medicine of life is found." }
+    ]
+  },
+  {
+    "id": "soul_departure",
+    "background": "bedchamber_last",
+    "actors": [{ "id": "kenelm", "startX": 8, "startY": 8, "spriteType": "digby" }],
+    "timeline": [
+       { "type": "say", "actorId": "kenelm", "text": "Venetia... the paper is finally tearing. The stars remain." }
+    ]
+  }
 ]

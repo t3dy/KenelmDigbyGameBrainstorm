@@ -10,34 +10,85 @@ import { ConstructionKit } from './components/editor/ConstructionKit';
 import { ManuscriptView } from './components/philology/ManuscriptView';
 import { SceneRunner } from './components/interface/SceneRunner';
 import { InputManager } from './components/interface/InputManager';
+import { SceneGallery } from './components/interface/SceneGallery';
+import { Market } from './components/interface/Market';
+import { AlmagestShowcase } from './components/showcase/AlmagestShowcase';
 
 function App() {
   const { 
     currentDay, location: locationId, stats, currentEncounter, setView, currentView,
-    makeChoice, currentScene, previousView, manifest 
+    makeChoice, currentScene, previousView, manifest, directorMode 
   } = useGameStore();
 
   const currentLocationName = manifest.locations.find(l => l.id === locationId)?.name || locationId;
 
   if (currentView === 'intro') {
     return (
-      <div className="min-h-screen relative overflow-hidden flex items-center justify-center p-8 bg-[#f4f1ea] bg-[url('https://www.transparenttextures.com/patterns/old-map.png')]">
+      <div className="min-h-screen relative overflow-hidden flex items-center justify-center p-8 bg-zinc-950">
+        {/* Animated Background Layers */}
+        <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/old-map.png')] grayscale invert" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-from)_0%,_transparent_70%)] from-amber-500/10 pointer-events-none" />
+        
         <InputManager />
+        
         <motion.div
-           initial={{ opacity: 0, scale: 0.95 }}
-           animate={{ opacity: 1, scale: 1 }}
-           className="max-w-3xl w-full bg-white p-16 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] border-4 border-zinc-950 relative rounded-sm z-10 text-center"
+           initial={{ opacity: 0, y: 30 }}
+           animate={{ opacity: 1, y: 0 }}
+           className="max-w-4xl w-full flex flex-col items-center relative z-10"
         >
-          <h1 className="text-7xl font-serif italic mb-2 tracking-tighter text-zinc-950">Almagest</h1>
-          <p className="text-amber-800 font-display font-black text-[10px] tracking-[0.5em] mb-12 uppercase opacity-60">A Kenelm Digby Simulation</p>
-          <div className="w-24 h-1 bg-amber-500 mx-auto mb-12" />
-          
-          <div className="space-y-4">
-             <button onClick={() => setView('nav')} className="w-full py-6 border-4 border-zinc-950 hover:bg-zinc-950 hover:text-white transition-all font-black text-2xl uppercase tracking-tighter shadow-xl transform active:scale-95">
-                Begin Voyage [A]
+          {/* Logo Brand */}
+          <div className="flex flex-col items-center mb-16">
+              <motion.div 
+                animate={{ rotate: 360 }}
+                transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
+                className="w-24 h-24 border border-amber-500/20 rounded-full flex items-center justify-center mb-6 relative"
+              >
+                  <div className="absolute inset-0 border-t-2 border-amber-500 rounded-full animate-pulse" />
+                  <Ship size={40} className="text-amber-500" />
+              </motion.div>
+              <h1 className="text-9xl font-serif italic text-white tracking-widest leading-none mb-4 drop-shadow-[0_0_30px_rgba(255,255,255,0.1)]">
+                ALMAGEST
+              </h1>
+              <div className="flex items-center gap-6">
+                <div className="h-px w-12 bg-zinc-800" />
+                <p className="text-amber-500 font-mono text-[10px] tracking-[1em] uppercase font-black whitespace-nowrap">The Digby Simulation</p>
+                <div className="h-px w-12 bg-zinc-800" />
+              </div>
+          </div>
+
+          {/* Action Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-2xl px-6">
+             <button 
+                onClick={() => setView('nav')} 
+                className="group relative overflow-hidden py-10 border border-amber-500/30 bg-zinc-950 hover:bg-zinc-900 transition-all rounded-sm flex flex-col items-center gap-4 text-center shadow-2xl"
+             >
+                <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
+                <Ship className="text-amber-500 group-hover:scale-110 transition-transform" />
+                <div className="relative z-10">
+                   <h3 className="text-xl font-bold uppercase tracking-widest text-white mb-1">Begin Voyage</h3>
+                   <p className="text-[10px] text-zinc-500 uppercase tracking-widest">Entry: Mediterranean Orbit</p>
+                </div>
+                <div className="absolute bottom-4 right-4 text-[9px] font-mono font-black text-amber-500 opacity-20">COMMAND_A</div>
              </button>
-             <button onClick={() => setView('editor')} className="w-full py-3 border border-zinc-300 text-zinc-400 hover:text-zinc-900 transition-all text-xs font-bold uppercase tracking-widest hover:border-zinc-900">
-                Access Construction Kit [E]
+
+             <button 
+                onClick={() => setView('showcase')} 
+                className="group relative overflow-hidden py-10 border border-zinc-800 bg-zinc-950 hover:bg-zinc-900 transition-all rounded-sm flex flex-col items-center gap-4 text-center shadow-2xl"
+             >
+                <div className="absolute inset-0 bg-gradient-to-br from-zinc-100/5 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
+                <Zap className="text-zinc-500 group-hover:text-amber-500 transition-colors" />
+                <div className="relative z-10">
+                   <h3 className="text-xl font-bold uppercase tracking-widest text-zinc-300 mb-1">Showcase Reel</h3>
+                   <p className="text-[10px] text-zinc-500 uppercase tracking-widest">Design Portfolio & KDSC</p>
+                </div>
+                <div className="absolute bottom-4 right-4 text-[9px] font-mono font-black text-zinc-500 opacity-20">COMMAND_D</div>
+             </button>
+             
+             <button 
+                onClick={() => setView('editor')} 
+                className="col-span-1 md:col-span-2 py-4 bg-zinc-950 border border-zinc-900 text-zinc-600 hover:text-zinc-100 hover:bg-zinc-900 transition-all text-[9px] font-black uppercase tracking-[0.5em] flex items-center justify-center gap-4"
+             >
+                <Settings size={14} /> Structural Construction Kit (ACK)
              </button>
           </div>
         </motion.div>
@@ -57,6 +108,9 @@ function App() {
       case 'log': return <Logbook />;
       case 'editor': return <ConstructionKit />;
       case 'philology': return <ManuscriptView />;
+      case 'gallery': return <SceneGallery />;
+      case 'market': return <Market />;
+      case 'showcase': return <AlmagestShowcase />;
       default: return <NavMap />;
     }
   };
@@ -66,6 +120,7 @@ function App() {
       <InputManager />
       
       {/* Global Header */}
+      {!directorMode && currentView !== 'staging' && (
       <header className="bg-zinc-950 text-white p-6 shadow-2xl z-40 flex items-center justify-between border-b border-zinc-800">
         <div className="flex items-center gap-8">
            <div onClick={() => setView('intro')} className="cursor-pointer group">
@@ -107,6 +162,7 @@ function App() {
            </div>
         </div>
       </header>
+      )}
 
       {/* Main View Port */}
       <main className="flex-1 relative flex flex-col overflow-hidden bg-white">
@@ -183,6 +239,7 @@ function App() {
       </main>
 
       {/* Persistent Nav Footer */}
+      {!directorMode && currentView !== 'staging' && (
       <footer className="bg-zinc-950 text-zinc-500 p-3 flex justify-center gap-16 text-[10px] font-black uppercase tracking-[0.3em] font-mono border-t border-zinc-800">
         <button onClick={() => setView('nav')} className={`hover:text-white transition-colors flex items-center gap-2 ${currentView === 'nav' ? 'text-amber-500' : ''}`}>
            <Ship size={14} /> [A] Naval
@@ -202,7 +259,11 @@ function App() {
         <button onClick={() => setView('editor')} className={`hover:text-white transition-colors flex items-center gap-2 ${currentView === 'editor' ? 'text-amber-500' : ''}`}>
            <Settings size={14} /> [E] ACK
         </button>
+        <button onClick={() => setView('gallery')} className={`hover:text-white transition-colors flex items-center gap-2 ${currentView === 'gallery' ? 'text-amber-500' : ''}`}>
+           <Zap size={14} /> [G] Chronicles
+        </button>
       </footer>
+      )}
     </div>
   );
 }

@@ -1,0 +1,26 @@
+{
+  "algiers": {
+    "persian_silk": { "buy": 1.2, "sell": 1.5 },
+    "alchemical_lead": { "buy": 0.8, "sell": 1.1 },
+    "zante_currants": { "buy": 1.4, "sell": 1.8 },
+    "mercury_quicksilver": { "buy": 1.1, "sell": 1.4 }
+  },
+  "scanderoon": {
+    "persian_silk": { "buy": 0.5, "sell": 0.8 },
+    "alchemical_lead": { "buy": 1.3, "sell": 1.7 },
+    "zante_currants": { "buy": 1.1, "sell": 1.4 },
+    "mercury_quicksilver": { "buy": 1.2, "sell": 1.6 }
+  },
+  "zante": {
+    "persian_silk": { "buy": 1.1, "sell": 1.4 },
+    "alchemical_lead": { "buy": 1.2, "sell": 1.5 },
+    "zante_currants": { "buy": 0.4, "sell": 0.7 },
+    "mercury_quicksilver": { "buy": 1.0, "sell": 1.3 }
+  },
+  "milos": {
+    "persian_silk": { "buy": 1.4, "sell": 1.9 },
+    "alchemical_lead": { "buy": 1.0, "sell": 1.4 },
+    "zante_currants": { "buy": 1.2, "sell": 1.6 },
+    "mercury_quicksilver": { "buy": 0.7, "sell": 1.1 }
+  }
+}

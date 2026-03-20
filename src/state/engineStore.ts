@@ -23,9 +23,12 @@ interface EngineState {
         hull: number;
         maxHull: number;
         components: ShipComponent[];
+        x: number;
+        y: number;
     };
     pursuer: PursuerState;
     tick: () => void;
+    setShipCoords: (x: number, y: number) => void;
     escalatePursuit: (stigma: number, day: number) => void;
     repairShipComponent: (id: string, amount: number) => void;
     damageComponent: (id: string, amount: number) => void;
@@ -36,6 +39,8 @@ export const useEngineStore = create<EngineState>((set, get) => ({
     ship: {
         hull: 100,
         maxHull: 100,
+        x: 10,
+        y: 15, // Starting Venice
         components: [
             { id: 'masts', name: 'Main Masts', health: 100, maxHealth: 100, efficiency: 1.0 },
             { id: 'athanor', name: 'Alchemical Athanor', health: 80, maxHealth: 100, efficiency: 1.0 },
@@ -49,23 +54,34 @@ export const useEngineStore = create<EngineState>((set, get) => ({
         y: 10,
         aggro: 0,
         active: false,
-        speed: 0.5
+        speed: 0.2
     },
-    tick: () => set((state) => {
-        if (!state.pursuer.active) return state;
+    tick: () => {
+        const state = get();
+        if (!state.pursuer.active) return;
 
-        // Pursuer pathfinding (Move towards target or center)
-        const dx = state.pursuer.x > 50 ? -state.pursuer.speed : state.pursuer.speed;
-        const dy = state.pursuer.y > 50 ? -state.pursuer.speed : state.pursuer.speed;
+        const targetX = state.ship.x;
+        const targetY = state.ship.y;
         
-        return {
+        // Pursuit Movement Logic (Vector toward target)
+        const dx = targetX - state.pursuer.x;
+        const dy = targetY - state.pursuer.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        
+        if (dist < 1) return; // Arrived or nearly there
+
+        const moveX = (dx / dist) * state.pursuer.speed;
+        const moveY = (dy / dist) * state.pursuer.speed;
+
+        set(state => ({
             pursuer: {
                 ...state.pursuer,
-                x: state.pursuer.x + dx,
-                y: state.pursuer.y + dy
+                x: state.pursuer.x + moveX,
+                y: state.pursuer.y + moveY
             }
-        };
-    }),
+        }));
+    },
+    setShipCoords: (x, y) => set(state => ({ ship: { ...state.ship, x, y } })),
     escalatePursuit: (stigma, day) => set((state) => ({
         pursuer: {
             ...state.pursuer,

@@ -44,5 +44,28 @@
         "consequence": "Deep philosophical insight into atomic composites."
       }
     ]
+  },
+  {
+    "id": "pursuit_confrontation",
+    "title": "Intercepted by the Serene",
+    "location": "Open Mediterranean",
+    "date": "1628-08-12",
+    "description": "Your alchemical stench precedes you. A Venetian Galley has overtaken the 'Eagle'. They demand a search of your hold and an explanation for your 'suspicious' experiments at Milos.",
+    "type": "diplomatic",
+    "stakes": {
+        "honor": -20,
+        "wealth": -50,
+        "knowledge": 0
+    },
+    "choices": [
+        {
+            "text": "Bribe the Venetian Captain",
+            "consequence": "Lose 100 Wealth but maintain your secrets."
+        },
+        {
+            "text": "Defend your right as an English Privateer",
+            "consequence": "Gain Honor but the Pursuer's Aggro doubles."
+        }
+    ]
   }
 ]

@@ -26,8 +26,226 @@
       "potency": 80,
       "instability": 40,
       "variant_options": []
+    },
+    {
+      "id": "glass_antimony",
+      "name": "Glass of Antimony",
+      "description": "A ruby-colored translucent salt.",
+      "potency": 120,
+      "instability": 60,
+      "variant_options": []
+    },
+    {
+      "id": "spirit_vitriol",
+      "name": "Spirit of Vitriol",
+      "description": "A sharp, volatile acidic oil.",
+      "potency": 90,
+      "instability": 15,
+      "variant_options": []
+    },
+    {
+      "id": "philosophers_lead",
+      "name": "Philosopher's Lead",
+      "description": "Lead that has received the influence of vitriolic spirit.",
+      "potency": 150,
+      "instability": 80,
+      "variant_options": []
     }
   ],
+  "commodities": [
+    {
+      "id": "persian_silk",
+      "type": "commodity",
+      "metadata": {
+        "name": "Persian Raw Silk",
+        "sources": [
+          "Trade in the Levant, 1628",
+          "Digby Trade Logs"
+        ],
+        "confidence": 0.95,
+        "links": [
+          "scanderoon",
+          "wealth"
+        ]
+      },
+      "description": "High-value raw silk, often traded from the interior at Scanderoon. Essential for European luxury markets.",
+      "base_price": 500
+    },
+    {
+      "id": "alchemical_lead",
+      "type": "commodity",
+      "metadata": {
+        "name": "Purified Alchemical Lead",
+        "sources": [
+          "Digby 1658",
+          "Stain in the Blood"
+        ],
+        "confidence": 0.9,
+        "links": [
+          "algiers",
+          "transmutation"
+        ]
+      },
+      "description": "A dense, stable metal used in the initial stages of the Great Work. Highly valued in Algiers for maritime ballistics.",
+      "base_price": 120
+    },
+    {
+      "id": "zante_currants",
+      "type": "commodity",
+      "metadata": {
+        "name": "Zante Currants",
+        "sources": [
+          "Venetian Trade Records, 1628"
+        ],
+        "confidence": 1,
+        "links": [
+          "zante",
+          "sustenance"
+        ]
+      },
+      "description": "A staple of the Mediterranean trade. High nutritional value with significant markup in London markets.",
+      "base_price": 40
+    },
+    {
+      "id": "mercury_quicksilver",
+      "type": "commodity",
+      "metadata": {
+        "name": "Philosophic Quicksilver",
+        "sources": [
+          "Alchemical Corpus"
+        ],
+        "confidence": 0.85,
+        "links": [
+          "lab",
+          "volatility"
+        ]
+      },
+      "description": "The liquid soul of metals. Essential for the creation of the Red Tincture, but extremely volatile during storage.",
+      "base_price": 800
+    }
+  ],
+  "markets": {
+    "algiers": [
+      {
+        "id": "persian_silk",
+        "name": "Persian Raw Silk",
+        "buy_price": 600,
+        "sell_price": 750,
+        "description": "High-value raw silk, often traded from the interior at Scanderoon. Essential for European luxury markets."
+      },
+      {
+        "id": "alchemical_lead",
+        "name": "Purified Alchemical Lead",
+        "buy_price": 96,
+        "sell_price": 132,
+        "description": "A dense, stable metal used in the initial stages of the Great Work. Highly valued in Algiers for maritime ballistics."
+      },
+      {
+        "id": "zante_currants",
+        "name": "Zante Currants",
+        "buy_price": 56,
+        "sell_price": 72,
+        "description": "A staple of the Mediterranean trade. High nutritional value with significant markup in London markets."
+      },
+      {
+        "id": "mercury_quicksilver",
+        "name": "Philosophic Quicksilver",
+        "buy_price": 880,
+        "sell_price": 1120,
+        "description": "The liquid soul of metals. Essential for the creation of the Red Tincture, but extremely volatile during storage."
+      }
+    ],
+    "scanderoon": [
+      {
+        "id": "persian_silk",
+        "name": "Persian Raw Silk",
+        "buy_price": 250,
+        "sell_price": 400,
+        "description": "High-value raw silk, often traded from the interior at Scanderoon. Essential for European luxury markets."
+      },
+      {
+        "id": "alchemical_lead",
+        "name": "Purified Alchemical Lead",
+        "buy_price": 156,
+        "sell_price": 204,
+        "description": "A dense, stable metal used in the initial stages of the Great Work. Highly valued in Algiers for maritime ballistics."
+      },
+      {
+        "id": "zante_currants",
+        "name": "Zante Currants",
+        "buy_price": 44,
+        "sell_price": 56,
+        "description": "A staple of the Mediterranean trade. High nutritional value with significant markup in London markets."
+      },
+      {
+        "id": "mercury_quicksilver",
+        "name": "Philosophic Quicksilver",
+        "buy_price": 960,
+        "sell_price": 1280,
+        "description": "The liquid soul of metals. Essential for the creation of the Red Tincture, but extremely volatile during storage."
+      }
+    ],
+    "zante": [
+      {
+        "id": "persian_silk",
+        "name": "Persian Raw Silk",
+        "buy_price": 550,
+        "sell_price": 700,
+        "description": "High-value raw silk, often traded from the interior at Scanderoon. Essential for European luxury markets."
+      },
+      {
+        "id": "alchemical_lead",
+        "name": "Purified Alchemical Lead",
+        "buy_price": 144,
+        "sell_price": 180,
+        "description": "A dense, stable metal used in the initial stages of the Great Work. Highly valued in Algiers for maritime ballistics."
+      },
+      {
+        "id": "zante_currants",
+        "name": "Zante Currants",
+        "buy_price": 16,
+        "sell_price": 28,
+        "description": "A staple of the Mediterranean trade. High nutritional value with significant markup in London markets."
+      },
+      {
+        "id": "mercury_quicksilver",
+        "name": "Philosophic Quicksilver",
+        "buy_price": 800,
+        "sell_price": 1040,
+        "description": "The liquid soul of metals. Essential for the creation of the Red Tincture, but extremely volatile during storage."
+      }
+    ],
+    "milos": [
+      {
+        "id": "persian_silk",
+        "name": "Persian Raw Silk",
+        "buy_price": 700,
+        "sell_price": 950,
+        "description": "High-value raw silk, often traded from the interior at Scanderoon. Essential for European luxury markets."
+      },
+      {
+        "id": "alchemical_lead",
+        "name": "Purified Alchemical Lead",
+        "buy_price": 120,
+        "sell_price": 168,
+        "description": "A dense, stable metal used in the initial stages of the Great Work. Highly valued in Algiers for maritime ballistics."
+      },
+      {
+        "id": "zante_currants",
+        "name": "Zante Currants",
+        "buy_price": 48,
+        "sell_price": 64,
+        "description": "A staple of the Mediterranean trade. High nutritional value with significant markup in London markets."
+      },
+      {
+        "id": "mercury_quicksilver",
+        "name": "Philosophic Quicksilver",
+        "buy_price": 560,
+        "sell_price": 880,
+        "description": "The liquid soul of metals. Essential for the creation of the Red Tincture, but extremely volatile during storage."
+      }
+    ]
+  },
   "locations": [
     {
       "id": "venice",
@@ -85,82 +303,308 @@
   ],
   "scenes": [
     {
-      "id": "intro_sympathy_secret",
-      "background": "eagle_deck",
+      "id": "1603_everard_legacy",
+      "background": "london_prison",
       "actors": [
         {
-          "id": "kenelm",
+          "id": "kenelm_young",
           "startX": 5,
-          "startY": 7,
-          "spriteType": "digby"
-        },
-        {
-          "id": "venetia",
-          "startX": 15,
-          "startY": 7,
-          "spriteType": "venetia"
+          "startY": 8,
+          "spriteType": "scholar"
         }
       ],
       "timeline": [
         {
-          "type": "wait",
-          "duration": 1000
-        },
+          "type": "say",
+          "actorId": "kenelm_young",
+          "text": "They executed him for a dream of gunpowder. Now I must build a dream of salt."
+        }
+      ]
+    },
+    {
+      "id": "1623_madrid_duel",
+      "background": "madrid_night",
+      "actors": [
         {
-          "type": "move",
-          "actorId": "kenelm",
-          "targetX": 9,
-          "targetY": 7,
-          "duration": 1000
-        },
+          "id": "kenelm",
+          "startX": 3,
+          "startY": 8,
+          "spriteType": "digby"
+        }
+      ],
+      "timeline": [
         {
           "type": "say",
           "actorId": "kenelm",
-          "text": "Stelliana... the Mediterranean night is as vast as my intentions."
-        },
+          "text": "Five men in the dark to protect the Prince? My blade is as certain as my logic."
+        }
+      ]
+    },
+    {
+      "id": "1628_eagle_departure",
+      "background": "eagle_deck",
+      "actors": [
         {
-          "type": "move",
-          "actorId": "venetia",
-          "targetX": 11,
-          "targetY": 7,
-          "duration": 800
-        },
-        {
-          "type": "emote",
-          "actorId": "venetia",
-          "emotion": "heart",
-          "duration": 1200
-        },
-        {
-          "type": "say",
-          "actorId": "venetia",
-          "text": "Kenelm, they say you carry a powder that can heal a man just by breathing on his sword miles away."
-        },
-        {
-          "type": "emote",
-          "actorId": "kenelm",
-          "emotion": "surprise",
-          "duration": 500
-        },
+          "id": "kenelm",
+          "startX": 8,
+          "startY": 7,
+          "spriteType": "digby"
+        }
+      ],
+      "timeline": [
         {
           "type": "say",
           "actorId": "kenelm",
-          "text": "It is not magic, Venetia. It is the sympathetical logic of the Vitriol, found in the salt of our souls."
-        },
+          "text": "The channel is a mere gate. The Mediterranean is the laboratory."
+        }
+      ]
+    },
+    {
+      "id": "1628_milos_grotto",
+      "background": "milos_refuge",
+      "actors": [
         {
-          "type": "emote",
-          "actorId": "venetia",
-          "emotion": "idea",
-          "duration": 1000
-        },
-        {
-          "type": "say",
-          "venetia": "If the London gossips hear this, they will call it soul-stealing, not science."
-        },
+          "id": "kenelm",
+          "startX": 5,
+          "startY": 5,
+          "spriteType": "digby"
+        }
+      ],
+      "timeline": [
         {
           "type": "say",
           "actorId": "kenelm",
-          "text": "Then we shall give them a romance so great, they will forget to call it a crime."
+          "text": "An obsidian island. Perfect for the calcination of the copper soul."
+        }
+      ]
+    },
+    {
+      "id": "1628_scanderoon_clash",
+      "background": "scanderoon_clash",
+      "actors": [
+        {
+          "id": "kenelm",
+          "startX": 2,
+          "startY": 8,
+          "spriteType": "digby"
+        }
+      ],
+      "timeline": [
+        {
+          "type": "say",
+          "actorId": "kenelm",
+          "text": "They thought a mathematician couldn't command a broadside."
+        }
+      ]
+    },
+    {
+      "id": "1618_florence_meeting",
+      "background": "florence_court",
+      "actors": [],
+      "timeline": []
+    },
+    {
+      "id": "1620_venice_shores",
+      "background": "venice_canal",
+      "actors": [],
+      "timeline": []
+    },
+    {
+      "id": "1621_secret_marriage",
+      "background": "london_chapel",
+      "actors": [],
+      "timeline": []
+    },
+    {
+      "id": "1624_gresham_lecture",
+      "background": "gresham_library",
+      "actors": [],
+      "timeline": []
+    },
+    {
+      "id": "1628_gibraltar_passage",
+      "background": "gibraltar_sea",
+      "actors": [],
+      "timeline": []
+    },
+    {
+      "id": "1628_algiers_truce",
+      "background": "algiers_port",
+      "actors": [],
+      "timeline": []
+    },
+    {
+      "id": "1628_zante_harvest",
+      "background": "zante_shore",
+      "actors": [],
+      "timeline": []
+    },
+    {
+      "id": "1628_delos_antiquities",
+      "background": "delos_ruins",
+      "actors": [],
+      "timeline": []
+    },
+    {
+      "id": "1628_milos_famine",
+      "background": "milos_town",
+      "actors": [],
+      "timeline": []
+    },
+    {
+      "id": "1628_rhodes_fortress",
+      "background": "rhodes_walls",
+      "actors": [],
+      "timeline": []
+    },
+    {
+      "id": "1628_cyprus_ambush",
+      "background": "cyprus_bay",
+      "actors": [],
+      "timeline": []
+    },
+    {
+      "id": "1629_london_triumph",
+      "background": "london_docks",
+      "actors": [],
+      "timeline": []
+    },
+    {
+      "id": "1630_alchemical_maturation",
+      "background": "gresham_lab",
+      "actors": [],
+      "timeline": []
+    },
+    {
+      "id": "1632_venetia_death",
+      "background": "venetia_chamber",
+      "actors": [],
+      "timeline": []
+    },
+    {
+      "id": "1633_mourning_portrait",
+      "background": "london_studio",
+      "actors": [],
+      "timeline": []
+    },
+    {
+      "id": "1635_paris_conversion",
+      "background": "paris_street",
+      "actors": [],
+      "timeline": []
+    },
+    {
+      "id": "1665_final_rest",
+      "background": "christ_church",
+      "actors": [],
+      "timeline": []
+    }
+  ],
+  "recipes": [
+    {
+      "id": "glass_of_antimony",
+      "name": "Glass of Antimony",
+      "ingredients": [
+        "antimony",
+        "vitriol"
+      ],
+      "result_reagent_id": "glass_antimony",
+      "knowledge_gain": 50,
+      "stigma_gain": 15,
+      "description": "A translucent, ruby-colored glass formed by the intense calcination of Antimony with the aid of Vitriol. The foundation of the Digbyan medical corpus."
+    },
+    {
+      "id": "spirit_of_vitriol",
+      "name": "Spirit of Vitriol",
+      "ingredients": [
+        "vitriol",
+        "water_marine"
+      ],
+      "result_reagent_id": "spirit_vitriol",
+      "knowledge_gain": 30,
+      "stigma_gain": 5,
+      "description": "A sharp, acidic vapor distilled from calcined salts. Essential for the purification of lead."
+    },
+    {
+      "id": "philosophers_lead",
+      "name": "Philosopher's Lead",
+      "ingredients": [
+        "lead_scanderoon",
+        "spirit_vitriol"
+      ],
+      "result_reagent_id": "philosophers_lead",
+      "knowledge_gain": 100,
+      "stigma_gain": 25,
+      "description": "Lead purified by the spirit of vitriol, allegedly capable of receiving the lunar influence."
+    }
+  ],
+  "encounters": [
+    {
+      "id": "scanderoon_battle",
+      "title": "The Battle of Scanderoon",
+      "location": "Alexandretta (Scanderoon)",
+      "date": "1628-06-16",
+      "description": "A naval engagement against Venetian and French ships in the Mediterranean.",
+      "type": "naval",
+      "stakes": {
+        "honor": 50,
+        "wealth": 80,
+        "knowledge": 10
+      },
+      "choices": [
+        {
+          "text": "Aggressive pursuit with the 'Eagle'",
+          "consequence": "Gain immense wealth but risk honor with the Crown."
+        },
+        {
+          "text": "Negotiated seizure",
+          "consequence": "A more surgical victory, gaining prestige among merchants."
+        }
+      ]
+    },
+    {
+      "id": "gresham_college_withdrawal",
+      "title": "The Mourning Hermit",
+      "location": "Gresham College, London",
+      "date": "1633-05-01",
+      "description": "After Venetia's death, you retreat to a laboratory to master the secrets of matter.",
+      "type": "alchemy",
+      "stakes": {
+        "honor": -10,
+        "wealth": -20,
+        "knowledge": 100
+      },
+      "choices": [
+        {
+          "text": "Master the 'Powder of Sympathy'",
+          "consequence": "Knowledge increases but your reputation for credulity grows."
+        },
+        {
+          "text": "Study the 'Nature of Bodies'",
+          "consequence": "Deep philosophical insight into atomic composites."
+        }
+      ]
+    },
+    {
+      "id": "pursuit_confrontation",
+      "title": "Intercepted by the Serene",
+      "location": "Open Mediterranean",
+      "date": "1628-08-12",
+      "description": "Your alchemical stench precedes you. A Venetian Galley has overtaken the 'Eagle'. They demand a search of your hold and an explanation for your 'suspicious' experiments at Milos.",
+      "type": "diplomatic",
+      "stakes": {
+        "honor": -20,
+        "wealth": -50,
+        "knowledge": 0
+      },
+      "choices": [
+        {
+          "text": "Bribe the Venetian Captain",
+          "consequence": "Lose 100 Wealth but maintain your secrets."
+        },
+        {
+          "text": "Defend your right as an English Privateer",
+          "consequence": "Gain Honor but the Pursuer's Aggro doubles."
         }
       ]
     }

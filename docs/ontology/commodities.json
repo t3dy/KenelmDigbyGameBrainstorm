@@ -1,0 +1,50 @@
+[
+  {
+    "id": "persian_silk",
+    "type": "commodity",
+    "metadata": {
+      "name": "Persian Raw Silk",
+      "sources": ["Trade in the Levant, 1628", "Digby Trade Logs"],
+      "confidence": 0.95,
+      "links": ["scanderoon", "wealth"]
+    },
+    "description": "High-value raw silk, often traded from the interior at Scanderoon. Essential for European luxury markets.",
+    "base_price": 500
+  },
+  {
+    "id": "alchemical_lead",
+    "type": "commodity",
+    "metadata": {
+      "name": "Purified Alchemical Lead",
+      "sources": ["Digby 1658", "Stain in the Blood"],
+      "confidence": 0.9,
+      "links": ["algiers", "transmutation"]
+    },
+    "description": "A dense, stable metal used in the initial stages of the Great Work. Highly valued in Algiers for maritime ballistics.",
+    "base_price": 120
+  },
+  {
+    "id": "zante_currants",
+    "type": "commodity",
+    "metadata": {
+      "name": "Zante Currants",
+      "sources": ["Venetian Trade Records, 1628"],
+      "confidence": 1.0,
+      "links": ["zante", "sustenance"]
+    },
+    "description": "A staple of the Mediterranean trade. High nutritional value with significant markup in London markets.",
+    "base_price": 40
+  },
+  {
+    "id": "mercury_quicksilver",
+    "type": "commodity",
+    "metadata": {
+      "name": "Philosophic Quicksilver",
+      "sources": ["Alchemical Corpus"],
+      "confidence": 0.85,
+      "links": ["lab", "volatility"]
+    },
+    "description": "The liquid soul of metals. Essential for the creation of the Red Tincture, but extremely volatile during storage.",
+    "base_price": 800
+  }
+]

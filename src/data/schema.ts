@@ -9,7 +9,7 @@ export interface Reagent {
   historical_context: string;
 }
 
-export type View = 'intro' | 'nav' | 'lab' | 'journal' | 'log' | 'editor' | 'staging' | 'philology' | 'market';
+export type View = 'intro' | 'nav' | 'lab' | 'journal' | 'log' | 'editor' | 'staging' | 'philology' | 'market' | 'gallery' | 'showcase';
 
 export interface Encounter {
   id: string;
@@ -78,6 +78,8 @@ export interface GameState {
   unlockedRecipes: string[];
   log: string[];
   selectedLetterId?: string;
+  directorMode?: boolean;
+  directorPlaylist?: string[];
 }
 
 export interface SpriteAction {
