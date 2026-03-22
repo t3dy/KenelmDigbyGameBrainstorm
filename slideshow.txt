@@ -1,0 +1,5 @@
+﻿file 'C:\Users\PC\.gemini\antigravity\brain\e3e52694-f7c2-4b25-a04b-fe45173d4ae7\scene_1_finished_1773987525681.png'
+file 'C:\Users\PC\.gemini\antigravity\brain\e3e52694-f7c2-4b25-a04b-fe45173d4ae7\scene_2_finished_1773987547940.png'
+file 'C:\Users\PC\.gemini\antigravity\brain\e3e52694-f7c2-4b25-a04b-fe45173d4ae7\scene_3_finished_1773987568797.png'
+file 'C:\Users\PC\.gemini\antigravity\brain\e3e52694-f7c2-4b25-a04b-fe45173d4ae7\scene_4_finished_1773987589461.png'
+file 'C:\Users\PC\.gemini\antigravity\brain\e3e52694-f7c2-4b25-a04b-fe45173d4ae7\scene_5_finished_1773987611404.png'

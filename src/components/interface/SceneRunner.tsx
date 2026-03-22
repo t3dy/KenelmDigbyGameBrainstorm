@@ -60,6 +60,8 @@ export const SceneRunner: React.FC<{ script: SceneScript, onComplete: () => void
         executeAction(action);
     }, [timelineIndex, isExecuting]);
 
+    const { directorMode, nextDirectorialScene, setView } = useGameStore();
+
     const executeAction = async (action: SpriteAction) => {
         switch (action.type) {
             case 'move':
@@ -94,6 +96,26 @@ export const SceneRunner: React.FC<{ script: SceneScript, onComplete: () => void
                 setActors(prev => prev.filter(a => a.id !== action.actorId));
                 setTimelineIndex(prev => prev + 1);
                 break;
+            case 'trigger_combat':
+                setIsExecuting(false);
+                setTimelineIndex(script.timeline.length); // Mark as done for completion button
+                setView('combat');
+                break;
+            case 'trigger_ship_combat':
+                setIsExecuting(false);
+                setTimelineIndex(script.timeline.length);
+                setView('ship_combat');
+                break;
+            case 'trigger_lab':
+                setIsExecuting(false);
+                setTimelineIndex(script.timeline.length);
+                setView('lab');
+                break;
+            case 'trigger_nav':
+                setIsExecuting(false);
+                setTimelineIndex(script.timeline.length);
+                setView('nav');
+                break;
         }
     };
 
@@ -113,8 +135,6 @@ export const SceneRunner: React.FC<{ script: SceneScript, onComplete: () => void
     };
 
     const currentBG = backgrounds[script.background] || 'https://www.transparenttextures.com/patterns/natural-paper.png';
-
-    const { directorMode, nextDirectorialScene } = useGameStore();
 
     const handleContinue = () => {
         if (directorMode) {

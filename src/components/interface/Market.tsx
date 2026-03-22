@@ -1,12 +1,15 @@
 import React from 'react';
 import { useGameStore } from '../../state/gameStore';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Coins, ShoppingBag, ArrowLeftRight, Package, Info } from 'lucide-react';
 
 export const Market: React.FC = () => {
     const { 
-        location: locationId, stats, manifest, buyReagent, sellReagent, setView 
+        location: locationId, stats, manifest, buyReagent, sellReagent, setView, ship, addLog 
     } = useGameStore();
+
+    const currentWeight = (ship.cargo?.reduce((sum, c) => sum + (c.quantity * c.weight), 0) || 0) + 
+                         (stats.reagents.reduce((sum, r) => sum + (r.quantity * 0.5), 0));
 
     const marketData = (manifest.markets as any)[locationId] || [];
     const locationName = manifest.locations.find(l => l.id === locationId)?.name || locationId;
@@ -26,8 +29,19 @@ export const Market: React.FC = () => {
                 </div>
 
                 <div className="flex items-center gap-10 bg-zinc-900/50 p-6 border border-zinc-800 rounded-sm">
+                    <div className="text-right border-r border-zinc-800 pr-10">
+                        <span className="block text-[8px] uppercase tracking-widest text-zinc-500 mb-1">Hold Filling</span>
+                        <div className="flex items-center gap-4">
+                            <span className="text-xl font-mono font-bold text-zinc-300">
+                                {Math.round(currentWeight)} <span className="text-[10px] text-zinc-600">/ {ship.maxCargo}</span>
+                            </span>
+                            <div className="w-24 h-1 bg-zinc-800 rounded-full overflow-hidden">
+                                <div className="h-full bg-amber-500/50" style={{ width: `${(currentWeight/ship.maxCargo)*100}%` }} />
+                            </div>
+                        </div>
+                    </div>
                     <div className="text-right">
-                        <span className="block text-[8px] uppercase tracking-widest text-zinc-500">Current Wealth</span>
+                        <span className="block text-[8px] uppercase tracking-widest text-zinc-500">Available Capital</span>
                         <span className="text-3xl font-mono font-bold text-amber-500 flex items-center gap-2">
                              <Coins size={20} /> {stats.wealth}
                         </span>
@@ -65,9 +79,17 @@ export const Market: React.FC = () => {
                                          <span className="text-xl font-mono font-bold text-zinc-300">{item.buy_price} <span className="text-[10px] opacity-40">GP</span></span>
                                     </div>
                                     <button 
-                                        onClick={() => buyReagent(item.id, item.name, 1, item.buy_price)}
+                                        onClick={() => {
+                                            const itemWeight = 5; // Simplified weight
+                                            if (currentWeight + itemWeight > ship.maxCargo) {
+                                                addLog("OVERLOAD: The Eagle's hold cannot sustain this weight.");
+                                                return;
+                                            }
+                                            buyReagent(item.id, item.name, 1, item.buy_price);
+                                            addLog(`COMMERCE: Purchased ${item.name}.`);
+                                        }}
                                         disabled={stats.wealth < item.buy_price}
-                                        className="px-8 py-3 bg-zinc-100 text-zinc-950 text-[10px] font-black uppercase tracking-[0.2em] hover:bg-amber-500 transition-all disabled:opacity-20 disabled:grayscale"
+                                        className="h-12 flex items-center justify-center px-10 bg-zinc-100 text-zinc-950 text-[10px] font-black uppercase tracking-[0.2em] hover:bg-amber-500 transition-all disabled:opacity-20 disabled:grayscale"
                                     >
                                         Procure
                                     </button>

@@ -1,0 +1,66 @@
+{
+  "combat_moves": [
+    {
+      "id": "move_vitriol",
+      "name": "Vitriolic Corrosive Burst",
+      "type": "attack",
+      "damage": 20,
+      "reagent_cost": {
+        "vitriol": 1
+      },
+      "message": "The enemy's hull smokes as the Vitriol eats the timber.",
+      "charge_time": 2,
+      "component_damage": 30
+    },
+    {
+      "id": "move_antimony",
+      "name": "Metallic Poison Fog",
+      "type": "debuff",
+      "damage": 20,
+      "reagent_cost": {
+        "antimony": 1
+      },
+      "message": "The enemy crew falls into a lethargic stupor.",
+      "charge_time": 2
+    },
+    {
+      "id": "move_glass_antimony",
+      "name": "Metallic Poison Fog",
+      "type": "debuff",
+      "damage": 20,
+      "reagent_cost": {
+        "glass_antimony": 1
+      },
+      "message": "The enemy crew falls into a lethargic stupor.",
+      "charge_time": 2
+    },
+    {
+      "id": "move_spirit_vitriol",
+      "name": "Vitriolic Corrosive Burst",
+      "type": "attack",
+      "damage": 20,
+      "reagent_cost": {
+        "spirit_vitriol": 1
+      },
+      "message": "The enemy's hull smokes as the Vitriol eats the timber.",
+      "charge_time": 2,
+      "component_damage": 30
+    },
+    {
+      "id": "move_philosophers_lead",
+      "name": "Philosopher's Lead Discharge",
+      "type": "attack",
+      "damage": 20,
+      "reagent_cost": {
+        "philosophers_lead": 1
+      },
+      "message": "The Eagle fires a payload of Philosopher's Lead.",
+      "charge_time": 2
+    }
+  ],
+  "metadata": {
+    "maker_id": "TACTIC_MAKER_01",
+    "timestamp": "2026-03-21T08:27:17.878Z",
+    "source_manifest": "digby-1628"
+  }
+}

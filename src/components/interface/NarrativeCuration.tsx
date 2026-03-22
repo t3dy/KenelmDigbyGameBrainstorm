@@ -38,7 +38,7 @@ export const NarrativeCuration: React.FC = () => {
                 </div>
 
                 <div className="grid grid-cols-3 gap-8">
-                    {pendingCuration.options.map((opt, i) => (
+                    {pendingCuration.options.map((opt: any, i: number) => (
                         <button
                             key={i}
                             onClick={() => curateRomance(i)}

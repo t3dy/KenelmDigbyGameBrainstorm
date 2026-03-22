@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
-    MessageSquare, 
     Database, 
     Settings, 
     Save, 
@@ -10,11 +9,14 @@ import {
 } from 'lucide-react';
 import { useGameStore } from '../../state/gameStore';
 import { EncounterEditor } from './EncounterEditor';
-import { DataIngest } from './DataIngest';
+import { DigbyData } from './DigbyData';
 import { StageEditor } from './StageEditor';
+// import { VerificationHarness } from './VerificationHarness';
+import { PortEditor } from './PortEditor';
+import { AssetPainter } from './AssetPainter';
 
 export const ConstructionKit: React.FC = () => {
-    const [activeTab, setActiveTab] = useState<'encounters' | 'data' | 'staging'>('encounters');
+    const [activeTab, setActiveTab] = useState<'encounters' | 'data' | 'staging' | 'verify' | 'ports' | 'assets'>('encounters');
     const { setView } = useGameStore();
 
     return (
@@ -49,6 +51,24 @@ export const ConstructionKit: React.FC = () => {
                       >
                          [S] Staging
                       </button>
+                      <button 
+                        onClick={() => setActiveTab('verify')}
+                        className={`px-6 py-2 text-[10px] font-black uppercase tracking-widest transition-all rounded-sm ${activeTab === 'verify' ? 'bg-zinc-800 text-gold shadow-lg' : 'text-zinc-600 hover:text-zinc-300'}`}
+                      >
+                         [V] Verify
+                      </button>
+                      <button 
+                        onClick={() => setActiveTab('ports')}
+                        className={`px-6 py-2 text-[10px] font-black uppercase tracking-widest transition-all rounded-sm ${activeTab === 'ports' ? 'bg-zinc-800 text-gold shadow-lg' : 'text-zinc-600 hover:text-zinc-300'}`}
+                      >
+                         [P] Ports
+                      </button>
+                      <button 
+                        onClick={() => setActiveTab('assets')}
+                        className={`px-6 py-2 text-[10px] font-black uppercase tracking-widest transition-all rounded-sm ${activeTab === 'assets' ? 'bg-zinc-800 text-gold shadow-lg' : 'text-zinc-600 hover:text-zinc-300'}`}
+                      >
+                         [A] Assets
+                      </button>
                    </nav>
                 </div>
 
@@ -77,8 +97,11 @@ export const ConstructionKit: React.FC = () => {
                       className="flex-1 flex overflow-hidden"
                    >
                       {activeTab === 'encounters' && <EncounterEditor />}
-                      {activeTab === 'data' && <DataIngest />}
+                      {activeTab === 'data' && <DigbyData />}
                       {activeTab === 'staging' && <StageEditor />}
+                      {/* {activeTab === 'verify' && <VerificationHarness />} */}
+                      {activeTab === 'ports' && <PortEditor />}
+                      {activeTab === 'assets' && <AssetPainter />}
                    </motion.div>
                 </AnimatePresence>
             </main>

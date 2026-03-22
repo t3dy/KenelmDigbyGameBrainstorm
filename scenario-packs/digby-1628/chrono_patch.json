@@ -1,0 +1,44 @@
+{
+  "chrono_schedule": [
+    {
+      "id": "sch_spirit_vision_florence",
+      "frequency": "once",
+      "trigger_date": "1622-10-14",
+      "action_id": "spirit_vision_florence",
+      "type": "mandatory"
+    },
+    {
+      "id": "sch_algiers_ransom_1628",
+      "frequency": "once",
+      "trigger_date": "1628-02-15",
+      "action_id": "algiers_ransom_1628",
+      "type": "mandatory"
+    },
+    {
+      "id": "sch_scanderoon_battle",
+      "frequency": "once",
+      "trigger_date": "1628-06-16",
+      "action_id": "scanderoon_battle",
+      "type": "mandatory"
+    },
+    {
+      "id": "sch_pursuit_confrontation",
+      "frequency": "once",
+      "trigger_date": "1628-08-12",
+      "action_id": "pursuit_confrontation",
+      "type": "mandatory"
+    },
+    {
+      "id": "sch_gresham_college_withdrawal",
+      "frequency": "once",
+      "trigger_date": "1633-05-01",
+      "action_id": "gresham_college_withdrawal",
+      "type": "mandatory"
+    }
+  ],
+  "metadata": {
+    "maker_id": "CHRONO_LOOP_01",
+    "timestamp": "2026-03-21T08:21:56.520Z",
+    "source_manifest": "digby-1628"
+  }
+}

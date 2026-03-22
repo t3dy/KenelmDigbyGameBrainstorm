@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { PenTool, CheckCircle, AlertCircle, RefreshCw, Sparkles, Book, FileText } from 'lucide-react';
+import { PenTool, CheckCircle, RefreshCw, Sparkles, Book, FileText } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useGameStore } from '../../state/gameStore';
 

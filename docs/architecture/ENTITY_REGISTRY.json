@@ -1,0 +1,22 @@
+{
+  "actors": {
+    "Kenelm Digby": "kenelm_digby",
+    "Sir Kenelm": "kenelm_digby",
+    "Digby": "kenelm_digby",
+    "The Admiral": "kenelm_digby",
+    "Venetia Stanley": "venetia_stanley",
+    "Venetia": "venetia_stanley",
+    "Thomas Allen": "thomas_allen",
+    "Mr. Allen": "thomas_allen"
+  },
+  "locations": {
+    "Scanderoon": "scanderoon",
+    "Alexandretta": "scanderoon",
+    "Venice": "venice",
+    "The Serene Republic": "venice",
+    "Milos": "milos",
+    "Florence": "florence",
+    "Algiers": "algiers",
+    "London": "london"
+  }
+}

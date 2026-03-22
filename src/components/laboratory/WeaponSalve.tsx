@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
 import { Heart, Activity, ShieldCheck, Crosshair, Beaker, RefreshCw, Ship } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useGameStore } from '../../state/gameStore';
-import { useEngineStore } from '../../state/engineStore';
 
 export const WeaponSalve: React.FC<{ mode?: 'character' | 'ship' }> = ({ mode = 'character' }) => {
-    const { characters, healCharacter, stats } = useGameStore();
-    const { ship, repairShipComponent } = useEngineStore();
+    const { characters, healCharacter, stats, ship, repairShipComponent } = useGameStore();
     const [currentMode, setCurrentMode] = useState<'character' | 'ship'>(mode);
-    const [selectedId, setSelectedId] = useState<string>(
+    const [selectedId] = useState<string>(
         currentMode === 'character' ? characters[0]?.id : ship.components[0]?.id
     );
     const [selectedItem] = useState<string | null>('powder_of_sympathy');

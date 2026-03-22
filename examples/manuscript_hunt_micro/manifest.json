@@ -1,0 +1,39 @@
+{
+    "id": "manuscript_hunt_micro",
+    "version": "1.0",
+    "description": "Exploration: The Library (FF-Lineage).",
+    "lineage": "FF",
+    "scenes": [
+        {
+            "id": "abbey_library",
+            "background": "dusty_shelves",
+            "actors": [
+                { "id": "monk_01", "name": "Abbot Thomas", "sprite": "scholar", "startX": 5, "startY": 10 }
+            ],
+            "sequence": [
+                { "type": "say", "actorId": "monk_01", "text": "The Codex is not for secular eyes, traveler." },
+                { "type": "move", "actorId": "monk_01", "targetX": 8, "targetY": 10 },
+                { "type": "emote", "actorId": "monk_01", "emotion": "anger" }
+            ]
+        }
+    ],
+    "reagents": [
+        { "id": "ink_remnant", "name": "Ancient Ink Flake", "historical_context": "From the 14th century, found in the margins." }
+    ],
+    "encounters": [
+        {
+            "id": "manuscript_discovery",
+            "type": "philology",
+            "title": "The Hidden Margin",
+            "description": "The Abbot is distracted. The script in the margin is not Latin, it's Greek.",
+            "stakes": {
+                "knowledge": 50,
+                "philology": 100,
+                "spirit": -10
+            },
+            "choices": [
+                { "text": "Copy the text quickly.", "consequence": "You risk the Abbot's ire for the knowledge of the ancients." }
+            ]
+        }
+    ]
+}

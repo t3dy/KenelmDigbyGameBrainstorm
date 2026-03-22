@@ -1,0 +1,15 @@
+{
+  "repairs": [
+    {
+      "type": "scene",
+      "index": 10,
+      "oldId": "1628_gibraltar_passage",
+      "newId": "1628_gibraltar_passage_10",
+      "property": "id"
+    }
+  ],
+  "metadata": {
+    "maker_id": "DEDUPLICATION_MAKER_52",
+    "timestamp": "2026-03-21T08:57:11.494Z"
+  }
+}

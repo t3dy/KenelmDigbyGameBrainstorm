@@ -1,0 +1,57 @@
+[
+  {
+    "id": "powder_of_sympathy",
+    "name": "Powder of Sympathy",
+    "description": "A healing agent applied to bloodied bandages to cure wounds remotely.",
+    "properties": {
+      "potency": 85,
+      "instability": 40,
+      "element": "aether"
+    },
+    "historical_context": "Digby's most famous discovery\u2014a bridge between experimental curiosity and magical thinking."
+  },
+  {
+    "id": "vitriol_of_copper",
+    "name": "Vitriol of Copper",
+    "description": "A deep blue substance used in the purification of symbols and metals.",
+    "properties": {
+      "potency": 60,
+      "instability": 20,
+      "element": "water"
+    },
+    "historical_context": "A central reagent in his collections of chymical secrets compiled by George Hartmann."
+  },
+  {
+    "id": "lead_transmutation",
+    "name": "Lead of Transition",
+    "description": "Heavy matter awaiting the spark of rarity.",
+    "properties": {
+      "potency": 30,
+      "instability": 10,
+      "element": "earth"
+    },
+    "historical_context": "The base metal for his efforts in maturation and perfection."
+  },
+  {
+    "id": "hidden_food_of_life",
+    "name": "Hidden Food of Life",
+    "description": "A subtle substance in the air that nourishes the vital force.",
+    "properties": {
+      "potency": 95,
+      "instability": 5,
+      "element": "air"
+    },
+    "historical_context": "Anticipates the concept of oxygen but framed within vitalist philosophy."
+  },
+  {
+    "id": "alkahest",
+    "name": "Alkahest",
+    "description": "The universal solvent, distilled through the comparison of countless variants.",
+    "properties": {
+      "potency": 100,
+      "instability": 90,
+      "element": "aether"
+    },
+    "historical_context": "The central goal of the Paris Circle, requiring rigorous Philological work."
+  }
+]

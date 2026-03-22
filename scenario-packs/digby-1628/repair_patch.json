@@ -1,0 +1,107 @@
+{
+  "repairs": [
+    {
+      "type": "scene",
+      "id": "1603_everard_legacy",
+      "property": "background",
+      "old": "london_prison",
+      "new": "gresham_library"
+    },
+    {
+      "type": "scene",
+      "id": "1623_madrid_duel",
+      "property": "background",
+      "old": "madrid_night",
+      "new": "scanderoon_clash"
+    },
+    {
+      "type": "scene",
+      "id": "1620_venice_shores",
+      "property": "background",
+      "old": "venice_canal",
+      "new": "eagle_deck"
+    },
+    {
+      "type": "scene",
+      "id": "1621_secret_marriage",
+      "property": "background",
+      "old": "london_chapel",
+      "new": "gresham_library"
+    },
+    {
+      "type": "scene",
+      "id": "1628_gibraltar_passage",
+      "property": "background",
+      "old": "gibraltar_sea",
+      "new": "eagle_deck"
+    },
+    {
+      "type": "scene",
+      "id": "1628_zante_harvest",
+      "property": "background",
+      "old": "zante_shore",
+      "new": "eagle_deck"
+    },
+    {
+      "type": "scene",
+      "id": "1628_delos_antiquities",
+      "property": "background",
+      "old": "delos_ruins",
+      "new": "eagle_deck"
+    },
+    {
+      "type": "scene",
+      "id": "1628_milos_famine",
+      "property": "background",
+      "old": "milos_town",
+      "new": "eagle_deck"
+    },
+    {
+      "type": "scene",
+      "id": "1628_rhodes_fortress",
+      "property": "background",
+      "old": "rhodes_walls",
+      "new": "eagle_deck"
+    },
+    {
+      "type": "scene",
+      "id": "1628_cyprus_ambush",
+      "property": "background",
+      "old": "cyprus_bay",
+      "new": "eagle_deck"
+    },
+    {
+      "type": "scene",
+      "id": "1629_london_triumph",
+      "property": "background",
+      "old": "london_docks",
+      "new": "gresham_library"
+    },
+    {
+      "type": "scene",
+      "id": "1630_alchemical_maturation",
+      "property": "background",
+      "old": "gresham_lab",
+      "new": "gresham_library"
+    },
+    {
+      "type": "scene",
+      "id": "1632_venetia_death",
+      "property": "background",
+      "old": "venetia_chamber",
+      "new": "eagle_deck"
+    },
+    {
+      "type": "scene",
+      "id": "1635_paris_conversion",
+      "property": "background",
+      "old": "paris_street",
+      "new": "eagle_deck"
+    }
+  ],
+  "metadata": {
+    "maker_id": "REPAIR_MAKER_01",
+    "timestamp": "2026-03-21T08:29:02.596Z",
+    "source_report": "scenario-packs/digby-1628/lint_report.json"
+  }
+}

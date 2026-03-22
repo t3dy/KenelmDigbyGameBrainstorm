@@ -6,7 +6,7 @@ import { useGameStore } from '../../state/gameStore';
 export const ManuscriptView: React.FC = () => {
     const { stats, completePhilology, resolveVariant, manifest } = useGameStore();
     const [isRestoring, setIsRestoring] = useState(false);
-    const [currentFragmentIndex, setCurrentFragmentIndex] = useState(0);
+    const [currentFragmentIndex] = useState(0);
     const [condition, setCondition] = useState(0.45);
     const [selectedVariantId, setSelectedVariantId] = useState<string | null>(null);
 

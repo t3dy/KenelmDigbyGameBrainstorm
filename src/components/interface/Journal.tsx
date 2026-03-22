@@ -4,8 +4,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useGameStore } from '../../state/gameStore';
 
 export const Journal: React.FC = () => {
-    const { log, stats, setView, characters, letters, selectedLetterId, selectLetter } = useGameStore();
-    const [tab, setTab] = useState<'log' | 'letters' | 'people'>('log');
+    const { log, stats, setView, characters, letters, selectedLetterId, selectLetter, manifest } = useGameStore();
+    const [tab, setTab] = useState<'log' | 'letters' | 'codex'>('log');
 
     const selectedLetter = letters.find(l => l.id === selectedLetterId);
 
@@ -32,10 +32,10 @@ export const Journal: React.FC = () => {
                         Correspondence ({letters.filter(l => !l.read).length})
                     </button>
                     <button 
-                        onClick={() => setTab('people')}
-                        className={`px-6 py-2 font-display uppercase tracking-widest text-[10px] font-bold border-2 transition-all ${tab === 'people' ? 'bg-ink text-parchment border-ink shadow-lg' : 'border-ink/20 hover:border-ink'}`}
+                        onClick={() => setTab('codex')}
+                        className={`px-6 py-2 font-display uppercase tracking-widest text-[10px] font-bold border-2 transition-all ${tab === 'codex' ? 'bg-ink text-parchment border-ink shadow-lg' : 'border-ink/20 hover:border-ink'}`}
                     >
-                        Advisors & Rivals
+                        Scientific Codex
                     </button>
                 </div>
             </header>
@@ -163,32 +163,41 @@ export const Journal: React.FC = () => {
                             </motion.div>
                         )}
 
-                        {tab === 'people' && (
+                        {tab === 'codex' && (
                             <motion.div 
-                                key="people"
+                                key="codex"
                                 initial={{ opacity: 0, x: 20 }}
                                 animate={{ opacity: 1, x: 0 }}
                                 exit={{ opacity: 0, x: -20 }}
                                 className="grid grid-cols-2 gap-6"
                             >
-                                {characters.map(char => (
-                                    <div key={char.id} className="bg-white p-8 border-2 border-ink relative group hover:border-gold-dark transition-all shadow-md">
-                                        <div className="absolute top-4 right-4 text-gold-dark opacity-10 group-hover:opacity-100 transition-all font-display text-[10px] uppercase font-black">
-                                            {char.role}
-                                        </div>
-                                        <h4 className="text-2xl italic mb-2">{char.name}</h4>
-                                        <div className="mb-4">
-                                            <div className="flex justify-between text-[9px] font-display uppercase font-bold mb-1 opacity-50">
-                                                <span>Affinity</span>
-                                                <span>{char.reputation}%</span>
+                                {manifest.reagents.map(reagent => {
+                                    const isResolved = stats.resolvedReagentIds.includes(reagent.id);
+                                    const currentStock = stats.reagents.find(r => r.id === reagent.id);
+                                    return (
+                                        <div key={reagent.id} className="bg-white p-8 border-2 border-ink relative group hover:border-gold-dark transition-all shadow-md">
+                                            <div className="absolute top-4 right-4 text-gold-dark font-display text-[10px] uppercase font-black">
+                                                {isResolved ? 'Resolved' : 'Variant Friction'}
                                             </div>
-                                            <div className="w-full h-2 bg-parchment-dark rounded-full overflow-hidden">
-                                                <div className="h-full bg-gold-dark" style={{ width: `${char.reputation}%` }} />
+                                            <h4 className="text-2xl italic mb-2 uppercase tracking-tighter">{reagent.name}</h4>
+                                            
+                                            <div className="flex gap-12 mb-6">
+                                                <div>
+                                                    <span className="text-[10px] font-display font-bold uppercase opacity-40 block mb-1">Stock</span>
+                                                    <span className="text-xl font-mono">{currentStock?.quantity || 0}</span>
+                                                </div>
+                                                <div>
+                                                    <span className="text-[10px] font-display font-bold uppercase opacity-40 block mb-1">Peak Potency</span>
+                                                    <span className="text-xl font-mono">{currentStock?.potency || 50}%</span>
+                                                </div>
                                             </div>
+
+                                            <p className="text-sm italic leading-relaxed text-ink/80 border-t border-ink/5 pt-4">
+                                                {reagent.description}
+                                            </p>
                                         </div>
-                                        <p className="text-sm italic leading-relaxed text-ink/80">{char.bio}</p>
-                                    </div>
-                                ))}
+                                    );
+                                })}
                             </motion.div>
                         )}
                     </AnimatePresence>
@@ -197,7 +206,7 @@ export const Journal: React.FC = () => {
             
             <footer className="mt-8 flex justify-center gap-4">
                  <button 
-                    onClick={() => setView('naval')}
+                    onClick={() => setView('nav')}
                     className="px-12 py-3 bg-gold text-white font-bold text-lg hover:shadow-2xl active:translate-y-1 transition-all flex items-center gap-3 uppercase tracking-widest font-display"
                 >
                     <Globe size={20} /> Resume Voyage

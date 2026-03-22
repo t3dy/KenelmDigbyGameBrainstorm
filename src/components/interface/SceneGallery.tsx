@@ -1,5 +1,5 @@
 import React from 'react';
-import { Play, Book, Calendar, Shield, MapPin } from 'lucide-react';
+import { Play, Book, Zap, Shield, MapPin } from 'lucide-react';
 import { useGameStore } from '../../state/gameStore';
 import { motion } from 'framer-motion';
 
@@ -39,49 +39,58 @@ export const SceneGallery: React.FC = () => {
             </header>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {manifest.scenes.map((scene, idx) => (
-                    <motion.div 
-                        key={scene.id}
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: idx * 0.05 }}
-                        className="group bg-[#2a1d18]/40 border border-[#3d2c25] p-6 hover:bg-[#2a1d18] hover:border-amber-500/50 transition-all shadow-xl cursor-pointer relative overflow-hidden"
-                        onClick={() => handlePlayScene(scene.id)}
-                    >
-                        <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-20 transition-opacity">
-                            <Book size={64} />
-                        </div>
+                {manifest.scenes.map((scene, idx) => {
+                    const isPlayable = scene.timeline.some((a: any) => a.type.startsWith('trigger_'));
+                    
+                    return (
+                        <motion.div 
+                            key={scene.id}
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: idx * 0.05 }}
+                            className={`group bg-[#2a1d18]/40 border border-[#3d2c25] p-6 hover:bg-[#2a1d18] hover:border-amber-500/50 transition-all shadow-xl cursor-pointer relative overflow-hidden ${isPlayable ? 'ring-2 ring-amber-500/30' : ''}`}
+                            onClick={() => handlePlayScene(scene.id)}
+                        >
+                            <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-20 transition-opacity">
+                                {isPlayable ? <Zap size={64} className="text-amber-500" /> : <Book size={64} />}
+                            </div>
 
-                        <div className="flex items-center gap-4 mb-4">
-                            <div className="w-10 h-10 rounded-sm bg-zinc-900 border border-[#3d2c25] flex items-center justify-center text-amber-500 font-mono font-bold text-xs ring-4 ring-black/20">
-                                {idx + 1}
+                            <div className="flex items-center gap-4 mb-4">
+                                <div className="w-10 h-10 rounded-sm bg-zinc-900 border border-[#3d2c25] flex items-center justify-center text-amber-500 font-mono font-bold text-xs ring-4 ring-black/20">
+                                    {idx + 1}
+                                </div>
+                                <div>
+                                    <h3 className="text-lg font-black tracking-tight leading-none group-hover:text-amber-500 transition-colors">
+                                        {scene.id.replace(/_/g, ' ').toUpperCase()}
+                                    </h3>
+                                    <div className="flex items-center gap-2 mt-1">
+                                        <span className="text-[9px] uppercase tracking-widest opacity-40 font-mono">
+                                            Epoch: {scene.id.split('_')[0]}
+                                        </span>
+                                        {isPlayable && (
+                                            <span className="bg-amber-500 text-zinc-950 text-[7px] font-black uppercase px-2 py-0.5 rounded-full tracking-widest leading-none">Interactive</span>
+                                        )}
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <h3 className="text-lg font-black tracking-tight leading-none group-hover:text-amber-500 transition-colors">
-                                    {scene.id.replace(/_/g, ' ').toUpperCase()}
-                                </h3>
-                                <span className="text-[9px] uppercase tracking-widest opacity-40 font-mono">
-                                    Epoch: {scene.id.split('_')[0]}
-                                </span>
-                            </div>
-                        </div>
 
-                        <div className="space-y-3 mb-6">
-                            <div className="flex items-center gap-2 text-[10px] opacity-60 italic">
-                                <MapPin size={10} />
-                                <span>Background: {scene.background}</span>
+                            <div className="space-y-3 mb-6">
+                                <div className="flex items-center gap-2 text-[10px] opacity-60 italic">
+                                    <MapPin size={10} />
+                                    <span>Background: {scene.background}</span>
+                                </div>
+                                <div className="flex items-center gap-2 text-[10px] opacity-60 italic">
+                                    <Shield size={10} />
+                                    <span>Actors: {scene.actors.length}</span>
+                                </div>
                             </div>
-                            <div className="flex items-center gap-2 text-[10px] opacity-60 italic">
-                                <Shield size={10} />
-                                <span>Actors: {scene.actors.length}</span>
-                            </div>
-                        </div>
 
-                        <button className="w-full py-3 bg-[#e8dcc4] text-[#1a1412] text-[10px] font-black uppercase tracking-[0.2em] flex items-center justify-center gap-2 hover:bg-white transition-all transform group-active:scale-95">
-                            <Play size={14} fill="currentColor" /> Replay Memory
-                        </button>
-                    </motion.div>
-                ))}
+                            <button className="w-full py-3 bg-[#e8dcc4] text-[#1a1412] text-[10px] font-black uppercase tracking-[0.2em] flex items-center justify-center gap-2 hover:bg-white transition-all transform group-active:scale-95 shadow-md">
+                                <Play size={14} fill="currentColor" /> {isPlayable ? 'Execute Module' : 'Replay Memory'}
+                            </button>
+                        </motion.div>
+                    );
+                })}
             </div>
 
             <footer className="mt-20 pt-12 border-t border-[#3d2c25] opacity-20 text-[9px] uppercase tracking-[0.5em] text-center font-mono">

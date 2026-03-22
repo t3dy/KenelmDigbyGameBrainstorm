@@ -1,0 +1,233 @@
+{
+  "markets": {
+    "venice": {
+      "id": "market_venice",
+      "location_id": "venice",
+      "inventory": {
+        "vitriol": {
+          "price": 38,
+          "demand": 1,
+          "stock": 18
+        },
+        "antimony": {
+          "price": 36,
+          "demand": 1,
+          "stock": 7
+        },
+        "glass_antimony": {
+          "price": 46,
+          "demand": 1,
+          "stock": 6
+        },
+        "spirit_vitriol": {
+          "price": 21,
+          "demand": 1,
+          "stock": 7
+        },
+        "philosophers_lead": {
+          "price": 20,
+          "demand": 1,
+          "stock": 8
+        }
+      },
+      "stability": "high"
+    },
+    "scanderoon": {
+      "id": "market_scanderoon",
+      "location_id": "scanderoon",
+      "inventory": {
+        "vitriol": {
+          "price": 35,
+          "demand": 1,
+          "stock": 6
+        },
+        "antimony": {
+          "price": 40,
+          "demand": 1,
+          "stock": 7
+        },
+        "glass_antimony": {
+          "price": 45,
+          "demand": 1,
+          "stock": 14
+        },
+        "spirit_vitriol": {
+          "price": 27,
+          "demand": 1,
+          "stock": 19
+        },
+        "philosophers_lead": {
+          "price": 29,
+          "demand": 1,
+          "stock": 10
+        }
+      },
+      "stability": "medium"
+    },
+    "milos": {
+      "id": "market_milos",
+      "location_id": "milos",
+      "inventory": {
+        "vitriol": {
+          "price": 38,
+          "demand": 1,
+          "stock": 14
+        },
+        "antimony": {
+          "price": 39,
+          "demand": 1,
+          "stock": 6
+        },
+        "glass_antimony": {
+          "price": 38,
+          "demand": 1,
+          "stock": 19
+        },
+        "spirit_vitriol": {
+          "price": 33,
+          "demand": 1,
+          "stock": 10
+        },
+        "philosophers_lead": {
+          "price": 46,
+          "demand": 1,
+          "stock": 9
+        }
+      },
+      "stability": "medium"
+    },
+    "florence": {
+      "id": "market_florence",
+      "location_id": "florence",
+      "inventory": {
+        "vitriol": {
+          "price": 82,
+          "demand": 1.8,
+          "stock": 12
+        },
+        "antimony": {
+          "price": 38,
+          "demand": 1,
+          "stock": 15
+        },
+        "glass_antimony": {
+          "price": 38,
+          "demand": 1,
+          "stock": 9
+        },
+        "spirit_vitriol": {
+          "price": 50,
+          "demand": 1.8,
+          "stock": 15
+        },
+        "philosophers_lead": {
+          "price": 26,
+          "demand": 1,
+          "stock": 8
+        }
+      },
+      "stability": "high"
+    },
+    "london": {
+      "id": "market_london",
+      "location_id": "london",
+      "inventory": {
+        "vitriol": {
+          "price": 39,
+          "demand": 1,
+          "stock": 9
+        },
+        "antimony": {
+          "price": 34,
+          "demand": 1,
+          "stock": 17
+        },
+        "glass_antimony": {
+          "price": 21,
+          "demand": 0.5,
+          "stock": 16
+        },
+        "spirit_vitriol": {
+          "price": 48,
+          "demand": 1,
+          "stock": 18
+        },
+        "philosophers_lead": {
+          "price": 31,
+          "demand": 1,
+          "stock": 13
+        }
+      },
+      "stability": "high"
+    },
+    "med_sea": {
+      "id": "market_med_sea",
+      "location_id": "med_sea",
+      "inventory": {
+        "vitriol": {
+          "price": 29,
+          "demand": 1,
+          "stock": 16
+        },
+        "antimony": {
+          "price": 33,
+          "demand": 1,
+          "stock": 16
+        },
+        "glass_antimony": {
+          "price": 27,
+          "demand": 1,
+          "stock": 14
+        },
+        "spirit_vitriol": {
+          "price": 31,
+          "demand": 1,
+          "stock": 13
+        },
+        "philosophers_lead": {
+          "price": 45,
+          "demand": 1,
+          "stock": 17
+        }
+      },
+      "stability": "medium"
+    },
+    "algiers": {
+      "id": "market_algiers",
+      "location_id": "algiers",
+      "inventory": {
+        "vitriol": {
+          "price": 29,
+          "demand": 1,
+          "stock": 9
+        },
+        "antimony": {
+          "price": 48,
+          "demand": 1,
+          "stock": 18
+        },
+        "glass_antimony": {
+          "price": 34,
+          "demand": 1,
+          "stock": 7
+        },
+        "spirit_vitriol": {
+          "price": 23,
+          "demand": 1,
+          "stock": 9
+        },
+        "philosophers_lead": {
+          "price": 39,
+          "demand": 1,
+          "stock": 13
+        }
+      },
+      "stability": "high"
+    }
+  },
+  "metadata": {
+    "maker_id": "ECON_MAKER_01",
+    "timestamp": "2026-03-21T09:04:20.813Z",
+    "source_manifest": "digby-1628"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "character_moves": [
+    {
+      "id": "sabre",
+      "name": "Sabre Strike",
+      "type": "attack",
+      "damage": 25,
+      "message": "Digby lunges with his steel!",
+      "icon": "Sword"
+    },
+    {
+      "id": "sympathy",
+      "name": "Powder of Sympathy",
+      "type": "heal",
+      "power": 30,
+      "reagent_cost": { "vitriol": 1 },
+      "message": "Digby applies the Powder of Sympathy! Wounds close as the molecules align.",
+      "icon": "Activity"
+    },
+    {
+      "id": "antimony",
+      "name": "Glass of Antimony",
+      "type": "attack",
+      "damage": 55,
+      "reagent_cost": { "nitre": 2 },
+      "message": "Digby shatters a flask of Antimony! The deck vanishes in red smoke.",
+      "icon": "Zap"
+    }
+  ],
+  "ship_moves": [
+    {
+      "id": "culverin",
+      "name": "Chased Culverins",
+      "type": "attack",
+      "damage": 15,
+      "charge_time": 3000,
+      "message": "Port-side batteries unleashed."
+    },
+    {
+      "id": "alchemical_shot",
+      "name": "Alchemical Chain-Shot",
+      "type": "attack",
+      "damage": 10,
+      "component_damage": 30,
+      "reagent_cost": { "vitriol": 2 },
+      "charge_time": 5000,
+      "message": "Corrosive chains targeted at the masts."
+    }
+  ],
+  "intrigue_moves": [
+    {
+      "id": "rhetoric",
+      "name": "High Rhetoric",
+      "type": "social_attack",
+      "impact": 15,
+      "message": "Digby quotes Aristotle with a Levantine flourish. Suspicion ebbs.",
+      "cost": { "spirit": 10 },
+      "icon": "MessageCircle"
+    },
+    {
+      "id": "alchemical_bribe",
+      "name": "Alchemical Gift",
+      "type": "social_attack",
+      "impact": 25,
+      "message": "A vial of Philosophic Mercury changes hands. The official is convinced.",
+      "cost": { "wealth": 100 },
+      "icon": "Gift"
+    },
+    {
+      "id": "proof",
+      "name": "Demonstrated Proof",
+      "type": "social_attack",
+      "impact": 35,
+      "message": "Sir Kenelm displays his laboratory findings. Doubt is extinguished.",
+      "cost": { "knowledge": 5 },
+      "icon": "BookOpen"
+    }
+  ],
+  "enemy_moves": [
+    {
+      "id": "matchlock",
+      "name": "Matchlock Volley",
+      "type": "attack",
+      "damage": 15,
+      "message": "The Venetian fires a flintlock! Smoke fills the deck."
+    },
+    {
+      "id": "boarding_axe",
+      "name": "Boarding Axe",
+      "type": "attack",
+      "damage": 25,
+      "message": "A heavy iron axe bites into the woodwork and bone."
+    }
+  ]
+}

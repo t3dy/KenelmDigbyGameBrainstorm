@@ -1,0 +1,1259 @@
+{
+  "id": "digby-1628",
+  "version": "1.1",
+  "description": "The privateering voyage of Sir Kenelm Digby, 1628. Integrated with the Almagest Asset Layer.",
+  "reagents": [
+    {
+      "id": "vitriol",
+      "name": "Calcined Vitriol (Oxford MS)",
+      "description": "A sharp, white salt, purified by the heat of the London sun.",
+      "potency": 40,
+      "instability": 5,
+      "variant_options": [
+        {
+          "id": "oxford_allan",
+          "name": "Calcined Vitriol (Oxford MS)",
+          "description": "A sharp, white salt, purified by the heat of the London sun."
+        },
+        {
+          "id": "paris_duclos",
+          "name": "Green Vitriol (Paris MS)",
+          "description": "A crude, emerald-green earth, favored by the skeptics of the Paris circle."
+        }
+      ]
+    },
+    {
+      "id": "antimony",
+      "name": "Antimony",
+      "description": "The semi-metal for the Glass of Antimony.",
+      "potency": 80,
+      "instability": 40,
+      "variant_options": []
+    },
+    {
+      "id": "glass_antimony",
+      "name": "Glass of Antimony",
+      "description": "A ruby-colored translucent salt.",
+      "potency": 120,
+      "instability": 60,
+      "variant_options": []
+    },
+    {
+      "id": "spirit_vitriol",
+      "name": "Spirit of Vitriol",
+      "description": "A sharp, volatile acidic oil.",
+      "potency": 90,
+      "instability": 15,
+      "variant_options": []
+    },
+    {
+      "id": "philosophers_lead",
+      "name": "Philosopher's Lead",
+      "description": "Lead that has received the influence of vitriolic spirit.",
+      "potency": 150,
+      "instability": 80,
+      "variant_options": []
+    }
+  ],
+  "commodities": [
+    {
+      "id": "persian_silk",
+      "type": "commodity",
+      "metadata": {
+        "name": "Persian Raw Silk",
+        "sources": [
+          "Trade in the Levant, 1628",
+          "Digby Trade Logs"
+        ],
+        "confidence": 0.95,
+        "links": [
+          "scanderoon",
+          "wealth"
+        ]
+      },
+      "description": "High-value raw silk, often traded from the interior at Scanderoon. Essential for European luxury markets.",
+      "base_price": 500
+    },
+    {
+      "id": "alchemical_lead",
+      "type": "commodity",
+      "metadata": {
+        "name": "Purified Alchemical Lead",
+        "sources": [
+          "Digby 1658",
+          "Stain in the Blood"
+        ],
+        "confidence": 0.9,
+        "links": [
+          "algiers",
+          "transmutation"
+        ]
+      },
+      "description": "A dense, stable metal used in the initial stages of the Great Work. Highly valued in Algiers for maritime ballistics.",
+      "base_price": 120
+    },
+    {
+      "id": "zante_currants",
+      "type": "commodity",
+      "metadata": {
+        "name": "Zante Currants",
+        "sources": [
+          "Venetian Trade Records, 1628"
+        ],
+        "confidence": 1,
+        "links": [
+          "zante",
+          "sustenance"
+        ]
+      },
+      "description": "A staple of the Mediterranean trade. High nutritional value with significant markup in London markets.",
+      "base_price": 40
+    },
+    {
+      "id": "mercury_quicksilver",
+      "type": "commodity",
+      "metadata": {
+        "name": "Philosophic Quicksilver",
+        "sources": [
+          "Alchemical Corpus"
+        ],
+        "confidence": 0.85,
+        "links": [
+          "lab",
+          "volatility"
+        ]
+      },
+      "description": "The liquid soul of metals. Essential for the creation of the Red Tincture, but extremely volatile during storage.",
+      "base_price": 800
+    }
+  ],
+  "markets": {
+    "venice": {
+      "id": "market_venice",
+      "location_id": "venice",
+      "inventory": {
+        "vitriol": {
+          "price": 38,
+          "demand": 1,
+          "stock": 18
+        },
+        "antimony": {
+          "price": 36,
+          "demand": 1,
+          "stock": 7
+        },
+        "glass_antimony": {
+          "price": 46,
+          "demand": 1,
+          "stock": 6
+        },
+        "spirit_vitriol": {
+          "price": 21,
+          "demand": 1,
+          "stock": 7
+        },
+        "philosophers_lead": {
+          "price": 20,
+          "demand": 1,
+          "stock": 8
+        }
+      },
+      "stability": "high"
+    },
+    "scanderoon": {
+      "id": "market_scanderoon",
+      "location_id": "scanderoon",
+      "inventory": {
+        "vitriol": {
+          "price": 35,
+          "demand": 1,
+          "stock": 6
+        },
+        "antimony": {
+          "price": 40,
+          "demand": 1,
+          "stock": 7
+        },
+        "glass_antimony": {
+          "price": 45,
+          "demand": 1,
+          "stock": 14
+        },
+        "spirit_vitriol": {
+          "price": 27,
+          "demand": 1,
+          "stock": 19
+        },
+        "philosophers_lead": {
+          "price": 29,
+          "demand": 1,
+          "stock": 10
+        }
+      },
+      "stability": "medium"
+    },
+    "milos": {
+      "id": "market_milos",
+      "location_id": "milos",
+      "inventory": {
+        "vitriol": {
+          "price": 38,
+          "demand": 1,
+          "stock": 14
+        },
+        "antimony": {
+          "price": 39,
+          "demand": 1,
+          "stock": 6
+        },
+        "glass_antimony": {
+          "price": 38,
+          "demand": 1,
+          "stock": 19
+        },
+        "spirit_vitriol": {
+          "price": 33,
+          "demand": 1,
+          "stock": 10
+        },
+        "philosophers_lead": {
+          "price": 46,
+          "demand": 1,
+          "stock": 9
+        }
+      },
+      "stability": "medium"
+    },
+    "florence": {
+      "id": "market_florence",
+      "location_id": "florence",
+      "inventory": {
+        "vitriol": {
+          "price": 82,
+          "demand": 1.8,
+          "stock": 12
+        },
+        "antimony": {
+          "price": 38,
+          "demand": 1,
+          "stock": 15
+        },
+        "glass_antimony": {
+          "price": 38,
+          "demand": 1,
+          "stock": 9
+        },
+        "spirit_vitriol": {
+          "price": 50,
+          "demand": 1.8,
+          "stock": 15
+        },
+        "philosophers_lead": {
+          "price": 26,
+          "demand": 1,
+          "stock": 8
+        }
+      },
+      "stability": "high"
+    },
+    "london": {
+      "id": "market_london",
+      "location_id": "london",
+      "inventory": {
+        "vitriol": {
+          "price": 39,
+          "demand": 1,
+          "stock": 9
+        },
+        "antimony": {
+          "price": 34,
+          "demand": 1,
+          "stock": 17
+        },
+        "glass_antimony": {
+          "price": 21,
+          "demand": 0.5,
+          "stock": 16
+        },
+        "spirit_vitriol": {
+          "price": 48,
+          "demand": 1,
+          "stock": 18
+        },
+        "philosophers_lead": {
+          "price": 31,
+          "demand": 1,
+          "stock": 13
+        }
+      },
+      "stability": "high"
+    },
+    "med_sea": {
+      "id": "market_med_sea",
+      "location_id": "med_sea",
+      "inventory": {
+        "vitriol": {
+          "price": 29,
+          "demand": 1,
+          "stock": 16
+        },
+        "antimony": {
+          "price": 33,
+          "demand": 1,
+          "stock": 16
+        },
+        "glass_antimony": {
+          "price": 27,
+          "demand": 1,
+          "stock": 14
+        },
+        "spirit_vitriol": {
+          "price": 31,
+          "demand": 1,
+          "stock": 13
+        },
+        "philosophers_lead": {
+          "price": 45,
+          "demand": 1,
+          "stock": 17
+        }
+      },
+      "stability": "medium"
+    },
+    "algiers": {
+      "id": "market_algiers",
+      "location_id": "algiers",
+      "inventory": {
+        "vitriol": {
+          "price": 29,
+          "demand": 1,
+          "stock": 9
+        },
+        "antimony": {
+          "price": 48,
+          "demand": 1,
+          "stock": 18
+        },
+        "glass_antimony": {
+          "price": 34,
+          "demand": 1,
+          "stock": 7
+        },
+        "spirit_vitriol": {
+          "price": 23,
+          "demand": 1,
+          "stock": 9
+        },
+        "philosophers_lead": {
+          "price": 39,
+          "demand": 1,
+          "stock": 13
+        }
+      },
+      "stability": "high"
+    }
+  },
+  "locations": [
+    {
+      "id": "venice",
+      "name": "The Serene Republic of Venice",
+      "x": 10,
+      "y": 15,
+      "description": "The capital of banking and naval surveillance. Heart of the Pursuer's network.",
+      "type": "capital",
+      "unlocked": true,
+      "port_config": {
+        "merchants": [
+          [
+            10,
+            5
+          ],
+          [
+            18,
+            12
+          ]
+        ],
+        "manuscripts": [
+          [
+            20,
+            4
+          ]
+        ],
+        "exit": [
+          2,
+          7
+        ],
+        "messages": {
+          "merchant": "A Venetian broker weighs his scales.",
+          "manuscript": "The Council's records are exposed.",
+          "exit": "Step back into the lagoon."
+        }
+      }
+    },
+    {
+      "id": "scanderoon",
+      "name": "Scanderoon (Alexandretta)",
+      "x": 88,
+      "y": 42,
+      "description": "The site of the great duel with the Venetian Galleys. Entry point to the Levant.",
+      "type": "battleground",
+      "unlocked": true,
+      "port_config": {
+        "merchants": [
+          [
+            12,
+            8
+          ],
+          [
+            15,
+            4
+          ],
+          [
+            8,
+            11
+          ]
+        ],
+        "manuscripts": [
+          [
+            22,
+            2
+          ]
+        ],
+        "exit": [
+          2,
+          7
+        ],
+        "messages": {
+          "merchant": "An Ottoman merchant eyes the Eagle's flags.",
+          "manuscript": "The scrolls of Scanderoon await analysis.",
+          "exit": "Set sail for the Levant."
+        }
+      }
+    },
+    {
+      "id": "milos",
+      "name": "Milos (Secret Grotto)",
+      "x": 45,
+      "y": 62,
+      "description": "A quiet obsidian island where Kenelm first performed the Vitriol experiment.",
+      "type": "refuge",
+      "unlocked": true,
+      "port_config": {
+        "merchants": [
+          [
+            5,
+            5
+          ]
+        ],
+        "manuscripts": [
+          [
+            15,
+            10
+          ],
+          [
+            10,
+            12
+          ]
+        ],
+        "exit": [
+          2,
+          7
+        ],
+        "messages": {
+          "merchant": "A local fisherman offers raw sulfur.",
+          "manuscript": "An alchemical fragment is etched into the obsidian.",
+          "exit": "Leave the volcanic grotto."
+        }
+      }
+    },
+    {
+      "id": "florence",
+      "name": "Florence (Medici Court)",
+      "x": 12,
+      "y": 25,
+      "description": "The cradle of the Renaissance and a center for alchemical patronage. Home of the magician who conjured the spirit.",
+      "type": "capital",
+      "unlocked": true,
+      "jurisdiction": "papal",
+      "port_config": {
+        "merchants": [
+          [
+            8,
+            10
+          ],
+          [
+            18,
+            5
+          ],
+          [
+            25,
+            12
+          ]
+        ],
+        "manuscripts": [
+          [
+            5,
+            15
+          ],
+          [
+            30,
+            2
+          ]
+        ],
+        "exit": [
+          2,
+          7
+        ],
+        "messages": {
+          "merchant": "A broker of the court weighs the terms.",
+          "manuscript": "The official archives of the city-state.",
+          "exit": "Return to the main fleet."
+        }
+      }
+    },
+    {
+      "id": "london",
+      "name": "London (Gresham College)",
+      "x": 2,
+      "y": 50,
+      "description": "The scientific and political hub of England.",
+      "type": "capital",
+      "unlocked": true,
+      "jurisdiction": "english"
+    },
+    {
+      "id": "med_sea",
+      "name": "The Open Mediterranean",
+      "x": 50,
+      "y": 50,
+      "description": "International waters contested by Venetian, Ottoman, and French forces.",
+      "type": "sea_lane",
+      "unlocked": true
+    },
+    {
+      "id": "algiers",
+      "name": "Algiers (The Regency)",
+      "x": 30,
+      "y": 70,
+      "description": "A formidable Ottoman Regency and the base for Mediterranean corsairs. Key for the release of English captives.",
+      "type": "capital",
+      "unlocked": true,
+      "jurisdiction": "ottoman",
+      "port_config": {
+        "merchants": [
+          [
+            8,
+            10
+          ],
+          [
+            18,
+            5
+          ],
+          [
+            25,
+            12
+          ]
+        ],
+        "manuscripts": [
+          [
+            5,
+            15
+          ],
+          [
+            30,
+            2
+          ]
+        ],
+        "exit": [
+          2,
+          7
+        ],
+        "messages": {
+          "merchant": "A broker of the court weighs the terms.",
+          "manuscript": "The official archives of the city-state.",
+          "exit": "Return to the main fleet."
+        }
+      },
+      "provenance": "ALGIERS_RANSOM_1628"
+    }
+  ],
+  "recipes": [
+    {
+      "id": "powder_of_sympathy",
+      "name": "The Powder of Sympathy",
+      "ingredients": [
+        "vitriol",
+        "nitre"
+      ],
+      "result_reagent_id": "powder_of_sympathy",
+      "knowledge_gain": 20,
+      "stigma_gain": 15,
+      "description": "A healing powder that acts across space via sympathetic resonance."
+    },
+    {
+      "id": "glass_antimony",
+      "name": "Glass of Antimony",
+      "ingredients": [
+        "antimony",
+        "nitre"
+      ],
+      "result_reagent_id": "glass_antimony",
+      "knowledge_gain": 40,
+      "stigma_gain": 30,
+      "description": "A translucent, ruby-colored glass formed by the intense calcination of Antimony with the aid of Nitre."
+    },
+    {
+      "id": "spirit_of_vitriol",
+      "name": "Spirit of Vitriol",
+      "ingredients": [
+        "vitriol",
+        "water_marine"
+      ],
+      "result_reagent_id": "spirit_vitriol",
+      "knowledge_gain": 30,
+      "stigma_gain": 5,
+      "description": "A sharp, acidic vapor distilled from calcined salts. Essential for the purification of lead."
+    }
+  ],
+  "characters": [
+    {
+      "id": "kenelm_digby",
+      "name": "Sir Kenelm Digby",
+      "role": "advisor",
+      "health": 100,
+      "reputation": 100,
+      "bio": "The protagonist. Alchemist, courtier, and adventurer."
+    },
+    {
+      "id": "venetia_stanley",
+      "name": "Venetia Stanley",
+      "role": "advisor",
+      "health": 100,
+      "reputation": 95,
+      "bio": "Digby's wife, whose honor he seeks to protect across the Mediterranean."
+    },
+    {
+      "id": "thomas_allen",
+      "name": "Thomas Allen",
+      "role": "advisor",
+      "health": 80,
+      "reputation": 90,
+      "bio": "Oxford mathematician and mentor. His secret library is the foundation of your knowledge."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "1603_everard_legacy",
+      "background": "gresham_library",
+      "actors": [
+        {
+          "id": "kenelm_young",
+          "startX": 5,
+          "startY": 8,
+          "spriteType": "scholar"
+        }
+      ],
+      "timeline": [
+        {
+          "type": "say",
+          "actorId": "kenelm_young",
+          "text": "They executed him for a dream of gunpowder. Now I must build a dream of salt."
+        }
+      ]
+    },
+    {
+      "id": "1623_madrid_duel",
+      "background": "scanderoon_clash",
+      "actors": [
+        {
+          "id": "kenelm",
+          "startX": 3,
+          "startY": 8,
+          "spriteType": "digby"
+        }
+      ],
+      "timeline": [
+        {
+          "type": "say",
+          "actorId": "kenelm",
+          "text": "Five men in the dark to protect the Prince? My blade is as certain as my logic."
+        }
+      ]
+    },
+    {
+      "id": "1628_eagle_departure",
+      "background": "eagle_deck",
+      "actors": [
+        {
+          "id": "kenelm",
+          "startX": 8,
+          "startY": 7,
+          "spriteType": "digby"
+        }
+      ],
+      "timeline": [
+        {
+          "type": "say",
+          "actorId": "kenelm",
+          "text": "The channel is a mere gate. The Mediterranean is the laboratory."
+        }
+      ]
+    },
+    {
+      "id": "1628_milos_grotto",
+      "background": "milos_refuge",
+      "actors": [
+        {
+          "id": "kenelm",
+          "startX": 2,
+          "startY": 8,
+          "spriteType": "digby"
+        }
+      ],
+      "timeline": [
+        {
+          "type": "move",
+          "actorId": "kenelm",
+          "targetX": 8,
+          "targetY": 8
+        },
+        {
+          "type": "say",
+          "actorId": "kenelm",
+          "text": "The obsidian here is aged by the sun. It is the perfect womb for the vitriolic soul."
+        },
+        {
+          "type": "emote",
+          "actorId": "kenelm",
+          "emotion": "idea"
+        },
+        {
+          "type": "say",
+          "actorId": "kenelm",
+          "text": "I must stoke the athanor. The Great Work waits for no man."
+        },
+        {
+          "type": "trigger_lab"
+        }
+      ]
+    },
+    {
+      "id": "1628_gibraltar_passage",
+      "background": "eagle_deck",
+      "actors": [
+        {
+          "id": "kenelm",
+          "startX": 5,
+          "startY": 8,
+          "spriteType": "digby"
+        },
+        {
+          "id": "sailor",
+          "startX": 15,
+          "startY": 8,
+          "spriteType": "sailor"
+        }
+      ],
+      "timeline": [
+        {
+          "type": "say",
+          "actorId": "sailor",
+          "text": "Sir, we've cleared the Pillars of Hercules. The Mediterranean opens before us."
+        },
+        {
+          "type": "move",
+          "actorId": "kenelm",
+          "targetX": 10,
+          "targetY": 8
+        },
+        {
+          "type": "say",
+          "actorId": "kenelm",
+          "text": "Then we are no longer in English waters. We are in the Laboratory of the World."
+        },
+        {
+          "type": "say",
+          "actorId": "sailor",
+          "text": "And the Venetians? They've been sighting us since the channel."
+        },
+        {
+          "type": "emote",
+          "actorId": "kenelm",
+          "emotion": "surprise"
+        },
+        {
+          "type": "say",
+          "actorId": "kenelm",
+          "text": "Then let them watch. We sail for the Levant."
+        },
+        {
+          "type": "trigger_nav"
+        }
+      ]
+    },
+    {
+      "id": "1628_scanderoon_clash",
+      "background": "scanderoon_clash",
+      "actors": [
+        {
+          "id": "kenelm",
+          "startX": 5,
+          "startY": 8,
+          "spriteType": "digby"
+        },
+        {
+          "id": "sailor",
+          "startX": 12,
+          "startY": 8,
+          "spriteType": "sailor"
+        }
+      ],
+      "timeline": [
+        {
+          "type": "say",
+          "actorId": "sailor",
+          "text": "The Venetian galleys have lowered their sweeps, Sir! They mean to board us!"
+        },
+        {
+          "type": "move",
+          "actorId": "kenelm",
+          "targetX": 10,
+          "targetY": 8
+        },
+        {
+          "type": "say",
+          "actorId": "kenelm",
+          "text": "Board us? They forget they face a mathematician."
+        },
+        {
+          "type": "emote",
+          "actorId": "kenelm",
+          "emotion": "anger"
+        },
+        {
+          "type": "say",
+          "actorId": "kenelm",
+          "text": "Run out the guns. Charge the Powder of Sympathy. Today, logic speaks in iron!"
+        },
+        {
+          "type": "trigger_ship_combat"
+        }
+      ]
+    },
+    {
+      "id": "1618_florence_meeting",
+      "background": "florence_court",
+      "actors": [],
+      "timeline": []
+    },
+    {
+      "id": "1620_venice_shores",
+      "background": "eagle_deck",
+      "actors": [],
+      "timeline": []
+    },
+    {
+      "id": "1621_secret_marriage",
+      "background": "gresham_library",
+      "actors": [],
+      "timeline": []
+    },
+    {
+      "id": "1624_gresham_lecture",
+      "background": "gresham_library",
+      "actors": [],
+      "timeline": []
+    },
+    {
+      "id": "1628_gibraltar_passage_10",
+      "background": "med_sea_passage",
+      "actors": [],
+      "timeline": []
+    },
+    {
+      "id": "1628_algiers_truce",
+      "background": "algiers_port",
+      "actors": [],
+      "timeline": []
+    },
+    {
+      "id": "1628_zante_harvest",
+      "background": "eagle_deck",
+      "actors": [],
+      "timeline": []
+    },
+    {
+      "id": "1628_delos_antiquities",
+      "background": "eagle_deck",
+      "actors": [],
+      "timeline": []
+    },
+    {
+      "id": "1628_milos_famine",
+      "background": "eagle_deck",
+      "actors": [],
+      "timeline": []
+    },
+    {
+      "id": "1628_rhodes_fortress",
+      "background": "eagle_deck",
+      "actors": [],
+      "timeline": []
+    },
+    {
+      "id": "1628_cyprus_ambush",
+      "background": "eagle_deck",
+      "actors": [],
+      "timeline": []
+    },
+    {
+      "id": "1629_london_triumph",
+      "background": "gresham_library",
+      "actors": [],
+      "timeline": []
+    },
+    {
+      "id": "1630_alchemical_maturation",
+      "background": "gresham_library",
+      "actors": [],
+      "timeline": []
+    },
+    {
+      "id": "1632_venetia_death",
+      "background": "eagle_deck",
+      "actors": [],
+      "timeline": []
+    },
+    {
+      "id": "1633_mourning_portrait",
+      "background": "london_studio",
+      "actors": [
+        {
+          "id": "digby",
+          "startX": 30,
+          "startY": 60,
+          "spriteType": "digby"
+        },
+        {
+          "id": "vandyck",
+          "startX": 70,
+          "startY": 60,
+          "spriteType": "scholar"
+        }
+      ],
+      "timeline": [
+        {
+          "type": "wait",
+          "duration": 1000
+        },
+        {
+          "type": "say",
+          "actorId": "vandyck",
+          "text": "Stay still, Sir Kenelm. The light of the setting sun is perfect."
+        },
+        {
+          "type": "wait",
+          "duration": 2000
+        },
+        {
+          "type": "say",
+          "actorId": "digby",
+          "text": "She is not here to see it. Make her immortality absolute, Anthony."
+        },
+        {
+          "type": "wait",
+          "duration": 3000
+        },
+        {
+          "type": "emote",
+          "actorId": "digby",
+          "emotion": "heart",
+          "duration": 2000
+        }
+      ]
+    },
+    {
+      "id": "1635_paris_conversion",
+      "background": "eagle_deck",
+      "actors": [],
+      "timeline": []
+    },
+    {
+      "id": "1665_final_rest",
+      "background": "christ_church",
+      "actors": [
+        {
+          "id": "priest",
+          "startX": 50,
+          "startY": 40,
+          "spriteType": "scholar"
+        }
+      ],
+      "timeline": [
+        {
+          "type": "wait",
+          "duration": 2000
+        },
+        {
+          "type": "say",
+          "actorId": "priest",
+          "text": "Here lies Sir Kenelm Digby. Alchemist, Pirate, and Philosopher. His work is complete."
+        },
+        {
+          "type": "wait",
+          "duration": 3000
+        },
+        {
+          "type": "vanish",
+          "actorId": "priest"
+        }
+      ]
+    },
+    {
+      "id": "scene_spirit_vision_florence",
+      "background": "gresham_library",
+      "actors": [
+        {
+          "id": "kenelm",
+          "startX": 5,
+          "startY": 8,
+          "spriteType": "digby"
+        }
+      ],
+      "timeline": [
+        {
+          "type": "say",
+          "actorId": "kenelm",
+          "text": "A magican in Florence conjures a spirit that bears the exact likeness of Venetia Stanley. She speaks of her innocence."
+        },
+        {
+          "type": "emote",
+          "actorId": "kenelm",
+          "emotion": "idea",
+          "duration": 2000
+        }
+      ],
+      "provenance": "SPIRIT_VISION_1622"
+    }
+  ],
+  "encounters": [
+    {
+      "id": "scanderoon_battle",
+      "title": "The Battle of Scanderoon",
+      "location": "scanderoon",
+      "date": "1628-06-16",
+      "description": "A naval engagement against Venetian and French ships in the Mediterranean.",
+      "type": "naval",
+      "stakes": {
+        "honor": 50,
+        "wealth": 80,
+        "knowledge": 10
+      },
+      "choices": [
+        {
+          "text": "Aggressive pursuit with the 'Eagle'",
+          "consequence": "Gain immense wealth but risk honor with the Crown."
+        },
+        {
+          "text": "Negotiated seizure",
+          "consequence": "A more surgical victory, gaining prestige among merchants."
+        }
+      ]
+    },
+    {
+      "id": "gresham_college_withdrawal",
+      "title": "The Mourning Hermit",
+      "location": "london",
+      "date": "1633-05-01",
+      "description": "After Venetia's death, you retreat to a laboratory to master the secrets of matter.",
+      "type": "alchemy",
+      "stakes": {
+        "honor": -10,
+        "wealth": -20,
+        "knowledge": 100
+      },
+      "choices": [
+        {
+          "text": "Master the 'Powder of Sympathy'",
+          "consequence": "Knowledge increases but your reputation for credulity grows."
+        },
+        {
+          "text": "Study the 'Nature of Bodies'",
+          "consequence": "Deep philosophical insight into atomic composites."
+        }
+      ]
+    },
+    {
+      "id": "pursuit_confrontation",
+      "title": "Intercepted by the Serene",
+      "location": "med_sea",
+      "date": "1628-08-12",
+      "description": "Your alchemical stench precedes you. A Venetian Galley has overtaken the 'Eagle'. They demand a search of your hold and an explanation for your 'suspicious' experiments at Milos.",
+      "type": "diplomatic",
+      "stakes": {
+        "honor": -20,
+        "wealth": -50,
+        "knowledge": 0
+      },
+      "choices": [
+        {
+          "text": "Bribe the Venetian Captain",
+          "consequence": "Lose 100 Wealth but maintain your secrets."
+        },
+        {
+          "text": "Defend your right as an English Privateer",
+          "consequence": "Gain Honor but the Pursuer's Aggro doubles."
+        }
+      ]
+    },
+    {
+      "id": "spirit_vision_florence",
+      "title": "The Ghost of Venetia",
+      "location": "florence",
+      "date": "1622-10-14",
+      "description": "A magican in Florence conjures a spirit that bears the exact likeness of Venetia Stanley. She speaks of her innocence.",
+      "type": "diplomatic",
+      "stakes": {
+        "honor": 40,
+        "wealth": -10,
+        "knowledge": 20
+      },
+      "choices": [
+        {
+          "text": "Believe the spirit's assurance.",
+          "consequence": "Your resolve is restored. Stigma is purged."
+        },
+        {
+          "text": "Mourn the trickery.",
+          "consequence": "You remain haunted by doubt. Knowledge of the occult increases."
+        }
+      ],
+      "provenance": "SPIRIT_VISION_1622"
+    },
+    {
+      "id": "algiers_ransom_1628",
+      "title": "The Ransom of the Forty",
+      "location": "algiers",
+      "date": "1628-02-15",
+      "description": "You negotiate with the Dey of Algiers for the release of 40 English mariners held in proximity to the port.",
+      "type": "diplomatic",
+      "stakes": {
+        "honor": 30,
+        "wealth": -100,
+        "knowledge": 10
+      },
+      "choices": [
+        {
+          "text": "Pay the gold for their release.",
+          "consequence": "Seasoned sailors join your crew. English favor increases."
+        },
+        {
+          "text": "Threaten naval reprisal.",
+          "consequence": "You save your wealth but risk future Ottoman aggression."
+        }
+      ],
+      "provenance": "ALGIERS_RANSOM_1628"
+    }
+  ],
+  "chrono_schedule": [
+    {
+      "id": "sch_spirit_vision_florence",
+      "frequency": "once",
+      "trigger_date": "1622-10-14",
+      "action_id": "spirit_vision_florence",
+      "type": "mandatory"
+    },
+    {
+      "id": "sch_algiers_ransom_1628",
+      "frequency": "once",
+      "trigger_date": "1628-02-15",
+      "action_id": "algiers_ransom_1628",
+      "type": "mandatory"
+    },
+    {
+      "id": "sch_scanderoon_battle",
+      "frequency": "once",
+      "trigger_date": "1628-06-16",
+      "action_id": "scanderoon_battle",
+      "type": "mandatory"
+    },
+    {
+      "id": "sch_pursuit_confrontation",
+      "frequency": "once",
+      "trigger_date": "1628-08-12",
+      "action_id": "pursuit_confrontation",
+      "type": "mandatory"
+    },
+    {
+      "id": "sch_gresham_college_withdrawal",
+      "frequency": "once",
+      "trigger_date": "1633-05-01",
+      "action_id": "gresham_college_withdrawal",
+      "type": "mandatory"
+    }
+  ],
+  "combat_moves": [
+    {
+      "id": "move_vitriol",
+      "name": "Vitriolic Corrosive Burst",
+      "type": "attack",
+      "damage": 20,
+      "reagent_cost": {
+        "vitriol": 1
+      },
+      "message": "The enemy's hull smokes as the Vitriol eats the timber.",
+      "charge_time": 2,
+      "component_damage": 30
+    },
+    {
+      "id": "move_antimony",
+      "name": "Metallic Poison Fog",
+      "type": "debuff",
+      "damage": 20,
+      "reagent_cost": {
+        "antimony": 1
+      },
+      "message": "The enemy crew falls into a lethargic stupor.",
+      "charge_time": 2
+    },
+    {
+      "id": "move_glass_antimony",
+      "name": "Metallic Poison Fog",
+      "type": "debuff",
+      "damage": 20,
+      "reagent_cost": {
+        "glass_antimony": 1
+      },
+      "message": "The enemy crew falls into a lethargic stupor.",
+      "charge_time": 2
+    },
+    {
+      "id": "move_spirit_vitriol",
+      "name": "Vitriolic Corrosive Burst",
+      "type": "attack",
+      "damage": 20,
+      "reagent_cost": {
+        "spirit_vitriol": 1
+      },
+      "message": "The enemy's hull smokes as the Vitriol eats the timber.",
+      "charge_time": 2,
+      "component_damage": 30
+    },
+    {
+      "id": "move_philosophers_lead",
+      "name": "Philosopher's Lead Discharge",
+      "type": "attack",
+      "damage": 20,
+      "reagent_cost": {
+        "philosophers_lead": 1
+      },
+      "message": "The Eagle fires a payload of Philosopher's Lead.",
+      "charge_time": 2
+    }
+  ],
+  "governance": {
+    "scholarly_coverage": 66.7,
+    "last_audit": "2026-03-21T09:11:53.000Z",
+    "unprovenanced_count": 32
+  }
+}

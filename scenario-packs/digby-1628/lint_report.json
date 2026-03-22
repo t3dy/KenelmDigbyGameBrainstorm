@@ -1,0 +1,12 @@
+{
+  "scan_id": "digby-1628",
+  "timestamp": "2026-03-21T09:12:09.209Z",
+  "errors": [],
+  "warnings": [],
+  "stats": {
+    "locations": 7,
+    "encounters": 5,
+    "reagents": 5,
+    "assets": 0
+  }
+}

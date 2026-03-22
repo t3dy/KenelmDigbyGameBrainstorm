@@ -1,0 +1,12 @@
+{
+    "id": "broken_micro",
+    "description": "A deliberately broken scenario for linter validation.",
+    "locations": [],
+    "encounters": [
+        {
+            "id": "missing_location_encounter",
+            "location": "non_existent_id",
+            "title": "The Ghost of Venice"
+        }
+    ]
+}

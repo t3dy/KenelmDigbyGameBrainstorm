@@ -1,0 +1,42 @@
+{
+    "id": "digby_scanderoon_micro",
+    "version": "1.0",
+    "description": "Tactical Crisis: A blockaded harbor (FTL-Lineage).",
+    "lineage": "FTL",
+    "locations": [
+        {
+            "id": "scanderoon",
+            "name": "Scanderoon Harbor",
+            "x": 45,
+            "y": 12,
+            "jurisdiction": "ottoman",
+            "unlocked": true
+        }
+    ],
+    "encounters": [
+        {
+            "id": "scanderoon_venice_blockade",
+            "type": "naval",
+            "title": "The Venetian Blockade",
+            "description": "Four Venetian galleys bear down, their prows cutting the Mediterranean surf. Scanderoon's protection is a legal ghost.",
+            "stakes": {
+                "honor": -10,
+                "wealth": -50,
+                "patronage": 20
+            },
+            "vessel": {
+                "id": "venice_galley_01",
+                "name": "San Marco",
+                "hull": 120,
+                "components": [
+                    { "id": "cannons", "name": "Heavy Broadside", "health": 60 },
+                    { "id": "masts", "name": "Main Mast", "health": 40 }
+                ]
+            },
+            "choices": [
+                { "text": "Run for the Ottoman guns.", "consequence": "You risk the hull for political asylum." },
+                { "text": "Engage the broadside.", "consequence": "A privateer's solution." }
+            ]
+        }
+    ]
+}

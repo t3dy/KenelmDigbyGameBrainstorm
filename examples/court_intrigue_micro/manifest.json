@@ -1,0 +1,44 @@
+{
+    "id": "court_intrigue_micro",
+    "version": "1.0",
+    "description": "Reputation Gated Evaluation: Florence to London (Ultima-Lineage).",
+    "lineage": "Ultima",
+    "locations": [
+        {
+            "id": "florence",
+            "name": "The Medici Court",
+            "x": 10,
+            "y": 15,
+            "jurisdiction": "papal",
+            "unlocked": true
+        }
+    ],
+    "reputation_axes": [
+        {
+            "id": "honor_stigma",
+            "defaultValue": 50,
+            "range": [0, 100],
+            "gates": [
+                { "threshold": 80, "action": "grant_royal_audience" },
+                { "threshold": 20, "action": "banish_from_court" }
+            ]
+        }
+    ],
+    "encounters": [
+        {
+            "id": "medici_eval",
+            "type": "intrigue",
+            "title": "The Grand Duke's Gaze",
+            "description": "Cosimo II watches your reaction to the alchemist's failure. A single nod determines your status in Tuscany.",
+            "stakes": {
+                "honor": 25,
+                "patronage": 40,
+                "stigma": -15
+            },
+            "choices": [
+                { "text": "Defend the experiment's logic.", "consequence": "You gain the Alchemists' respect, but Cosimo grows wary." },
+                { "text": "Admit the failure was inevitable.", "consequence": "A courtier's answer. Patronage increases." }
+            ]
+        }
+    ]
+}

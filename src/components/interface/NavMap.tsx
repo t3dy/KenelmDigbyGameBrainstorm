@@ -1,22 +1,21 @@
 import React, { useState, useEffect } from 'react';
-import { Ship, Anchor, AlertCircle, Shield, Droplets, Zap, X, ArrowLeftRight } from 'lucide-react';
+import { Ship, Anchor, AlertCircle, Shield, Droplets, Zap, X, ArrowLeftRight, Map as MapIcon } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useGameStore } from '../../state/gameStore';
-import { useEngineStore } from '../../state/engineStore';
 import { WeaponSalve } from '../laboratory/WeaponSalve';
 
 export const NavMap: React.FC = () => {
     const { 
-        location: currentLoc, travelTo, stats, manifest, currentDay, setView, setEncounter 
+        location: currentLoc, travelTo, stats, manifest, setView, setEncounter, addLog,
+        ship, pursuer, tick
     } = useGameStore();
-    const { ship, pursuer, tick, escalatePursuit, setShipCoords } = useEngineStore();
     const [hoveredLoc, setHoveredLoc] = useState<string | null>(null);
     const [isRepairOpen, setIsRepairOpen] = useState(false);
 
     const hasMarket = !!(manifest as any).markets[currentLoc];
     const locationName = manifest.locations.find(l => l.id === currentLoc)?.name || currentLoc;
 
-    // Tactical Pursuit Loop
+    // Tactical Pursuit Loop (Driven by Store Tick)
     useEffect(() => {
         const timer = setInterval(() => {
             tick();
@@ -24,24 +23,18 @@ export const NavMap: React.FC = () => {
         return () => clearInterval(timer);
     }, [tick]);
 
-    // Synergy Loop: Sync Stigma to Pursuer Aggro & Location to Pursuit Target
+    // Synergy Loop: Sync Stigma to Pursuer Aggro
+    // Collision Check: Pursuit Interception (Systemic)
     useEffect(() => {
-        escalatePursuit(stats.stigma, currentDay);
-        
-        const locData = manifest.locations.find(l => l.id === currentLoc);
-        if (locData) {
-            setShipCoords(locData.x, locData.y);
-        }
-
-        // Collision Check: Pursuit Interception
         const dx = ship.x - pursuer.x;
         const dy = ship.y - pursuer.y;
         const dist = Math.sqrt(dx * dx + dy * dy);
 
         if (dist < 2.5 && pursuer.active) {
             setEncounter('pursuit_confrontation');
+            addLog("⚠️ PURSUIT: The Serene fleet has intercepted the Eagle!");
         }
-    }, [stats.stigma, currentDay, currentLoc, manifest.locations, escalatePursuit, setShipCoords, ship.x, ship.y, pursuer.x, pursuer.y, pursuer.active, setEncounter]);
+    }, [ship.x, ship.y, pursuer.x, pursuer.y, pursuer.active, setEncounter, addLog]);
 
     return (
         <div className="flex-1 flex flex-col bg-zinc-50 relative overflow-hidden h-full">
@@ -96,18 +89,17 @@ export const NavMap: React.FC = () => {
                 </motion.div>
 
                 {/* Current Ship Icon (Eagle) */}
-                {manifest.locations.find(l => l.id === currentLoc) && (
-                    <motion.div
-                        layoutId="ship-eagle"
-                        style={{ 
-                            left: `${manifest.locations.find(l => l.id === currentLoc)?.x}%`, 
-                            top: `${manifest.locations.find(l => l.id === currentLoc)?.y}%` 
-                        }}
-                        className="absolute transform -translate-x-1/2 -translate-y-12 z-20 pointer-events-none text-zinc-950"
-                    >
-                        <Ship size={32} className="drop-shadow-2xl" />
-                    </motion.div>
-                )}
+                <motion.div
+                    animate={{ 
+                        left: `${ship.x}%`, 
+                        top: `${ship.y}%` 
+                    }}
+                    transition={{ duration: 0.5, ease: "linear" }}
+                    className="absolute transform -translate-x-1/2 -translate-y-12 z-20 pointer-events-none text-zinc-950"
+                >
+                    <Ship size={32} className="drop-shadow-2xl" />
+                </motion.div>
+
             </div>
 
             {/* Tactical Ship Status Footer */}
@@ -139,9 +131,15 @@ export const NavMap: React.FC = () => {
                         <button 
                             disabled={!hasMarket}
                             onClick={() => setView('market')}
-                            className="w-full py-4 bg-amber-500 text-zinc-950 text-[10px] font-black uppercase tracking-[0.3em] hover:bg-amber-400 transition-all shadow-[0_10px_30px_rgba(245,158,11,0.2)] disabled:opacity-20 disabled:grayscale flex items-center justify-center gap-2"
+                            className="w-full py-4 bg-amber-500 text-zinc-950 text-[10px] font-black uppercase tracking-[0.3em] hover:bg-amber-400 transition-all shadow-[0_10px_30px_rgba(245,158,11,0.2)] disabled:opacity-20 disabled:grayscale flex items-center justify-center gap-2 mb-2"
                         >
                             <ArrowLeftRight size={14} /> Dock & Trade
+                        </button>
+                        <button 
+                            onClick={() => setView('port')}
+                            className="w-full py-4 bg-zinc-800 text-white text-[10px] font-black uppercase tracking-[0.3em] hover:bg-zinc-700 transition-all shadow-lg flex items-center justify-center gap-2"
+                        >
+                            <MapIcon size={14} className="text-amber-500" /> Venture Ashore
                         </button>
                    </div>
                 </div>

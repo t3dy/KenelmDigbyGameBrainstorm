@@ -1,75 +1,49 @@
-# SYSTEM_INIT: Almagest Knowledge-Driven Simulation Compiler (KDSC) v2.0
+# 🏛️ Almagest System Init: Master-Maker Protocol
 
-## 🎯 1. OBJECTIVE
-To transform the Almagest project into a deterministic, research-backed simulation where every gameplay mechanic, narrative beat, and alchemical reagent is derived from a strictly validated **Ontology Layer**.
+This document establishes the **Canonical Architecture** for the Almagest project. It supersedes all previous "vision" or "narrative" init files.
 
----
+## ⚖️ 1. TRUTHFULNESS CONSTRAINTS (MANDATORY)
+To prevent architectural over-claiming, the following status taxonomy must be used:
+- **Planned**: Blue-sky thinking.
+- **Specified**: Documents, schemas, and plans locked.
+- **Implemented**: Code and scripts exist.
+- **Validated**: Demonstrated via end-to-end workflow execution.
+- **Generalized**: Proven multiple use-cases.
 
-## 🏗️ 2. THE 5-LAYER ARCHITECTURE
+**FACTS**:
+- A tool registry is NOT a suite of implemented tools.
+- A pipeline diagram is NOT an executed system.
+- One scholarly example (Digby) is NOT general proof.
 
-### **Layer 1: Research (The Input)**
-*   **Artifacts**: Source PDFs, extracted summaries, keyword reports.
-*   **Action**: Keyword detection and source extraction.
+## 🎯 2. CORE OBJECTIVE
+To build a **Full-Scale Construction Kit** for three gameplay lineages:
+1.  **Ultima-like**: Systemic moral evaluation.
+2.  **FF-like**: Authored dramatic pacing.
+3.  **FTL-like**: tactical crisis management.
 
-### **Layer 2: Ontology (The Core Truth)**
-*   **Artifacts**: `/docs/ontology/*.json` (Entities, Relationships, Variants).
-*   **Action**: Defining "What exists" in the world.
-*   **Constraints**: Must include **Provenance** (source) and **Confidence** for every entity.
-
-### **Layer 3: Design (The Affordance)**
-*   **Artifacts**: `/docs/design/*.json` (Ontology -> Mechanics mapping).
-*   **Action**: Defining "How it works" in the game.
-*   **Constraint**: No mechanic may exist without an Ontological backing.
-
-### **Layer 4: Compilation (The Builder)**
-*   **Script**: `/scripts/compile_manifest.py` (or similar).
-*   **Action**: Deterministically merges Ontology + Design -> `src/data/manifest.json`.
-*   **Constraint**: **MANIFEST.JSON IS READ-ONLY FOR AGENTS.**
-
-### **Layer 5: Runtime (The Game)**
-*   **Code**: `/src/` (React + Zustand).
-*   **Action**: Consumes `manifest.json` ONLY.
-*   **Constraint**: No interpretation or mutation of ontology at runtime.
-
----
-
-## 🚦 3. DATA FLOW CONTRACT
-**INGEST → ONTOLOGY → DESIGN → COMPILE → RUNTIME**
-
-1.  **NO** agent may write directly to `src/data/manifest.json`.
-2.  **NO** mechanic may be added to the code without a backing entry in `/docs/ontology/`.
-3.  **ALL** changes to the world-state must be performed by the **Foreman** proposing Ontology/Design changes, followed by a **Compilation Step**.
-
----
-
-## 📂 4. DIRECTORY STRUCTURE
-
-| Path | Purpose | Role |
+## 🏗️ 3. THE 7-LAYER ARCHITECTURE (MAKER STACK)
+| Layer | Purpose | Action |
 | :--- | :--- | :--- |
-| `/.agents/` | Persona Contracts (Foreman, Worker, Librarian) | **Foreman** |
-| `/docs/ontology/` | Entities, Relationships, Manuscript Variants | **Librarian** |
-| `/docs/design/` | Mechanic Affordances, Gameplay Tables | **Retroist** |
-| `/docs/workflow/` | Active Implementation Plans (Ephemeral) | **Foreman** |
-| `/scripts/` | Manifest Compilers & Validation Scripts | **Orchestrator** |
-| `/src/` | React Runtime (Read-only Manifest) | **Worker** |
+| **RESEARCH** | Historical context (PDFs). | Extraction of records. |
+| **ONTOLOGY** | Entities (Reagents, Ports). | Defining "What exists." |
+| **ASSETS** | **Reusable Units**. | Defining "How it behaves" via **Machinery**. |
+| **DESIGN** | **Primitives / Affordances**. | Providing the standard JSON contracts. |
+| **COMPILE** | Manifest Building. | Merges Ontology + Asset Instance -> Manifest. |
+| **THE MAKER** | **Authoring Tools**. | Tool-driven population and validation. |
+| **RUNTIME** | React Simulation. | Purely consumes the validated manifest. |
+
+## 🛑 4. THE "EDITOR-FIRST" RULE
+**ALL** new world-content should be authored through the **Maker Tools** (Editors).
+*   If an LLM or human needs to edit a `.tsx` file to add a port, the **Port Editor** is incomplete.
+*   Every JSON primitive MUST have a corresponding UI-editor to ensure the kit is "Low-Code/No-Code" for future scholarly datasets.
+
+## 📐 5. ARCHITECTURAL BOUNDARIES
+*   **Engine**: React + Zustand + KDSC Compiler.
+*   **The Maker**: Editors for Scenes, Actors, Ports, and Encounters.
+*   **Construction Kit (ACK)**: Reusable components (Scene, Actor, Encounter, Dialogue).
+*   **Content**: Individual datasets (1628 Digby, 1970s PKD, etc.).
 
 ---
 
-## 🧬 5. PHILOLOGY SYSTEM
-Philology is a first-class citizen. 
-*   **Variants** are stored in `/docs/ontology/manuscripts/`.
-*   **Truth Resolution** happens at the **Design Layer**.
-*   **Resolution Output** modifies Reagent behavior and Narrative branches at **Compile Time**.
-
----
-
-## 🛡️ 6. TETHER VALIDATION RULES
-1.  **Librarian <-> Retroist**: A reagent must have a `source` and `confidence > 0.7` to be mapped to a mechanic.
-2.  **Foreman <-> Worker**: Worker cannot edit `/src/` without an approved `IMP-xxxx` linked to an Ontology change.
-3.  **Compilation Gate**: Build fails if an entity lacks provenance.
-
----
-
-**Status**: SEALED ARCHITECTURE. COMPILER-DRIVEN.
-**Mode**: EXPANSION MODE (Phase 4: Levantine Trade).
-**Strategic Reference**: [ROADMAP.md](file:///docs/architecture/ROADMAP.md)
+**Status**: SPECIFIED. Architectural blueprint locked.
+**Strategic Reference**: [CONSTRUCTION_KIT_SCOPE.md](file:///docs/architecture/CONSTRUCTION_KIT_SCOPE.md)

@@ -6,7 +6,6 @@ import {
     Flame, 
     Plus, 
     Sparkles, 
-    RefreshCw, 
     Database, 
     Crosshair,
     FlaskConical,
@@ -65,19 +64,67 @@ export const Laboratory: React.FC = () => {
         return () => window.removeEventListener('keydown', handleKeyDown);
     }, [mode, slot1, slot2, availableReagents, isMixing]);
 
+    const [heat, setHeat] = useState(0);
+    const [targetHeat] = useState(70);
+    const [isStoking, setIsStoking] = useState(false);
+
+    // Calculate stability range based on knowledge/resolutions
+    const isSlot1Resolved = stats.resolvedReagentIds.includes(slot1 || '');
+    const isSlot2Resolved = stats.resolvedReagentIds.includes(slot2 || '');
+    const sweetSpotWidth = 10 + (isSlot1Resolved ? 10 : 0) + (isSlot2Resolved ? 10 : 0);
+    const inRange = heat >= (targetHeat - sweetSpotWidth/2) && heat <= (targetHeat + sweetSpotWidth/2);
+
+    // Calcination Heat Loop
+    useEffect(() => {
+        if (!isMixing) {
+            setHeat(0);
+            return;
+        }
+
+        const timer = setInterval(() => {
+            setHeat(h => {
+                const decay = 2; // Heat lost per tick
+                const gain = isStoking ? 6 : 0; // Heat gained if stoking
+                const next = h - decay + gain;
+                return Math.max(0, Math.min(100, next));
+            });
+        }, 50);
+
+        return () => clearInterval(timer);
+    }, [isMixing, isStoking]);
+
     const handleMix = async () => {
         if (!slot1 || !slot2 || isMixing) return;
         
         setIsMixing(true);
         setResult(null);
+        setHeat(30); // Starting heat
 
-        // Visual delay for synthesis
-        await new Promise(resolve => setTimeout(resolve, 1500));
+        let stabilityTotal = 0;
+        let ticks = 0;
+
+        // Visual delay for synthesis (3 seconds for more challenge)
+        const duration = 3000;
+        const interval = 100;
         
-        mixReagents(slot1, slot2);
+        const mixTimer = setInterval(() => {
+            if (inRange) {
+                stabilityTotal += 1;
+            }
+            ticks += 1;
+        }, interval);
+
+        await new Promise(resolve => setTimeout(resolve, duration));
+        clearInterval(mixTimer);
         
-        setResult('PROCESS COMPLETE');
+        const successRate = stabilityTotal / ticks;
+        const resultQuality = successRate > 0.8 ? 'PERFECT' : successRate > 0.5 ? 'STABLE' : 'VOLATILE';
+
+        mixReagents(slot1, slot2, successRate);
+        
+        setResult(`${resultQuality} MANIFESTATION`);
         setIsMixing(false);
+        setIsStoking(false);
         
         setTimeout(() => {
             setSlot1(null);
@@ -224,24 +271,49 @@ export const Laboratory: React.FC = () => {
                                     <div className="absolute top-1/2 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-amber-500/20 to-transparent -z-10" />
                                 </div>
 
+                                {isMixing && (
+                                    <div className="w-80 mb-12 flex flex-col items-center">
+                                        <div className="flex justify-between w-full mb-2 text-[9px] font-black uppercase text-amber-500 tracking-[0.2em] animate-pulse">
+                                            <span>Chymical Heat</span>
+                                            <span>{heat.toFixed(0)}°</span>
+                                        </div>
+                                        <div className="w-full h-4 bg-zinc-950 border border-zinc-800 rounded-full relative overflow-hidden p-0.5">
+                                            {/* Sweet Spot */}
+                                            <div 
+                                                className="absolute top-0 bottom-0 bg-emerald-500/20 border-x border-emerald-500/30" 
+                                                style={{ left: `${targetHeat - (sweetSpotWidth/2)}%`, width: `${sweetSpotWidth}%` }} 
+                                            />
+                                            {/* Current Heat */}
+                                            <motion.div 
+                                                animate={{ width: `${heat}%` }} 
+                                                className={`h-full rounded-full ${!inRange ? (heat > targetHeat ? 'bg-red-500 shadow-[0_0_15px_rgba(239,68,68,0.5)]' : 'bg-zinc-700') : 'bg-emerald-500 shadow-[0_0_15px_rgba(16,185,129,0.5)]'}`} 
+                                            />
+                                        </div>
+                                        <p className="mt-3 text-[10px] text-zinc-600 font-bold uppercase tracking-widest italic">Maintain the Solar Steady Point</p>
+                                    </div>
+                                )}
+
                                 <button
-                                    onClick={handleMix}
-                                    disabled={!slot1 || !slot2 || isMixing}
+                                    onMouseDown={() => { if (isMixing) setIsStoking(true); }}
+                                    onMouseUp={() => setIsStoking(false)}
+                                    onMouseLeave={() => setIsStoking(false)}
+                                    onClick={() => { if (!isMixing) handleMix(); }}
+                                    disabled={(!slot1 || !slot2) && !isMixing}
                                     className={`relative group px-12 py-5 border-2 transition-all overflow-hidden ${
-                                        slot1 && slot2 && !isMixing
+                                        slot1 && slot2
                                         ? 'border-amber-500 text-amber-100 hover:bg-amber-500 hover:text-amber-950'
                                         : 'border-zinc-900 text-zinc-700 bg-zinc-950 cursor-not-allowed'
-                                    }`}
+                                    } ${isStoking ? 'scale-95 shadow-inner' : ''}`}
                                 >
                                     <div className="relative z-10 flex items-center gap-3 font-black tracking-[0.2em] uppercase">
                                         {isMixing ? (
                                             <>
-                                                <RefreshCw className="animate-spin" size={20} />
-                                                Synthesis in progress...
+                                                <Flame className={`animate-pulse ${isStoking ? 'text-red-500 scale-125' : 'text-zinc-600'}`} size={20} />
+                                                STOKE THE ATHANOR [HOLD]
                                             </>
                                         ) : (
                                             <>
-                                                <Flame size={20} />
+                                                <Sparkles size={20} />
                                                 Commence Manifestation [M]
                                             </>
                                         )}

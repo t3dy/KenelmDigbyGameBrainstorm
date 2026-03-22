@@ -1,0 +1,12 @@
+{
+  "scan_id": "court_intrigue_micro",
+  "timestamp": "2026-03-21T06:42:17.192Z",
+  "errors": [],
+  "warnings": [],
+  "stats": {
+    "locations": 1,
+    "encounters": 1,
+    "reagents": 0,
+    "assets": 0
+  }
+}

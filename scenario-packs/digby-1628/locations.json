@@ -1,0 +1,47 @@
+[
+  {
+    "id": "venice",
+    "name": "The Serene Republic of Venice",
+    "x": 10,
+    "y": 15,
+    "description": "The capital of banking and naval surveillance. Heart of the Pursuer's network.",
+    "type": "capital",
+    "unlocked": true
+  },
+  {
+    "id": "milos",
+    "name": "Milos (Secret Grotto)",
+    "x": 45,
+    "y": 62,
+    "description": "A quiet obsidian island where Kenelm first performed the Vitriol experiment.",
+    "type": "refuge",
+    "unlocked": true
+  },
+  {
+    "id": "scanderoon",
+    "name": "Scanderoon (Alexandretta)",
+    "x": 88,
+    "y": 42,
+    "description": "The site of the great duel with the Venetian Galleys. Entry point to the Levant.",
+    "type": "battleground",
+    "unlocked": true
+  },
+  {
+    "id": "algiers",
+    "name": "Algiers (Corsair Port)",
+    "x": 12,
+    "y": 48,
+    "description": "A place of plague and profitable piracy. Reagents here are crude but potent.",
+    "type": "outpost",
+    "unlocked": false
+  },
+  {
+    "id": "london",
+    "name": "London (Gresham College)",
+    "x": 0,
+    "y": 0,
+    "description": "The final destination. The seat of the Royal Society and the Honor of Stelliana.",
+    "type": "milestone",
+    "unlocked": false
+  }
+]

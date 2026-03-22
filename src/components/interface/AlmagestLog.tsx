@@ -2,7 +2,7 @@ import React from 'react';
 import { useGameStore } from '../../state/gameStore';
 import { Scroll, Terminal } from 'lucide-react';
 
-export const Logbook: React.FC = () => {
+export const AlmagestLog: React.FC = () => {
     const { log } = useGameStore();
 
     return (

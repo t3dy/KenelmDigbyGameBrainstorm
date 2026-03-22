@@ -1,0 +1,74 @@
+[
+  {
+    "id": "kenelm_digby",
+    "name": "Sir Kenelm Digby",
+    "role": "advisor",
+    "health": 100,
+    "woundLevel": 0,
+    "reputation": 100,
+    "bio": "The protagonist. Alchemist, courtier, and adventurer."
+  },
+  {
+    "id": "venetia_stanley",
+    "name": "Venetia Stanley",
+    "role": "advisor",
+    "health": 100,
+    "woundLevel": 0,
+    "reputation": 95,
+    "bio": "Digby's wife, whose honor he seeks to protect across the Mediterranean."
+  },
+  {
+    "id": "thomas_allen",
+    "name": "Thomas Allen",
+    "role": "advisor",
+    "health": 80,
+    "woundLevel": 0,
+    "reputation": 90,
+    "bio": "Oxford mathematician and mentor. His secret library is the foundation of your knowledge."
+  },
+  {
+    "id": "john_scanderoon",
+    "name": "John of Scanderoon",
+    "role": "crew",
+    "health": 60,
+    "woundLevel": 40,
+    "reputation": 85,
+    "bio": "A veteran of the Battle of Scanderoon. Carries a wound that responds to the Powder of Sympathy."
+  },
+  {
+      "id": "everard_digby",
+      "name": "Sir Everard Digby",
+      "role": "advisor",
+      "health": 0,
+      "woundLevel": 0,
+      "reputation": 30,
+      "bio": "The executed father. His legacy of treason is the 'Stigma' that haunts your voyage."
+  },
+  {
+      "id": "george_hartmann",
+      "name": "George Hartmann",
+      "role": "crew",
+      "health": 90,
+      "woundLevel": 0,
+      "reputation": 70,
+      "bio": "Digby's laboratory assistant. Skilled in the practical arts of chymistry."
+  },
+  {
+      "id": "samuel_duclos",
+      "name": "Samuel Duclos",
+      "role": "rival",
+      "health": 100,
+      "woundLevel": 0,
+      "reputation": 40,
+      "bio": "A rival alchemist in the Paris Circle. Highly skeptical of the Vitriol of Copper."
+  },
+  {
+      "id": "prince_charles",
+      "name": "Prince Charles",
+      "role": "advisor",
+      "health": 100,
+      "woundLevel": 0,
+      "reputation": 100,
+      "bio": "The future Charles I. A patron whose favor is essential for your return."
+  }
+]

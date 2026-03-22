@@ -1,0 +1,14 @@
+{
+  "scan_id": "broken_micro",
+  "timestamp": "2026-03-21T06:42:31.760Z",
+  "errors": [
+    "Encounter 'missing_location_encounter' references non-existent location ID: 'non_existent_id'"
+  ],
+  "warnings": [],
+  "stats": {
+    "locations": 0,
+    "encounters": 1,
+    "reagents": 0,
+    "assets": 0
+  }
+}
